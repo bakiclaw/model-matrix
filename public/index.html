@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModelMatrix | AI Model Benchmarks & Pricing</title>
+    <meta name="description" content="Compare AI models by performance, cost, and value. Find the best LLMs for coding, vision, and general tasks with ModelMatrix.">
+    <meta name="keywords" content="AI models, LLM benchmarks, AI pricing, ModelMatrix, GPT-4, Claude 3, Gemini, DeepSeek">
+    <meta property="og:title" content="ModelMatrix | AI Model Benchmarks & Pricing">
+    <meta property="og:description" content="Sleek, data-driven comparison of the world's leading AI models. Performance, cost, and value scores at a glance.">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        [x-cloak] { display: none !important; }
+        body {
+            background-color: #030712;
+            color: #f9fafb;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            border-color: rgba(59, 130, 246, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3);
+        }
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+        }
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body x-data="modelApp()" x-init="init()">
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
+        <!-- Header -->
+        <header class="text-center mb-16">
+            <h1 class="text-5xl font-extrabold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                ModelMatrix
+            </h1>
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                Discover the optimal balance of intelligence and economy. Real-time benchmarks and pricing for over 300+ AI models.
+            </p>
+        </header>
+
+        <!-- Search & Filters -->
+        <div class="mb-10 flex flex-col md:flex-row gap-4 items-center justify-between sticky top-4 z-50 p-4 glass rounded-2xl shadow-2xl">
+            <div class="relative w-full md:w-96">
+                <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5"></i>
+                <input 
+                    type="text" 
+                    x-model="search" 
+                    placeholder="Search models or providers..." 
+                    class="w-full pl-10 pr-4 py-2 bg-gray-900/50 border border-gray-700 rounded-xl focus:border-blue-500 transition-all text-white placeholder-gray-500"
+                >
+            </div>
+            
+            <div class="flex flex-wrap gap-2 justify-center">
+                <button 
+                    @click="sortBy('overall')" 
+                    :class="sortKey === 'overall' ? 'bg-blue-600 text-white' : 'bg-gray-800 text-gray-400 hover:bg-gray-700'"
+                    class="px-4 py-2 rounded-xl text-sm font-medium transition-colors"
+                >
+                    Top Performance
+                </button>
+                <button 
+                    @click="sortBy('value')" 
+                    :class="sortKey === 'value' ? 'bg-purple-600 text-white' : 'bg-gray-800 text-gray-400 hover:bg-gray-700'"
+                    class="px-4 py-2 rounded-xl text-sm font-medium transition-colors"
+                >
+                    Best Value
+                </button>
+                <button 
+                    @click="sortBy('price')" 
+                    :class="sortKey === 'price' ? 'bg-green-600 text-white' : 'bg-gray-800 text-gray-400 hover:bg-gray-700'"
+                    class="px-4 py-2 rounded-xl text-sm font-medium transition-colors"
+                >
+                    Lowest Cost
+                </button>
+            </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" x-show="!loading">
+            <template x-for="model in filteredModels" :key="model.id">
+                <div class="glass p-6 rounded-2xl transition-all duration-300 card-hover flex flex-col h-full">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-xl font-bold truncate text-white" :title="model.name" x-text="model.name"></h3>
+                            <p class="text-gray-500 text-sm uppercase tracking-wider font-semibold" x-text="model.provider"></p>
+                        </div>
+                        <span 
+                            class="ml-2 px-2.5 py-1 rounded-lg text-xs font-bold"
+                            :class="model.scores.overall ? 'bg-blue-500/10 text-blue-400 border border-blue-500/20' : 'bg-gray-800 text-gray-500'"
+                            x-text="model.scores.overall ? model.scores.overall : 'N/A'"
+                        ></span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-gray-900/40 p-3 rounded-xl border border-white/5">
+                            <p class="text-gray-500 text-[10px] uppercase font-bold mb-1">Pricing (1M)</p>
+                            <p class="text-white font-mono text-sm">
+                                <span class="text-green-400">$</span><span x-text="model.pricing.prompt.toFixed(2)"></span>
+                            </p>
+                        </div>
+                        <div class="bg-gray-900/40 p-3 rounded-xl border border-white/5">
+                            <p class="text-gray-500 text-[10px] uppercase font-bold mb-1">Value Score</p>
+                            <p class="text-white font-mono text-sm" x-text="model.valueScore === Infinity ? 'FREE' : model.valueScore.toFixed(1)"></p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-6 flex-grow">
+                        <!-- Coding -->
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-400 flex items-center gap-2">
+                                <i data-lucide="code-2" class="w-4 h-4 text-purple-400"></i> Coding
+                            </span>
+                            <span class="font-semibold text-gray-200" x-text="model.scores.coding || '-'"></span>
+                        </div>
+                        <!-- Vision -->
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-400 flex items-center gap-2">
+                                <i data-lucide="eye" class="w-4 h-4 text-yellow-400"></i> Vision
+                            </span>
+                            <span class="font-semibold text-gray-200" x-text="model.scores.vision || '-'"></span>
+                        </div>
+                        <!-- Context -->
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-400 flex items-center gap-2">
+                                <i data-lucide="layers" class="w-4 h-4 text-blue-400"></i> Context
+                            </span>
+                            <span class="font-semibold text-gray-200" x-text="(model.context_length / 1000) + 'K'"></span>
+                        </div>
+                    </div>
+
+                    <div class="mt-auto">
+                        <a 
+                            :href="'https://openrouter.ai/models/' + model.id" 
+                            target="_blank"
+                            class="w-full flex items-center justify-center gap-2 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-xl font-bold transition-all border border-gray-700"
+                        >
+                            View Details <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <!-- Loading / Empty State -->
+        <div x-show="loading" class="flex flex-col items-center justify-center py-24">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mb-4"></div>
+            <p class="text-gray-400">Loading benchmark data...</p>
+        </div>
+
+        <div x-show="!loading && filteredModels.length === 0" class="text-center py-24 glass rounded-3xl">
+            <i data-lucide="alert-circle" class="w-12 h-12 text-gray-600 mx-auto mb-4"></i>
+            <h2 class="text-2xl font-bold text-gray-400">No models found</h2>
+            <p class="text-gray-500">Try adjusting your search criteria</p>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="mt-24 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 ModelMatrix. Data powered by OpenRouter & LMSYS Arena.</p>
+        </footer>
+    </div>
+
+    <script>
+        function modelApp() {
+            return {
+                allModels: [],
+                search: '',
+                sortKey: 'overall',
+                sortOrder: 'desc',
+                loading: true,
+
+                init() {
+                    this.fetchData();
+                    initParticles();
+                    setTimeout(() => lucide.createIcons(), 100);
+                },
+
+                async fetchData() {
+                    try {
+                        const response = await fetch('data/prices.json');
+                        const data = await response.json();
+                        
+                        this.allModels = data.models.map(m => {
+                            const avgPrice = (m.pricing.prompt + m.pricing.completion) / 2;
+                            const valueScore = m.scores.overall ? (m.scores.overall / (avgPrice || 0.000001)) : 0;
+                            return {
+                                ...m,
+                                valueScore: avgPrice === 0 ? Infinity : valueScore,
+                                totalPrice: m.pricing.prompt + m.pricing.completion
+                            };
+                        });
+                        this.sortBy('overall');
+                    } catch (error) {
+                        console.error('Error fetching models:', error);
+                    } finally {
+                        this.loading = false;
+                        this.$nextTick(() => lucide.createIcons());
+                    }
+                },
+
+                sortBy(key) {
+                    this.sortKey = key;
+                    this.sortOrder = 'desc';
+                    if (key === 'price') this.sortOrder = 'asc';
+                    
+                    this.allModels.sort((a, b) => {
+                        let valA, valB;
+                        if (key === 'overall') { valA = a.scores.overall || 0; valB = b.scores.overall || 0; }
+                        else if (key === 'value') { valA = a.valueScore; valB = b.valueScore; }
+                        else if (key === 'price') { valA = a.totalPrice; valB = b.totalPrice; }
+                        
+                        return this.sortOrder === 'desc' ? valB - valA : valA - valB;
+                    });
+                },
+
+                get filteredModels() {
+                    const searchLower = this.search.toLowerCase();
+                    const filtered = this.allModels.filter(m => 
+                        m.name.toLowerCase().includes(searchLower) || 
+                        m.provider.toLowerCase().includes(searchLower) ||
+                        m.id.toLowerCase().includes(searchLower)
+                    );
+                    this.$nextTick(() => lucide.createIcons());
+                    return filtered.slice(0, 100); // Limit to top 100 for performance
+                }
+            }
+        }
+
+        // Lightweight Particles Background
+        function initParticles() {
+            const canvas = document.getElementById('particles-canvas');
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            let width, height;
+
+            function resize() {
+                width = canvas.width = window.innerWidth;
+                height = canvas.height = window.innerHeight;
+            }
+
+            window.addEventListener('resize', resize);
+            resize();
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.vx = (Math.random() - 0.5) * 0.5;
+                    this.vy = (Math.random() - 0.5) * 0.5;
+                    this.size = Math.random() * 2;
+                }
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if (this.x < 0 || this.x > width) this.vx *= -1;
+                    if (this.y < 0 || this.y > height) this.vy *= -1;
+                }
+                draw() {
+                    ctx.fillStyle = 'rgba(59, 130, 246, 0.2)';
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            }
+
+            for (let i = 0; i < 80; i++) particles.push(new Particle());
+
+            function animate() {
+                ctx.clearRect(0, 0, width, height);
+                particles.forEach(p => {
+                    p.update();
+                    p.draw();
+                });
+
+                // Draw lines between close particles
+                ctx.strokeStyle = 'rgba(59, 130, 246, 0.05)';
+                ctx.lineWidth = 0.5;
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx*dx + dy*dy);
+                        if (dist < 150) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+    </script>
+</body>
+</html>

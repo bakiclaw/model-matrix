@@ -1,0 +1,5921 @@
+{
+  "metadata": {
+    "source": "OpenRouter + LMSYS Arena Mapping",
+    "last_updated": "2026-02-03T09:49:13.805136Z",
+    "total_models": 311
+  },
+  "models": [
+    {
+      "id": "moonshotai/kimi-k2.5",
+      "name": "MoonshotAI: Kimi K2.5",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.5,
+        "completion": 2.8
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "moonshotai"
+    },
+    {
+      "id": "minimax/minimax-m2-her",
+      "name": "MiniMax: MiniMax M2-her",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "minimax"
+    },
+    {
+      "id": "writer/palmyra-x5",
+      "name": "Writer: Palmyra X5",
+      "context_length": 1040000,
+      "pricing": {
+        "prompt": 0.6,
+        "completion": 6.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "writer"
+    },
+    {
+      "id": "openai/gpt-audio",
+      "name": "OpenAI: GPT Audio",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-audio-mini",
+      "name": "OpenAI: GPT Audio Mini",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.6,
+        "completion": 2.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "z-ai/glm-4.7-flash",
+      "name": "Z.AI: GLM 4.7 Flash",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 0.07,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai"
+    },
+    {
+      "id": "openai/gpt-5.2-codex",
+      "name": "OpenAI: GPT-5.2-Codex",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 1.75,
+        "completion": 14.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "allenai/olmo-3.1-32b-instruct",
+      "name": "AllenAI: Olmo 3.1 32B Instruct",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "allenai"
+    },
+    {
+      "id": "bytedance-seed/seed-1.6-flash",
+      "name": "ByteDance Seed: Seed 1.6 Flash",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.075,
+        "completion": 0.3
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "bytedance-seed"
+    },
+    {
+      "id": "bytedance-seed/seed-1.6",
+      "name": "ByteDance Seed: Seed 1.6",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 2.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "bytedance-seed"
+    },
+    {
+      "id": "minimax/minimax-m2.1",
+      "name": "MiniMax: MiniMax M2.1",
+      "context_length": 196608,
+      "pricing": {
+        "prompt": 0.27,
+        "completion": 1.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "minimax"
+    },
+    {
+      "id": "z-ai/glm-4.7",
+      "name": "Z.AI: GLM 4.7",
+      "context_length": 202752,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 1.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai"
+    },
+    {
+      "id": "google/gemini-3-flash-preview",
+      "name": "Google: Gemini 3 Flash Preview",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 0.5,
+        "completion": 3.0
+      },
+      "scores": {
+        "overall": 1300,
+        "coding": 1220,
+        "vision": 1340,
+        "hard": 1200
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "mistralai/mistral-small-creative",
+      "name": "Mistral: Mistral Small Creative",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.3
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "allenai/olmo-3.1-32b-think",
+      "name": "AllenAI: Olmo 3.1 32B Think",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "allenai"
+    },
+    {
+      "id": "xiaomi/mimo-v2-flash",
+      "name": "Xiaomi: MiMo-V2-Flash",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.09,
+        "completion": 0.29
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "xiaomi"
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-30b-a3b",
+      "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.05,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nvidia"
+    },
+    {
+      "id": "openai/gpt-5.2-chat",
+      "name": "OpenAI: GPT-5.2 Chat",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 1.75,
+        "completion": 14.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-5.2-pro",
+      "name": "OpenAI: GPT-5.2 Pro",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 21.0,
+        "completion": 168.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-5.2",
+      "name": "OpenAI: GPT-5.2",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 1.75,
+        "completion": 14.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "mistralai/devstral-2512",
+      "name": "Mistral: Devstral 2 2512",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.05,
+        "completion": 0.22
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "relace/relace-search",
+      "name": "Relace: Relace Search",
+      "context_length": 256000,
+      "pricing": {
+        "prompt": 1.0,
+        "completion": 3.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "relace"
+    },
+    {
+      "id": "z-ai/glm-4.6v",
+      "name": "Z.AI: GLM 4.6V",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 0.9
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai"
+    },
+    {
+      "id": "nex-agi/deepseek-v3.1-nex-n1",
+      "name": "Nex AGI: DeepSeek V3.1 Nex N1",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.27,
+        "completion": 1.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nex-agi"
+    },
+    {
+      "id": "essentialai/rnj-1-instruct",
+      "name": "EssentialAI: Rnj 1 Instruct",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.15
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "essentialai"
+    },
+    {
+      "id": "openai/gpt-5.1-codex-max",
+      "name": "OpenAI: GPT-5.1-Codex-Max",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "amazon/nova-2-lite-v1",
+      "name": "Amazon: Nova 2 Lite",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 2.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "amazon"
+    },
+    {
+      "id": "mistralai/ministral-14b-2512",
+      "name": "Mistral: Ministral 3 14B 2512",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "mistralai/ministral-8b-2512",
+      "name": "Mistral: Ministral 3 8B 2512",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.15
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "mistralai/ministral-3b-2512",
+      "name": "Mistral: Ministral 3 3B 2512",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "mistralai/mistral-large-2512",
+      "name": "Mistral: Mistral Large 3 2512",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.5,
+        "completion": 1.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "arcee-ai/trinity-mini",
+      "name": "Arcee AI: Trinity Mini",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.045,
+        "completion": 0.15
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "arcee-ai"
+    },
+    {
+      "id": "deepseek/deepseek-v3.2-speciale",
+      "name": "DeepSeek: DeepSeek V3.2 Speciale",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.27,
+        "completion": 0.41
+      },
+      "scores": {
+        "overall": 1305,
+        "coding": 1370,
+        "vision": 1220,
+        "hard": 1310
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "deepseek/deepseek-v3.2",
+      "name": "DeepSeek: DeepSeek V3.2",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 0.38
+      },
+      "scores": {
+        "overall": 1305,
+        "coding": 1370,
+        "vision": 1220,
+        "hard": 1310
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "prime-intellect/intellect-3",
+      "name": "Prime Intellect: INTELLECT-3",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 1.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "prime-intellect"
+    },
+    {
+      "id": "tngtech/tng-r1t-chimera",
+      "name": "TNG: R1T Chimera",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 0.85
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "tngtech"
+    },
+    {
+      "id": "anthropic/claude-opus-4.5",
+      "name": "Anthropic: Claude Opus 4.5",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 5.0,
+        "completion": 25.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "allenai/olmo-3-32b-think",
+      "name": "AllenAI: Olmo 3 32B Think",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "allenai"
+    },
+    {
+      "id": "allenai/olmo-3-7b-instruct",
+      "name": "AllenAI: Olmo 3 7B Instruct",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "allenai"
+    },
+    {
+      "id": "allenai/olmo-3-7b-think",
+      "name": "AllenAI: Olmo 3 7B Think",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 0.12,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "allenai"
+    },
+    {
+      "id": "google/gemini-3-pro-image-preview",
+      "name": "Google: Nano Banana Pro (Gemini 3 Pro Image Preview)",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 12.0
+      },
+      "scores": {
+        "overall": 1350,
+        "coding": 1320,
+        "vision": 1380,
+        "hard": 1310
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "x-ai/grok-4.1-fast",
+      "name": "xAI: Grok 4.1 Fast",
+      "context_length": 2000000,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "x-ai"
+    },
+    {
+      "id": "google/gemini-3-pro-preview",
+      "name": "Google: Gemini 3 Pro Preview",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 12.0
+      },
+      "scores": {
+        "overall": 1350,
+        "coding": 1320,
+        "vision": 1380,
+        "hard": 1310
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "deepcogito/cogito-v2.1-671b",
+      "name": "Deep Cogito: Cogito v2.1 671B",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 1.25
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepcogito"
+    },
+    {
+      "id": "openai/gpt-5.1",
+      "name": "OpenAI: GPT-5.1",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-5.1-chat",
+      "name": "OpenAI: GPT-5.1 Chat",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-5.1-codex",
+      "name": "OpenAI: GPT-5.1-Codex",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-5.1-codex-mini",
+      "name": "OpenAI: GPT-5.1-Codex-Mini",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 2.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "kwaipilot/kat-coder-pro",
+      "name": "Kwaipilot: KAT-Coder-Pro V1",
+      "context_length": 256000,
+      "pricing": {
+        "prompt": 0.207,
+        "completion": 0.828
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "kwaipilot"
+    },
+    {
+      "id": "moonshotai/kimi-k2-thinking",
+      "name": "MoonshotAI: Kimi K2 Thinking",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 1.75
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "moonshotai"
+    },
+    {
+      "id": "amazon/nova-premier-v1",
+      "name": "Amazon: Nova Premier 1.0",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 12.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "amazon"
+    },
+    {
+      "id": "perplexity/sonar-pro-search",
+      "name": "Perplexity: Sonar Pro Search",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 15.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "perplexity"
+    },
+    {
+      "id": "mistralai/voxtral-small-24b-2507",
+      "name": "Mistral: Voxtral Small 24B 2507",
+      "context_length": 32000,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.3
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "openai/gpt-oss-safeguard-20b",
+      "name": "OpenAI: gpt-oss-safeguard-20b",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.075,
+        "completion": 0.3
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "nvidia/nemotron-nano-12b-v2-vl",
+      "name": "NVIDIA: Nemotron Nano 12B 2 VL",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "nvidia"
+    },
+    {
+      "id": "minimax/minimax-m2",
+      "name": "MiniMax: MiniMax M2",
+      "context_length": 196608,
+      "pricing": {
+        "prompt": 0.255,
+        "completion": 1.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "minimax"
+    },
+    {
+      "id": "qwen/qwen3-vl-32b-instruct",
+      "name": "Qwen: Qwen3 VL 32B Instruct",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.5,
+        "completion": 1.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "liquid/lfm2-8b-a1b",
+      "name": "LiquidAI: LFM2-8B-A1B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.01,
+        "completion": 0.02
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "liquid"
+    },
+    {
+      "id": "liquid/lfm-2.2-6b",
+      "name": "LiquidAI: LFM2-2.6B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.01,
+        "completion": 0.02
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "liquid"
+    },
+    {
+      "id": "ibm-granite/granite-4.0-h-micro",
+      "name": "IBM: Granite 4.0 Micro",
+      "context_length": 131000,
+      "pricing": {
+        "prompt": 0.017,
+        "completion": 0.11
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "ibm-granite"
+    },
+    {
+      "id": "deepcogito/cogito-v2-preview-llama-405b",
+      "name": "Deep Cogito: Cogito V2 Preview Llama 405B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 3.5,
+        "completion": 3.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepcogito"
+    },
+    {
+      "id": "openai/gpt-5-image-mini",
+      "name": "OpenAI: GPT-5 Image Mini",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 2.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "anthropic/claude-haiku-4.5",
+      "name": "Anthropic: Claude Haiku 4.5",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 1.0,
+        "completion": 5.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "qwen/qwen3-vl-8b-thinking",
+      "name": "Qwen: Qwen3 VL 8B Thinking",
+      "context_length": 256000,
+      "pricing": {
+        "prompt": 0.18,
+        "completion": 2.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision",
+        "Logic"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-vl-8b-instruct",
+      "name": "Qwen: Qwen3 VL 8B Instruct",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.08,
+        "completion": 0.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "openai/gpt-5-image",
+      "name": "OpenAI: GPT-5 Image",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 10.0,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/o3-deep-research",
+      "name": "OpenAI: o3 Deep Research",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 10.0,
+        "completion": 40.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/o4-mini-deep-research",
+      "name": "OpenAI: o4 Mini Deep Research",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 8.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+      "name": "NVIDIA: Llama 3.3 Nemotron Super 49B V1.5",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nvidia"
+    },
+    {
+      "id": "baidu/ernie-4.5-21b-a3b-thinking",
+      "name": "Baidu: ERNIE 4.5 21B A3B Thinking",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.07,
+        "completion": 0.28
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "baidu"
+    },
+    {
+      "id": "google/gemini-2.5-flash-image",
+      "name": "Google: Gemini 2.5 Flash Image (Nano Banana)",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 2.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "qwen/qwen3-vl-30b-a3b-thinking",
+      "name": "Qwen: Qwen3 VL 30B A3B Thinking",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 1.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision",
+        "Logic"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "name": "Qwen: Qwen3 VL 30B A3B Instruct",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "openai/gpt-5-pro",
+      "name": "OpenAI: GPT-5 Pro",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 15.0,
+        "completion": 120.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "z-ai/glm-4.6",
+      "name": "Z.AI: GLM 4.6",
+      "context_length": 202752,
+      "pricing": {
+        "prompt": 0.35,
+        "completion": 1.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai"
+    },
+    {
+      "id": "z-ai/glm-4.6:exacto",
+      "name": "Z.AI: GLM 4.6 (exacto)",
+      "context_length": 204800,
+      "pricing": {
+        "prompt": 0.44,
+        "completion": 1.76
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai"
+    },
+    {
+      "id": "anthropic/claude-sonnet-4.5",
+      "name": "Anthropic: Claude Sonnet 4.5",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 15.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "deepseek/deepseek-v3.2-exp",
+      "name": "DeepSeek: DeepSeek V3.2 Exp",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.27,
+        "completion": 0.41
+      },
+      "scores": {
+        "overall": 1305,
+        "coding": 1370,
+        "vision": 1220,
+        "hard": 1310
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "thedrummer/cydonia-24b-v4.1",
+      "name": "TheDrummer: Cydonia 24B V4.1",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 0.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "thedrummer"
+    },
+    {
+      "id": "relace/relace-apply-3",
+      "name": "Relace: Relace Apply 3",
+      "context_length": 256000,
+      "pricing": {
+        "prompt": 0.85,
+        "completion": 1.25
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "relace"
+    },
+    {
+      "id": "google/gemini-2.5-flash-preview-09-2025",
+      "name": "Google: Gemini 2.5 Flash Preview 09-2025",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 2.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite-preview-09-2025",
+      "name": "Google: Gemini 2.5 Flash Lite Preview 09-2025",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "qwen/qwen3-vl-235b-a22b-thinking",
+      "name": "Qwen: Qwen3 VL 235B A22B Thinking",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.45,
+        "completion": 3.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision",
+        "Logic"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "name": "Qwen: Qwen3 VL 235B A22B Instruct",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-max",
+      "name": "Qwen: Qwen3 Max",
+      "context_length": 256000,
+      "pricing": {
+        "prompt": 1.2,
+        "completion": 6.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-coder-plus",
+      "name": "Qwen: Qwen3 Coder Plus",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 1.0,
+        "completion": 5.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "openai/gpt-5-codex",
+      "name": "OpenAI: GPT-5 Codex",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "deepseek/deepseek-v3.1-terminus:exacto",
+      "name": "DeepSeek: DeepSeek V3.1 Terminus (exacto)",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.21,
+        "completion": 0.79
+      },
+      "scores": {
+        "overall": 1305,
+        "coding": 1370,
+        "vision": 1220,
+        "hard": 1310
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "deepseek/deepseek-v3.1-terminus",
+      "name": "DeepSeek: DeepSeek V3.1 Terminus",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.21,
+        "completion": 0.79
+      },
+      "scores": {
+        "overall": 1305,
+        "coding": 1370,
+        "vision": 1220,
+        "hard": 1310
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "x-ai/grok-4-fast",
+      "name": "xAI: Grok 4 Fast",
+      "context_length": 2000000,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "x-ai"
+    },
+    {
+      "id": "alibaba/tongyi-deepresearch-30b-a3b",
+      "name": "Tongyi DeepResearch 30B A3B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.09,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "alibaba"
+    },
+    {
+      "id": "qwen/qwen3-coder-flash",
+      "name": "Qwen: Qwen3 Coder Flash",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 1.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "opengvlab/internvl3-78b",
+      "name": "OpenGVLab: InternVL3 78B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.39
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "opengvlab"
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-thinking",
+      "name": "Qwen: Qwen3 Next 80B A3B Thinking",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-next-80b-a3b-instruct",
+      "name": "Qwen: Qwen3 Next 80B A3B Instruct",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.09,
+        "completion": 1.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "meituan/longcat-flash-chat",
+      "name": "Meituan: LongCat Flash Chat",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.8
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meituan"
+    },
+    {
+      "id": "qwen/qwen-plus-2025-07-28",
+      "name": "Qwen: Qwen Plus 0728",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen-plus-2025-07-28:thinking",
+      "name": "Qwen: Qwen Plus 0728 (thinking)",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 4.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "nvidia/nemotron-nano-9b-v2",
+      "name": "NVIDIA: Nemotron Nano 9B V2",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.04,
+        "completion": 0.16
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nvidia"
+    },
+    {
+      "id": "moonshotai/kimi-k2-0905",
+      "name": "MoonshotAI: Kimi K2 0905",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.39,
+        "completion": 1.9
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "moonshotai"
+    },
+    {
+      "id": "moonshotai/kimi-k2-0905:exacto",
+      "name": "MoonshotAI: Kimi K2 0905 (exacto)",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.6,
+        "completion": 2.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "moonshotai"
+    },
+    {
+      "id": "deepcogito/cogito-v2-preview-llama-70b",
+      "name": "Deep Cogito: Cogito V2 Preview Llama 70B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.88,
+        "completion": 0.88
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepcogito"
+    },
+    {
+      "id": "deepcogito/cogito-v2-preview-llama-109b-moe",
+      "name": "Cogito V2 Preview Llama 109B",
+      "context_length": 32767,
+      "pricing": {
+        "prompt": 0.18,
+        "completion": 0.59
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepcogito"
+    },
+    {
+      "id": "stepfun-ai/step3",
+      "name": "StepFun: Step3",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 0.57,
+        "completion": 1.42
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "stepfun-ai"
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b-thinking-2507",
+      "name": "Qwen: Qwen3 30B A3B Thinking 2507",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.051,
+        "completion": 0.34
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "x-ai/grok-code-fast-1",
+      "name": "xAI: Grok Code Fast 1",
+      "context_length": 256000,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 1.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "x-ai"
+    },
+    {
+      "id": "nousresearch/hermes-4-70b",
+      "name": "Nous: Hermes 4 70B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.11,
+        "completion": 0.38
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nousresearch"
+    },
+    {
+      "id": "nousresearch/hermes-4-405b",
+      "name": "Nous: Hermes 4 405B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 1.0,
+        "completion": 3.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nousresearch"
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3.1",
+      "name": "DeepSeek: DeepSeek V3.1",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.75
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "openai/gpt-4o-audio-preview",
+      "name": "OpenAI: GPT-4o Audio",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "mistralai/mistral-medium-3.1",
+      "name": "Mistral: Mistral Medium 3.1",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 2.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "baidu/ernie-4.5-21b-a3b",
+      "name": "Baidu: ERNIE 4.5 21B A3B",
+      "context_length": 120000,
+      "pricing": {
+        "prompt": 0.07,
+        "completion": 0.28
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "baidu"
+    },
+    {
+      "id": "baidu/ernie-4.5-vl-28b-a3b",
+      "name": "Baidu: ERNIE 4.5 VL 28B A3B",
+      "context_length": 30000,
+      "pricing": {
+        "prompt": 0.14,
+        "completion": 0.56
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "baidu"
+    },
+    {
+      "id": "z-ai/glm-4.5v",
+      "name": "Z.AI: GLM 4.5V",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 0.6,
+        "completion": 1.8
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai"
+    },
+    {
+      "id": "ai21/jamba-mini-1.7",
+      "name": "AI21: Jamba Mini 1.7",
+      "context_length": 256000,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "ai21"
+    },
+    {
+      "id": "ai21/jamba-large-1.7",
+      "name": "AI21: Jamba Large 1.7",
+      "context_length": 256000,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 8.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "ai21"
+    },
+    {
+      "id": "openai/gpt-5-chat",
+      "name": "OpenAI: GPT-5 Chat",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-5",
+      "name": "OpenAI: GPT-5",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-5-mini",
+      "name": "OpenAI: GPT-5 Mini",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 2.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-5-nano",
+      "name": "OpenAI: GPT-5 Nano",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 0.05,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "name": "OpenAI: gpt-oss-120b",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.039,
+        "completion": 0.19
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-oss-120b:exacto",
+      "name": "OpenAI: gpt-oss-120b (exacto)",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.039,
+        "completion": 0.19
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "name": "OpenAI: gpt-oss-20b",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.02,
+        "completion": 0.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "anthropic/claude-opus-4.1",
+      "name": "Anthropic: Claude Opus 4.1",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 15.0,
+        "completion": 75.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "mistralai/codestral-2508",
+      "name": "Mistral: Codestral 2508",
+      "context_length": 256000,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 0.9
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "qwen/qwen3-coder-30b-a3b-instruct",
+      "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
+      "context_length": 160000,
+      "pricing": {
+        "prompt": 0.07,
+        "completion": 0.27
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b-instruct-2507",
+      "name": "Qwen: Qwen3 30B A3B Instruct 2507",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.08,
+        "completion": 0.33
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "z-ai/glm-4.5",
+      "name": "Z.AI: GLM 4.5",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.35,
+        "completion": 1.55
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai"
+    },
+    {
+      "id": "z-ai/glm-4.5-air",
+      "name": "Z.AI: GLM 4.5 Air",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.05,
+        "completion": 0.22
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai"
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-thinking-2507",
+      "name": "Qwen: Qwen3 235B A22B Thinking 2507",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.11,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "z-ai/glm-4-32b",
+      "name": "Z.AI: GLM 4 32B ",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai"
+    },
+    {
+      "id": "qwen/qwen3-coder",
+      "name": "Qwen: Qwen3 Coder 480B A35B",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.22,
+        "completion": 0.95
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-coder:exacto",
+      "name": "Qwen: Qwen3 Coder 480B A35B (exacto)",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.22,
+        "completion": 1.8
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "bytedance/ui-tars-1.5-7b",
+      "name": "ByteDance: UI-TARS 7B ",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "bytedance"
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite",
+      "name": "Google: Gemini 2.5 Flash Lite",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-2507",
+      "name": "Qwen: Qwen3 235B A22B Instruct 2507",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.071,
+        "completion": 0.463
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "moonshotai/kimi-k2",
+      "name": "MoonshotAI: Kimi K2 0711",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.5,
+        "completion": 2.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "moonshotai"
+    },
+    {
+      "id": "mistralai/devstral-medium",
+      "name": "Mistral: Devstral Medium",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 2.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "mistralai/devstral-small",
+      "name": "Mistral: Devstral Small 1.1",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.3
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "x-ai/grok-4",
+      "name": "xAI: Grok 4",
+      "context_length": 256000,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 15.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "x-ai"
+    },
+    {
+      "id": "tencent/hunyuan-a13b-instruct",
+      "name": "Tencent: Hunyuan A13B Instruct",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.14,
+        "completion": 0.57
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "tencent"
+    },
+    {
+      "id": "tngtech/deepseek-r1t2-chimera",
+      "name": "TNG: DeepSeek R1T2 Chimera",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 0.85
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "tngtech"
+    },
+    {
+      "id": "morph/morph-v3-large",
+      "name": "Morph: Morph V3 Large",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.9,
+        "completion": 1.9
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "morph"
+    },
+    {
+      "id": "morph/morph-v3-fast",
+      "name": "Morph: Morph V3 Fast",
+      "context_length": 81920,
+      "pricing": {
+        "prompt": 0.8,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "morph"
+    },
+    {
+      "id": "baidu/ernie-4.5-vl-424b-a47b",
+      "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
+      "context_length": 123000,
+      "pricing": {
+        "prompt": 0.42,
+        "completion": 1.25
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "baidu"
+    },
+    {
+      "id": "baidu/ernie-4.5-300b-a47b",
+      "name": "Baidu: ERNIE 4.5 300B A47B ",
+      "context_length": 123000,
+      "pricing": {
+        "prompt": 0.28,
+        "completion": 1.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "baidu"
+    },
+    {
+      "id": "inception/mercury",
+      "name": "Inception: Mercury",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 1.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "inception"
+    },
+    {
+      "id": "mistralai/mistral-small-3.2-24b-instruct",
+      "name": "Mistral: Mistral Small 3.2 24B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.06,
+        "completion": 0.18
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "minimax/minimax-m1",
+      "name": "MiniMax: MiniMax M1",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 2.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "minimax"
+    },
+    {
+      "id": "google/gemini-2.5-flash",
+      "name": "Google: Gemini 2.5 Flash",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 2.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "google/gemini-2.5-pro",
+      "name": "Google: Gemini 2.5 Pro",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "moonshotai/kimi-dev-72b",
+      "name": "MoonshotAI: Kimi Dev 72B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.29,
+        "completion": 1.15
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "moonshotai"
+    },
+    {
+      "id": "openai/o3-pro",
+      "name": "OpenAI: o3 Pro",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 20.0,
+        "completion": 80.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "x-ai/grok-3-mini",
+      "name": "xAI: Grok 3 Mini",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 0.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "x-ai"
+    },
+    {
+      "id": "x-ai/grok-3",
+      "name": "xAI: Grok 3",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 15.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "x-ai"
+    },
+    {
+      "id": "google/gemini-2.5-pro-preview",
+      "name": "Google: Gemini 2.5 Pro Preview 06-05",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "deepseek/deepseek-r1-0528",
+      "name": "DeepSeek: R1 0528",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 1.75
+      },
+      "scores": {
+        "overall": 1350,
+        "coding": 1460,
+        "vision": 1100,
+        "hard": 1480
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "anthropic/claude-opus-4",
+      "name": "Anthropic: Claude Opus 4",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 15.0,
+        "completion": 75.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "anthropic/claude-sonnet-4",
+      "name": "Anthropic: Claude Sonnet 4",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 15.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "google/gemma-3n-e4b-it",
+      "name": "Google: Gemma 3n 4B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.02,
+        "completion": 0.04
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "nousresearch/deephermes-3-mistral-24b-preview",
+      "name": "Nous: DeepHermes 3 Mistral 24B Preview",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.02,
+        "completion": 0.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nousresearch"
+    },
+    {
+      "id": "mistralai/mistral-medium-3",
+      "name": "Mistral: Mistral Medium 3",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 2.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "google/gemini-2.5-pro-preview-05-06",
+      "name": "Google: Gemini 2.5 Pro Preview 05-06",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "arcee-ai/spotlight",
+      "name": "Arcee AI: Spotlight",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.18,
+        "completion": 0.18
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "arcee-ai"
+    },
+    {
+      "id": "arcee-ai/maestro-reasoning",
+      "name": "Arcee AI: Maestro Reasoning",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.9,
+        "completion": 3.3
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "arcee-ai"
+    },
+    {
+      "id": "arcee-ai/virtuoso-large",
+      "name": "Arcee AI: Virtuoso Large",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.75,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "arcee-ai"
+    },
+    {
+      "id": "arcee-ai/coder-large",
+      "name": "Arcee AI: Coder Large",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.5,
+        "completion": 0.8
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "arcee-ai"
+    },
+    {
+      "id": "inception/mercury-coder",
+      "name": "Inception: Mercury Coder",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 1.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "inception"
+    },
+    {
+      "id": "meta-llama/llama-guard-4-12b",
+      "name": "Meta: Llama Guard 4 12B",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.18,
+        "completion": 0.18
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "qwen/qwen3-30b-a3b",
+      "name": "Qwen: Qwen3 30B A3B",
+      "context_length": 40960,
+      "pricing": {
+        "prompt": 0.06,
+        "completion": 0.22
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-8b",
+      "name": "Qwen: Qwen3 8B",
+      "context_length": 32000,
+      "pricing": {
+        "prompt": 0.05,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-14b",
+      "name": "Qwen: Qwen3 14B",
+      "context_length": 40960,
+      "pricing": {
+        "prompt": 0.05,
+        "completion": 0.22
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-32b",
+      "name": "Qwen: Qwen3 32B",
+      "context_length": 40960,
+      "pricing": {
+        "prompt": 0.08,
+        "completion": 0.24
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b",
+      "name": "Qwen: Qwen3 235B A22B",
+      "context_length": 40960,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "tngtech/deepseek-r1t-chimera",
+      "name": "TNG: DeepSeek R1T Chimera",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "tngtech"
+    },
+    {
+      "id": "openai/o4-mini-high",
+      "name": "OpenAI: o4 Mini High",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 1.1,
+        "completion": 4.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/o3",
+      "name": "OpenAI: o3",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 8.0
+      },
+      "scores": {
+        "overall": 1340,
+        "coding": 1420,
+        "vision": 1050,
+        "hard": 1380
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/o4-mini",
+      "name": "OpenAI: o4 Mini",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 1.1,
+        "completion": 4.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "qwen/qwen2.5-coder-7b-instruct",
+      "name": "Qwen: Qwen2.5 Coder 7B Instruct",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.03,
+        "completion": 0.09
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "openai/gpt-4.1",
+      "name": "OpenAI: GPT-4.1",
+      "context_length": 1047576,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 8.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-4.1-mini",
+      "name": "OpenAI: GPT-4.1 Mini",
+      "context_length": 1047576,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 1.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-4.1-nano",
+      "name": "OpenAI: GPT-4.1 Nano",
+      "context_length": 1047576,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "eleutherai/llemma_7b",
+      "name": "EleutherAI: Llemma 7b",
+      "context_length": 4096,
+      "pricing": {
+        "prompt": 0.8,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "eleutherai"
+    },
+    {
+      "id": "alfredpros/codellama-7b-instruct-solidity",
+      "name": "AlfredPros: CodeLLaMa 7B Instruct Solidity",
+      "context_length": 4096,
+      "pricing": {
+        "prompt": 0.8,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "alfredpros"
+    },
+    {
+      "id": "x-ai/grok-3-mini-beta",
+      "name": "xAI: Grok 3 Mini Beta",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 0.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "x-ai"
+    },
+    {
+      "id": "x-ai/grok-3-beta",
+      "name": "xAI: Grok 3 Beta",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 15.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "x-ai"
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "name": "NVIDIA: Llama 3.1 Nemotron Ultra 253B v1",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.6,
+        "completion": 1.8
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nvidia"
+    },
+    {
+      "id": "meta-llama/llama-4-maverick",
+      "name": "Meta: Llama 4 Maverick",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "meta-llama/llama-4-scout",
+      "name": "Meta: Llama 4 Scout",
+      "context_length": 327680,
+      "pricing": {
+        "prompt": 0.08,
+        "completion": 0.3
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "qwen/qwen2.5-vl-32b-instruct",
+      "name": "Qwen: Qwen2.5 VL 32B Instruct",
+      "context_length": 16384,
+      "pricing": {
+        "prompt": 0.05,
+        "completion": 0.22
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "deepseek/deepseek-chat-v3-0324",
+      "name": "DeepSeek: DeepSeek V3 0324",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.19,
+        "completion": 0.87
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "openai/o1-pro",
+      "name": "OpenAI: o1-pro",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 150.0,
+        "completion": 600.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "mistralai/mistral-small-3.1-24b-instruct",
+      "name": "Mistral: Mistral Small 3.1 24B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.03,
+        "completion": 0.11
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "allenai/olmo-2-0325-32b-instruct",
+      "name": "AllenAI: Olmo 2 32B Instruct",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.05,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "allenai"
+    },
+    {
+      "id": "google/gemma-3-4b-it",
+      "name": "Google: Gemma 3 4B",
+      "context_length": 96000,
+      "pricing": {
+        "prompt": 0.017,
+        "completion": 0.0682
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "google/gemma-3-12b-it",
+      "name": "Google: Gemma 3 12B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.03,
+        "completion": 0.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "cohere/command-a",
+      "name": "Cohere: Command A",
+      "context_length": 256000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "cohere"
+    },
+    {
+      "id": "openai/gpt-4o-mini-search-preview",
+      "name": "OpenAI: GPT-4o-mini Search Preview",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-4o-search-preview",
+      "name": "OpenAI: GPT-4o Search Preview",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "google/gemma-3-27b-it",
+      "name": "Google: Gemma 3 27B",
+      "context_length": 96000,
+      "pricing": {
+        "prompt": 0.04,
+        "completion": 0.15
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "thedrummer/skyfall-36b-v2",
+      "name": "TheDrummer: Skyfall 36B V2",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.55,
+        "completion": 0.8
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "thedrummer"
+    },
+    {
+      "id": "perplexity/sonar-reasoning-pro",
+      "name": "Perplexity: Sonar Reasoning Pro",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 8.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "perplexity"
+    },
+    {
+      "id": "perplexity/sonar-pro",
+      "name": "Perplexity: Sonar Pro",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 15.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "perplexity"
+    },
+    {
+      "id": "perplexity/sonar-deep-research",
+      "name": "Perplexity: Sonar Deep Research",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 8.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "perplexity"
+    },
+    {
+      "id": "qwen/qwq-32b",
+      "name": "Qwen: QwQ 32B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "google/gemini-2.0-flash-lite-001",
+      "name": "Google: Gemini 2.0 Flash Lite",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 0.075,
+        "completion": 0.3
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "anthropic/claude-3.7-sonnet:thinking",
+      "name": "Anthropic: Claude 3.7 Sonnet (thinking)",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 15.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "anthropic/claude-3.7-sonnet",
+      "name": "Anthropic: Claude 3.7 Sonnet",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 15.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "mistralai/mistral-saba",
+      "name": "Mistral: Saba",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "meta-llama/llama-guard-3-8b",
+      "name": "Llama Guard 3 8B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.02,
+        "completion": 0.06
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "openai/o3-mini-high",
+      "name": "OpenAI: o3 Mini High",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 1.1,
+        "completion": 4.4
+      },
+      "scores": {
+        "overall": 1340,
+        "coding": 1420,
+        "vision": 1050,
+        "hard": 1380
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "google/gemini-2.0-flash-001",
+      "name": "Google: Gemini 2.0 Flash",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "qwen/qwen-vl-plus",
+      "name": "Qwen: Qwen VL Plus",
+      "context_length": 7500,
+      "pricing": {
+        "prompt": 0.21,
+        "completion": 0.63
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "aion-labs/aion-1.0",
+      "name": "AionLabs: Aion-1.0",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 4.0,
+        "completion": 8.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "aion-labs"
+    },
+    {
+      "id": "aion-labs/aion-1.0-mini",
+      "name": "AionLabs: Aion-1.0-Mini",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.7,
+        "completion": 1.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "aion-labs"
+    },
+    {
+      "id": "aion-labs/aion-rp-llama-3.1-8b",
+      "name": "AionLabs: Aion-RP 1.0 (8B)",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.8,
+        "completion": 1.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "aion-labs"
+    },
+    {
+      "id": "qwen/qwen-vl-max",
+      "name": "Qwen: Qwen VL Max",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.8,
+        "completion": 3.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen-turbo",
+      "name": "Qwen: Qwen-Turbo",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 0.05,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen2.5-vl-72b-instruct",
+      "name": "Qwen: Qwen2.5 VL 72B Instruct",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen-plus",
+      "name": "Qwen: Qwen-Plus",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "qwen/qwen-max",
+      "name": "Qwen: Qwen-Max ",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 1.6,
+        "completion": 6.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "openai/o3-mini",
+      "name": "OpenAI: o3 Mini",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 1.1,
+        "completion": 4.4
+      },
+      "scores": {
+        "overall": 1340,
+        "coding": 1420,
+        "vision": 1050,
+        "hard": 1380
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "mistralai/mistral-small-24b-instruct-2501",
+      "name": "Mistral: Mistral Small 3",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.03,
+        "completion": 0.11
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "deepseek/deepseek-r1-distill-qwen-32b",
+      "name": "DeepSeek: R1 Distill Qwen 32B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.29,
+        "completion": 0.29
+      },
+      "scores": {
+        "overall": 1350,
+        "coding": 1460,
+        "vision": 1100,
+        "hard": 1480
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "perplexity/sonar",
+      "name": "Perplexity: Sonar",
+      "context_length": 127072,
+      "pricing": {
+        "prompt": 1.0,
+        "completion": 1.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "perplexity"
+    },
+    {
+      "id": "deepseek/deepseek-r1-distill-llama-70b",
+      "name": "DeepSeek: R1 Distill Llama 70B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.03,
+        "completion": 0.11
+      },
+      "scores": {
+        "overall": 1350,
+        "coding": 1460,
+        "vision": 1100,
+        "hard": 1480
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "deepseek/deepseek-r1",
+      "name": "DeepSeek: R1",
+      "context_length": 64000,
+      "pricing": {
+        "prompt": 0.7,
+        "completion": 2.5
+      },
+      "scores": {
+        "overall": 1350,
+        "coding": 1460,
+        "vision": 1100,
+        "hard": 1480
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "minimax/minimax-01",
+      "name": "MiniMax: MiniMax-01",
+      "context_length": 1000192,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 1.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "minimax"
+    },
+    {
+      "id": "microsoft/phi-4",
+      "name": "Microsoft: Phi 4",
+      "context_length": 16384,
+      "pricing": {
+        "prompt": 0.06,
+        "completion": 0.14
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "microsoft"
+    },
+    {
+      "id": "sao10k/l3.1-70b-hanami-x1",
+      "name": "Sao10K: Llama 3.1 70B Hanami x1",
+      "context_length": 16000,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 3.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "sao10k"
+    },
+    {
+      "id": "deepseek/deepseek-chat",
+      "name": "DeepSeek: DeepSeek V3",
+      "context_length": 163840,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepseek"
+    },
+    {
+      "id": "sao10k/l3.3-euryale-70b",
+      "name": "Sao10K: Llama 3.3 Euryale 70B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.65,
+        "completion": 0.75
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "sao10k"
+    },
+    {
+      "id": "openai/o1",
+      "name": "OpenAI: o1",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 15.0,
+        "completion": 60.0
+      },
+      "scores": {
+        "overall": 1355,
+        "coding": 1450,
+        "vision": 1100,
+        "hard": 1400
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "cohere/command-r7b-12-2024",
+      "name": "Cohere: Command R7B (12-2024)",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.0375,
+        "completion": 0.15
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "cohere"
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct",
+      "name": "Meta: Llama 3.3 70B Instruct",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.32
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "amazon/nova-lite-v1",
+      "name": "Amazon: Nova Lite 1.0",
+      "context_length": 300000,
+      "pricing": {
+        "prompt": 0.06,
+        "completion": 0.24
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "amazon"
+    },
+    {
+      "id": "amazon/nova-micro-v1",
+      "name": "Amazon: Nova Micro 1.0",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.035,
+        "completion": 0.14
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "amazon"
+    },
+    {
+      "id": "amazon/nova-pro-v1",
+      "name": "Amazon: Nova Pro 1.0",
+      "context_length": 300000,
+      "pricing": {
+        "prompt": 0.8,
+        "completion": 3.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "amazon"
+    },
+    {
+      "id": "openai/gpt-4o-2024-11-20",
+      "name": "OpenAI: GPT-4o (2024-11-20)",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "mistralai/mistral-large-2411",
+      "name": "Mistral Large 2411",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 6.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "mistralai/mistral-large-2407",
+      "name": "Mistral Large 2407",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 6.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "mistralai/pixtral-large-2411",
+      "name": "Mistral: Pixtral Large 2411",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 6.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "qwen/qwen-2.5-coder-32b-instruct",
+      "name": "Qwen2.5 Coder 32B Instruct",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.03,
+        "completion": 0.11
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "raifle/sorcererlm-8x22b",
+      "name": "SorcererLM 8x22B",
+      "context_length": 16000,
+      "pricing": {
+        "prompt": 4.5,
+        "completion": 4.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "raifle"
+    },
+    {
+      "id": "thedrummer/unslopnemo-12b",
+      "name": "TheDrummer: UnslopNemo 12B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "thedrummer"
+    },
+    {
+      "id": "anthropic/claude-3.5-haiku",
+      "name": "Anthropic: Claude 3.5 Haiku",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 0.8,
+        "completion": 4.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "anthracite-org/magnum-v4-72b",
+      "name": "Magnum v4 72B",
+      "context_length": 16384,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 5.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthracite-org"
+    },
+    {
+      "id": "anthropic/claude-3.5-sonnet",
+      "name": "Anthropic: Claude 3.5 Sonnet",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 6.0,
+        "completion": 30.0
+      },
+      "scores": {
+        "overall": 1310,
+        "coding": 1380,
+        "vision": 1280,
+        "hard": 1290
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "mistralai/ministral-8b",
+      "name": "Mistral: Ministral 8B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "mistralai/ministral-3b",
+      "name": "Mistral: Ministral 3B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.04,
+        "completion": 0.04
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "qwen/qwen-2.5-7b-instruct",
+      "name": "Qwen: Qwen2.5 7B Instruct",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.04,
+        "completion": 0.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "nvidia/llama-3.1-nemotron-70b-instruct",
+      "name": "NVIDIA: Llama 3.1 Nemotron 70B Instruct",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 1.2,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nvidia"
+    },
+    {
+      "id": "inflection/inflection-3-pi",
+      "name": "Inflection: Inflection 3 Pi",
+      "context_length": 8000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "inflection"
+    },
+    {
+      "id": "inflection/inflection-3-productivity",
+      "name": "Inflection: Inflection 3 Productivity",
+      "context_length": 8000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "inflection"
+    },
+    {
+      "id": "thedrummer/rocinante-12b",
+      "name": "TheDrummer: Rocinante 12B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.17,
+        "completion": 0.43
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "thedrummer"
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Meta: Llama 3.2 3B Instruct",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.02,
+        "completion": 0.02
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "meta-llama/llama-3.2-1b-instruct",
+      "name": "Meta: Llama 3.2 1B Instruct",
+      "context_length": 60000,
+      "pricing": {
+        "prompt": 0.027,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "meta-llama/llama-3.2-11b-vision-instruct",
+      "name": "Meta: Llama 3.2 11B Vision Instruct",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.049,
+        "completion": 0.049
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "qwen/qwen-2.5-72b-instruct",
+      "name": "Qwen2.5 72B Instruct",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.12,
+        "completion": 0.39
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "neversleep/llama-3.1-lumimaid-8b",
+      "name": "NeverSleep: Lumimaid v0.2 8B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.09,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "neversleep"
+    },
+    {
+      "id": "mistralai/pixtral-12b",
+      "name": "Mistral: Pixtral 12B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.1
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "cohere/command-r-08-2024",
+      "name": "Cohere: Command R (08-2024)",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "cohere"
+    },
+    {
+      "id": "cohere/command-r-plus-08-2024",
+      "name": "Cohere: Command R+ (08-2024)",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "cohere"
+    },
+    {
+      "id": "sao10k/l3.1-euryale-70b",
+      "name": "Sao10K: Llama 3.1 Euryale 70B v2.2",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.65,
+        "completion": 0.75
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "sao10k"
+    },
+    {
+      "id": "qwen/qwen-2.5-vl-7b-instruct",
+      "name": "Qwen: Qwen2.5-VL 7B Instruct",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Vision"
+      ],
+      "provider": "qwen"
+    },
+    {
+      "id": "nousresearch/hermes-3-llama-3.1-70b",
+      "name": "Nous: Hermes 3 70B Instruct",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 0.3
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nousresearch"
+    },
+    {
+      "id": "nousresearch/hermes-3-llama-3.1-405b",
+      "name": "Nous: Hermes 3 405B Instruct",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 1.0,
+        "completion": 1.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nousresearch"
+    },
+    {
+      "id": "openai/chatgpt-4o-latest",
+      "name": "OpenAI: ChatGPT-4o",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 5.0,
+        "completion": 15.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "sao10k/l3-lunaris-8b",
+      "name": "Sao10K: Llama 3 8B Lunaris",
+      "context_length": 8192,
+      "pricing": {
+        "prompt": 0.04,
+        "completion": 0.05
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "sao10k"
+    },
+    {
+      "id": "openai/gpt-4o-2024-08-06",
+      "name": "OpenAI: GPT-4o (2024-08-06)",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "meta-llama/llama-3.1-405b",
+      "name": "Meta: Llama 3.1 405B (base)",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 4.0,
+        "completion": 4.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "name": "Meta: Llama 3.1 8B Instruct",
+      "context_length": 16384,
+      "pricing": {
+        "prompt": 0.02,
+        "completion": 0.05
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "meta-llama/llama-3.1-405b-instruct",
+      "name": "Meta: Llama 3.1 405B Instruct",
+      "context_length": 10000,
+      "pricing": {
+        "prompt": 3.5,
+        "completion": 3.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "meta-llama/llama-3.1-70b-instruct",
+      "name": "Meta: Llama 3.1 70B Instruct",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 0.4
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "mistralai/mistral-nemo",
+      "name": "Mistral: Mistral Nemo",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.02,
+        "completion": 0.04
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "openai/gpt-4o-mini-2024-07-18",
+      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-4o-mini",
+      "name": "OpenAI: GPT-4o-mini",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.6
+      },
+      "scores": {
+        "overall": 1270,
+        "coding": 1220,
+        "vision": 1250,
+        "hard": 1150
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "google/gemma-2-27b-it",
+      "name": "Google: Gemma 2 27B",
+      "context_length": 8192,
+      "pricing": {
+        "prompt": 0.65,
+        "completion": 0.65
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "google/gemma-2-9b-it",
+      "name": "Google: Gemma 2 9B",
+      "context_length": 8192,
+      "pricing": {
+        "prompt": 0.03,
+        "completion": 0.09
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google"
+    },
+    {
+      "id": "sao10k/l3-euryale-70b",
+      "name": "Sao10k: Llama 3 Euryale 70B v2.1",
+      "context_length": 8192,
+      "pricing": {
+        "prompt": 1.48,
+        "completion": 1.48
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "sao10k"
+    },
+    {
+      "id": "nousresearch/hermes-2-pro-llama-3-8b",
+      "name": "NousResearch: Hermes 2 Pro - Llama-3 8B",
+      "context_length": 8192,
+      "pricing": {
+        "prompt": 0.14,
+        "completion": 0.14
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nousresearch"
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct",
+      "name": "Mistral: Mistral 7B Instruct",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v0.3",
+      "name": "Mistral: Mistral 7B Instruct v0.3",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "meta-llama/llama-guard-2-8b",
+      "name": "Meta: LlamaGuard 2 8B",
+      "context_length": 8192,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "openai/gpt-4o-2024-05-13",
+      "name": "OpenAI: GPT-4o (2024-05-13)",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 5.0,
+        "completion": 15.0
+      },
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-4o",
+      "name": "OpenAI: GPT-4o",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.5,
+        "completion": 10.0
+      },
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-4o:extended",
+      "name": "OpenAI: GPT-4o (extended)",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 6.0,
+        "completion": 18.0
+      },
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "meta-llama/llama-3-70b-instruct",
+      "name": "Meta: Llama 3 70B Instruct",
+      "context_length": 8192,
+      "pricing": {
+        "prompt": 0.51,
+        "completion": 0.74
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "meta-llama/llama-3-8b-instruct",
+      "name": "Meta: Llama 3 8B Instruct",
+      "context_length": 8192,
+      "pricing": {
+        "prompt": 0.03,
+        "completion": 0.06
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "mistralai/mixtral-8x22b-instruct",
+      "name": "Mistral: Mixtral 8x22B Instruct",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 6.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "microsoft/wizardlm-2-8x22b",
+      "name": "WizardLM-2 8x22B",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 0.48,
+        "completion": 0.48
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "microsoft"
+    },
+    {
+      "id": "openai/gpt-4-turbo",
+      "name": "OpenAI: GPT-4 Turbo",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 10.0,
+        "completion": 30.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "anthropic/claude-3-haiku",
+      "name": "Anthropic: Claude 3 Haiku",
+      "context_length": 200000,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 1.25
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "mistralai/mistral-large",
+      "name": "Mistral Large",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 6.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-0613",
+      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
+      "context_length": 4095,
+      "pricing": {
+        "prompt": 1.0,
+        "completion": 2.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-4-turbo-preview",
+      "name": "OpenAI: GPT-4 Turbo Preview",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 10.0,
+        "completion": 30.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "mistralai/mistral-tiny",
+      "name": "Mistral Tiny",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 0.25
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v0.2",
+      "name": "Mistral: Mistral 7B Instruct v0.2",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "mistralai/mixtral-8x7b-instruct",
+      "name": "Mistral: Mixtral 8x7B Instruct",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.54,
+        "completion": 0.54
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "neversleep/noromaid-20b",
+      "name": "Noromaid 20B",
+      "context_length": 4096,
+      "pricing": {
+        "prompt": 1.0,
+        "completion": 1.75
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "neversleep"
+    },
+    {
+      "id": "alpindale/goliath-120b",
+      "name": "Goliath 120B",
+      "context_length": 6144,
+      "pricing": {
+        "prompt": 3.75,
+        "completion": 7.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "alpindale"
+    },
+    {
+      "id": "openai/gpt-4-1106-preview",
+      "name": "OpenAI: GPT-4 Turbo (older v1106)",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 10.0,
+        "completion": 30.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-instruct",
+      "name": "OpenAI: GPT-3.5 Turbo Instruct",
+      "context_length": 4095,
+      "pricing": {
+        "prompt": 1.5,
+        "completion": 2.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v0.1",
+      "name": "Mistral: Mistral 7B Instruct v0.1",
+      "context_length": 2824,
+      "pricing": {
+        "prompt": 0.11,
+        "completion": 0.19
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai"
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-16k",
+      "name": "OpenAI: GPT-3.5 Turbo 16k",
+      "context_length": 16385,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 4.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "mancer/weaver",
+      "name": "Mancer: Weaver (alpha)",
+      "context_length": 8000,
+      "pricing": {
+        "prompt": 0.75,
+        "completion": 1.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mancer"
+    },
+    {
+      "id": "undi95/remm-slerp-l2-13b",
+      "name": "ReMM SLERP 13B",
+      "context_length": 6144,
+      "pricing": {
+        "prompt": 0.45,
+        "completion": 0.65
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "undi95"
+    },
+    {
+      "id": "gryphe/mythomax-l2-13b",
+      "name": "MythoMax 13B",
+      "context_length": 4096,
+      "pricing": {
+        "prompt": 0.06,
+        "completion": 0.06
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "gryphe"
+    },
+    {
+      "id": "openai/gpt-4-0314",
+      "name": "OpenAI: GPT-4 (older v0314)",
+      "context_length": 8191,
+      "pricing": {
+        "prompt": 30.0,
+        "completion": 60.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-4",
+      "name": "OpenAI: GPT-4",
+      "context_length": 8191,
+      "pricing": {
+        "prompt": 30.0,
+        "completion": 60.0
+      },
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-3.5-turbo",
+      "name": "OpenAI: GPT-3.5 Turbo",
+      "context_length": 16385,
+      "pricing": {
+        "prompt": 0.5,
+        "completion": 1.5
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    }
+  ]
+}
