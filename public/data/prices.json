@@ -1,17 +1,55 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-03T09:49:13.805136Z",
+    "last_updated": "2026-02-08T10:43:33.850952Z",
     "total_models": 311
   },
   "models": [
+    {
+      "id": "anthropic/claude-opus-4.6",
+      "name": "Anthropic: Claude Opus 4.6",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 5.0,
+        "completion": 25.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic"
+    },
+    {
+      "id": "qwen/qwen3-coder-next",
+      "name": "Qwen: Qwen3 Coder Next",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.07,
+        "completion": 0.3
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "qwen"
+    },
     {
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.5,
-        "completion": 2.8
+        "prompt": 0.3,
+        "completion": 1.5
       },
       "scores": {
         "overall": null,
@@ -103,9 +141,9 @@
     {
       "id": "z-ai/glm-4.7-flash",
       "name": "Z.AI: GLM 4.7 Flash",
-      "context_length": 200000,
+      "context_length": 202752,
       "pricing": {
-        "prompt": 0.07,
+        "prompt": 0.06,
         "completion": 0.4
       },
       "scores": {
@@ -137,6 +175,25 @@
         "Code"
       ],
       "provider": "openai"
+    },
+    {
+      "id": "allenai/molmo-2-8b",
+      "name": "AllenAI: Molmo2 8B",
+      "context_length": 36864,
+      "pricing": {
+        "prompt": 0.2,
+        "completion": 0.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "allenai"
     },
     {
       "id": "allenai/olmo-3.1-32b-instruct",
@@ -201,7 +258,7 @@
       "context_length": 196608,
       "pricing": {
         "prompt": 0.27,
-        "completion": 1.1
+        "completion": 0.95
       },
       "scores": {
         "overall": null,
@@ -1146,25 +1203,6 @@
       "provider": "ibm-granite"
     },
     {
-      "id": "deepcogito/cogito-v2-preview-llama-405b",
-      "name": "Deep Cogito: Cogito V2 Preview Llama 405B",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 3.5,
-        "completion": 3.5
-      },
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "deepcogito"
-    },
-    {
       "id": "openai/gpt-5-image-mini",
       "name": "OpenAI: GPT-5 Image Mini",
       "context_length": 400000,
@@ -1591,7 +1629,7 @@
       "context_length": 262144,
       "pricing": {
         "prompt": 0.2,
-        "completion": 1.2
+        "completion": 0.88
       },
       "scores": {
         "overall": null,
@@ -1724,7 +1762,7 @@
       "context_length": 131072,
       "pricing": {
         "prompt": 0.09,
-        "completion": 0.4
+        "completion": 0.45
       },
       "scores": {
         "overall": null,
@@ -1926,44 +1964,6 @@
         "Chat"
       ],
       "provider": "moonshotai"
-    },
-    {
-      "id": "deepcogito/cogito-v2-preview-llama-70b",
-      "name": "Deep Cogito: Cogito V2 Preview Llama 70B",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 0.88,
-        "completion": 0.88
-      },
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "deepcogito"
-    },
-    {
-      "id": "deepcogito/cogito-v2-preview-llama-109b-moe",
-      "name": "Cogito V2 Preview Llama 109B",
-      "context_length": 32767,
-      "pricing": {
-        "prompt": 0.18,
-        "completion": 0.59
-      },
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "deepcogito"
     },
     {
       "id": "stepfun-ai/step3",
@@ -2331,8 +2331,8 @@
       "name": "OpenAI: gpt-oss-20b",
       "context_length": 131072,
       "pricing": {
-        "prompt": 0.02,
-        "completion": 0.1
+        "prompt": 0.03,
+        "completion": 0.14
       },
       "scores": {
         "overall": null,
@@ -2445,8 +2445,8 @@
       "name": "Z.AI: GLM 4.5 Air",
       "context_length": 131072,
       "pricing": {
-        "prompt": 0.05,
-        "completion": 0.22
+        "prompt": 0.13,
+        "completion": 0.85
       },
       "scores": {
         "overall": null,
@@ -2503,7 +2503,7 @@
       "context_length": 262144,
       "pricing": {
         "prompt": 0.22,
-        "completion": 0.95
+        "completion": 1.0
       },
       "scores": {
         "overall": null,
@@ -2579,7 +2579,7 @@
       "context_length": 262144,
       "pricing": {
         "prompt": 0.071,
-        "completion": 0.463
+        "completion": 0.1
       },
       "scores": {
         "overall": null,
@@ -3792,7 +3792,7 @@
     {
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
-      "context_length": 96000,
+      "context_length": 128000,
       "pricing": {
         "prompt": 0.04,
         "completion": 0.15
@@ -4231,8 +4231,8 @@
       "name": "Mistral: Mistral Small 3",
       "context_length": 32768,
       "pricing": {
-        "prompt": 0.03,
-        "completion": 0.11
+        "prompt": 0.05,
+        "completion": 0.08
       },
       "scores": {
         "overall": null,
@@ -5179,10 +5179,10 @@
     {
       "id": "meta-llama/llama-3.1-405b-instruct",
       "name": "Meta: Llama 3.1 405B Instruct",
-      "context_length": 10000,
+      "context_length": 131000,
       "pricing": {
-        "prompt": 3.5,
-        "completion": 3.5
+        "prompt": 4.0,
+        "completion": 4.0
       },
       "scores": {
         "overall": null,
@@ -5486,7 +5486,7 @@
       "context_length": 8192,
       "pricing": {
         "prompt": 0.03,
-        "completion": 0.06
+        "completion": 0.04
       },
       "scores": {
         "overall": null,
