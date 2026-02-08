@@ -1,0 +1,32 @@
+name: Daily ModelMatrix Update
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # 02:00 UTC / 04:00 IST
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: pip install requests
+        
+      - name: Fetch Prices
+        run: python scripts/fetch_prices.py
+        
+      - name: Commit and Push
+        run: |
+          git config --local user.email "bakiclaw@gmail.com"
+          git config --local user.name "Baki"
+          git add public/data/prices.json
+          git commit -m "data: automated daily price update" || echo "No changes to commit"
+          git push
