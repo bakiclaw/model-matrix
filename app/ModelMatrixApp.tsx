@@ -378,9 +378,12 @@ export default function ModelMatrixApp() {
       <footer className="py-20 px-4 bg-slate-950 border-t border-white/5 text-center relative mt-20">
          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent"></div>
          <p className="text-slate-700 text-[9px] font-black uppercase tracking-[0.5em] mb-4">ModelMatrix Efficiency Systems &copy; 2026</p>
-         <div className="text-[8px] font-bold text-slate-800 uppercase tracking-widest max-w-2xl mx-auto leading-loose">
-            Enterprise Grade Cost Mapping. Verified Data Sources from LMSYS Arena & OpenRouter API. Updated Hourly.
+         <div className="text-[8px] font-bold text-slate-800 uppercase tracking-widest max-w-2xl mx-auto leading-loose mb-4">
+            Enterprise Grade Cost Mapping. Verified Data Sources from LMSYS Arena & OpenRouter API. Updated {data?.metadata?.last_updated ? new Date(data.metadata.last_updated).toLocaleString() : 'Recently'}.
          </div>
+         <p className="text-slate-600 text-[10px] font-bold uppercase tracking-widest">
+           Developed by <a href="https://github.com/bakiclaw" target="_blank" rel="noopener noreferrer" className="text-indigo-500 hover:text-indigo-400 transition-colors">Baki 🧠⚡</a>
+         </p>
       </footer>
     </div>
   )
