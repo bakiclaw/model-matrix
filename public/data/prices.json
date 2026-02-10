@@ -1,10 +1,29 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-09T05:59:18.266837Z",
-    "total_models": 308
+    "last_updated": "2026-02-10T02:00:52.264730Z",
+    "total_models": 309
   },
   "models": [
+    {
+      "id": "qwen/qwen3-max-thinking",
+      "name": "Qwen: Qwen3 Max Thinking",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 1.2,
+        "completion": 6.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "qwen"
+    },
     {
       "id": "anthropic/claude-opus-4.6",
       "name": "Anthropic: Claude Opus 4.6",
@@ -1243,7 +1262,7 @@
     {
       "id": "qwen/qwen3-vl-8b-thinking",
       "name": "Qwen: Qwen3 VL 8B Thinking",
-      "context_length": 256000,
+      "context_length": 131072,
       "pricing": {
         "prompt": 0.18,
         "completion": 2.1
@@ -1645,7 +1664,7 @@
     {
       "id": "qwen/qwen3-max",
       "name": "Qwen: Qwen3 Max",
-      "context_length": 256000,
+      "context_length": 262144,
       "pricing": {
         "prompt": 1.2,
         "completion": 6.0
@@ -1664,7 +1683,7 @@
     {
       "id": "qwen/qwen3-coder-plus",
       "name": "Qwen: Qwen3 Coder Plus",
-      "context_length": 128000,
+      "context_length": 1000000,
       "pricing": {
         "prompt": 1.0,
         "completion": 5.0
@@ -1778,7 +1797,7 @@
     {
       "id": "qwen/qwen3-coder-flash",
       "name": "Qwen: Qwen3 Coder Flash",
-      "context_length": 128000,
+      "context_length": 1000000,
       "pricing": {
         "prompt": 0.3,
         "completion": 1.5
@@ -1895,7 +1914,7 @@
       "context_length": 1000000,
       "pricing": {
         "prompt": 0.4,
-        "completion": 4.0
+        "completion": 1.2
       },
       "scores": {
         "overall": null,
@@ -3982,7 +4001,7 @@
     {
       "id": "qwen/qwen-vl-plus",
       "name": "Qwen: Qwen VL Plus",
-      "context_length": 7500,
+      "context_length": 131072,
       "pricing": {
         "prompt": 0.21,
         "completion": 0.63
@@ -4077,7 +4096,7 @@
     {
       "id": "qwen/qwen-turbo",
       "name": "Qwen: Qwen-Turbo",
-      "context_length": 1000000,
+      "context_length": 131072,
       "pricing": {
         "prompt": 0.05,
         "completion": 0.2
@@ -4115,7 +4134,7 @@
     {
       "id": "qwen/qwen-plus",
       "name": "Qwen: Qwen-Plus",
-      "context_length": 131072,
+      "context_length": 1000000,
       "pricing": {
         "prompt": 0.4,
         "completion": 1.2
