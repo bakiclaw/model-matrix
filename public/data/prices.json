@@ -1,10 +1,29 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-11T06:00:01.388989Z",
-    "total_models": 310
+    "last_updated": "2026-02-12T02:00:16.013783Z",
+    "total_models": 308
   },
   "models": [
+    {
+      "id": "z-ai/glm-5",
+      "name": "Z.ai: GLM 5",
+      "context_length": 202752,
+      "pricing": {
+        "prompt": 1.0,
+        "completion": 3.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai"
+    },
     {
       "id": "qwen/qwen3-max-thinking",
       "name": "Qwen: Qwen3 Max Thinking",
@@ -178,7 +197,7 @@
     },
     {
       "id": "z-ai/glm-4.7-flash",
-      "name": "Z.AI: GLM 4.7 Flash",
+      "name": "Z.ai: GLM 4.7 Flash",
       "context_length": 202752,
       "pricing": {
         "prompt": 0.06,
@@ -311,7 +330,7 @@
     },
     {
       "id": "z-ai/glm-4.7",
-      "name": "Z.AI: GLM 4.7",
+      "name": "Z.ai: GLM 4.7",
       "context_length": 202752,
       "pricing": {
         "prompt": 0.4,
@@ -520,7 +539,7 @@
     },
     {
       "id": "z-ai/glm-4.6v",
-      "name": "Z.AI: GLM 4.6V",
+      "name": "Z.ai: GLM 4.6V",
       "context_length": 131072,
       "pricing": {
         "prompt": 0.3,
@@ -1491,7 +1510,7 @@
     },
     {
       "id": "z-ai/glm-4.6",
-      "name": "Z.AI: GLM 4.6",
+      "name": "Z.ai: GLM 4.6",
       "context_length": 202752,
       "pricing": {
         "prompt": 0.35,
@@ -1510,7 +1529,7 @@
     },
     {
       "id": "z-ai/glm-4.6:exacto",
-      "name": "Z.AI: GLM 4.6 (exacto)",
+      "name": "Z.ai: GLM 4.6 (exacto)",
       "context_length": 204800,
       "pricing": {
         "prompt": 0.44,
@@ -2176,7 +2195,7 @@
     },
     {
       "id": "z-ai/glm-4.5v",
-      "name": "Z.AI: GLM 4.5V",
+      "name": "Z.ai: GLM 4.5V",
       "context_length": 65536,
       "pricing": {
         "prompt": 0.6,
@@ -2423,7 +2442,7 @@
     },
     {
       "id": "z-ai/glm-4.5",
-      "name": "Z.AI: GLM 4.5",
+      "name": "Z.ai: GLM 4.5",
       "context_length": 131072,
       "pricing": {
         "prompt": 0.35,
@@ -2442,7 +2461,7 @@
     },
     {
       "id": "z-ai/glm-4.5-air",
-      "name": "Z.AI: GLM 4.5 Air",
+      "name": "Z.ai: GLM 4.5 Air",
       "context_length": 131072,
       "pricing": {
         "prompt": 0.13,
@@ -2480,7 +2499,7 @@
     },
     {
       "id": "z-ai/glm-4-32b",
-      "name": "Z.AI: GLM 4 32B ",
+      "name": "Z.ai: GLM 4 32B ",
       "context_length": 128000,
       "pricing": {
         "prompt": 0.1,
@@ -4664,25 +4683,6 @@
       "provider": "anthropic"
     },
     {
-      "id": "anthropic/claude-3.5-sonnet",
-      "name": "Anthropic: Claude 3.5 Sonnet",
-      "context_length": 200000,
-      "pricing": {
-        "prompt": 6.0,
-        "completion": 30.0
-      },
-      "scores": {
-        "overall": 1310,
-        "coding": 1380,
-        "vision": 1280,
-        "hard": 1290
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "anthropic"
-    },
-    {
       "id": "anthracite-org/magnum-v4-72b",
       "name": "Magnum v4 72B",
       "context_length": 16384,
@@ -4702,42 +4702,23 @@
       "provider": "anthracite-org"
     },
     {
-      "id": "mistralai/ministral-8b",
-      "name": "Mistral: Ministral 8B",
-      "context_length": 131072,
+      "id": "anthropic/claude-3.5-sonnet",
+      "name": "Anthropic: Claude 3.5 Sonnet",
+      "context_length": 200000,
       "pricing": {
-        "prompt": 0.1,
-        "completion": 0.1
+        "prompt": 6.0,
+        "completion": 30.0
       },
       "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
+        "overall": 1310,
+        "coding": 1380,
+        "vision": 1280,
+        "hard": 1290
       },
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
-    },
-    {
-      "id": "mistralai/ministral-3b",
-      "name": "Mistral: Ministral 3B",
-      "context_length": 131072,
-      "pricing": {
-        "prompt": 0.04,
-        "completion": 0.04
-      },
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "mistralai"
+      "provider": "anthropic"
     },
     {
       "id": "qwen/qwen-2.5-7b-instruct",
@@ -4778,8 +4759,8 @@
       "provider": "nvidia"
     },
     {
-      "id": "inflection/inflection-3-productivity",
-      "name": "Inflection: Inflection 3 Productivity",
+      "id": "inflection/inflection-3-pi",
+      "name": "Inflection: Inflection 3 Pi",
       "context_length": 8000,
       "pricing": {
         "prompt": 2.5,
@@ -4797,8 +4778,8 @@
       "provider": "inflection"
     },
     {
-      "id": "inflection/inflection-3-pi",
-      "name": "Inflection: Inflection 3 Pi",
+      "id": "inflection/inflection-3-productivity",
+      "name": "Inflection: Inflection 3 Productivity",
       "context_length": 8000,
       "pricing": {
         "prompt": 2.5,
@@ -4835,6 +4816,25 @@
       "provider": "thedrummer"
     },
     {
+      "id": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Meta: Llama 3.2 3B Instruct",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.02,
+        "completion": 0.02
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
       "id": "meta-llama/llama-3.2-1b-instruct",
       "name": "Meta: Llama 3.2 1B Instruct",
       "context_length": 60000,
@@ -4869,25 +4869,6 @@
       },
       "tags": [
         "Vision"
-      ],
-      "provider": "meta-llama"
-    },
-    {
-      "id": "meta-llama/llama-3.2-3b-instruct",
-      "name": "Meta: Llama 3.2 3B Instruct",
-      "context_length": 131072,
-      "pricing": {
-        "prompt": 0.02,
-        "completion": 0.02
-      },
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
       ],
       "provider": "meta-llama"
     },
@@ -4949,12 +4930,12 @@
       "provider": "mistralai"
     },
     {
-      "id": "cohere/command-r-plus-08-2024",
-      "name": "Cohere: Command R+ (08-2024)",
+      "id": "cohere/command-r-08-2024",
+      "name": "Cohere: Command R (08-2024)",
       "context_length": 128000,
       "pricing": {
-        "prompt": 2.5,
-        "completion": 10.0
+        "prompt": 0.15,
+        "completion": 0.6
       },
       "scores": {
         "overall": null,
@@ -4968,12 +4949,12 @@
       "provider": "cohere"
     },
     {
-      "id": "cohere/command-r-08-2024",
-      "name": "Cohere: Command R (08-2024)",
+      "id": "cohere/command-r-plus-08-2024",
+      "name": "Cohere: Command R+ (08-2024)",
       "context_length": 128000,
       "pricing": {
-        "prompt": 0.15,
-        "completion": 0.6
+        "prompt": 2.5,
+        "completion": 10.0
       },
       "scores": {
         "overall": null,
@@ -5139,25 +5120,6 @@
       "provider": "meta-llama"
     },
     {
-      "id": "meta-llama/llama-3.1-70b-instruct",
-      "name": "Meta: Llama 3.1 70B Instruct",
-      "context_length": 131072,
-      "pricing": {
-        "prompt": 0.4,
-        "completion": 0.4
-      },
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "meta-llama"
-    },
-    {
       "id": "meta-llama/llama-3.1-8b-instruct",
       "name": "Meta: Llama 3.1 8B Instruct",
       "context_length": 16384,
@@ -5183,6 +5145,25 @@
       "pricing": {
         "prompt": 4.0,
         "completion": 4.0
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama"
+    },
+    {
+      "id": "meta-llama/llama-3.1-70b-instruct",
+      "name": "Meta: Llama 3.1 70B Instruct",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 0.4
       },
       "scores": {
         "overall": null,
@@ -5329,8 +5310,8 @@
       "provider": "nousresearch"
     },
     {
-      "id": "mistralai/mistral-7b-instruct-v0.3",
-      "name": "Mistral: Mistral 7B Instruct v0.3",
+      "id": "mistralai/mistral-7b-instruct",
+      "name": "Mistral: Mistral 7B Instruct",
       "context_length": 32768,
       "pricing": {
         "prompt": 0.2,
@@ -5348,8 +5329,8 @@
       "provider": "mistralai"
     },
     {
-      "id": "mistralai/mistral-7b-instruct",
-      "name": "Mistral: Mistral 7B Instruct",
+      "id": "mistralai/mistral-7b-instruct-v0.3",
+      "name": "Mistral: Mistral 7B Instruct v0.3",
       "context_length": 32768,
       "pricing": {
         "prompt": 0.2,
@@ -5443,12 +5424,12 @@
       "provider": "openai"
     },
     {
-      "id": "meta-llama/llama-3-8b-instruct",
-      "name": "Meta: Llama 3 8B Instruct",
+      "id": "meta-llama/llama-3-70b-instruct",
+      "name": "Meta: Llama 3 70B Instruct",
       "context_length": 8192,
       "pricing": {
-        "prompt": 0.03,
-        "completion": 0.04
+        "prompt": 0.51,
+        "completion": 0.74
       },
       "scores": {
         "overall": null,
@@ -5462,12 +5443,12 @@
       "provider": "meta-llama"
     },
     {
-      "id": "meta-llama/llama-3-70b-instruct",
-      "name": "Meta: Llama 3 70B Instruct",
+      "id": "meta-llama/llama-3-8b-instruct",
+      "name": "Meta: Llama 3 8B Instruct",
       "context_length": 8192,
       "pricing": {
-        "prompt": 0.51,
-        "completion": 0.74
+        "prompt": 0.03,
+        "completion": 0.04
       },
       "scores": {
         "overall": null,
@@ -5502,10 +5483,10 @@
     {
       "id": "microsoft/wizardlm-2-8x22b",
       "name": "WizardLM-2 8x22B",
-      "context_length": 65536,
+      "context_length": 65535,
       "pricing": {
-        "prompt": 0.48,
-        "completion": 0.48
+        "prompt": 0.62,
+        "completion": 0.62
       },
       "scores": {
         "overall": null,
@@ -5612,25 +5593,6 @@
         "Chat"
       ],
       "provider": "openai"
-    },
-    {
-      "id": "mistralai/mistral-tiny",
-      "name": "Mistral Tiny",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 0.25,
-        "completion": 0.25
-      },
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "mistralai"
     },
     {
       "id": "mistralai/mistral-7b-instruct-v0.2",
@@ -5842,25 +5804,6 @@
       "provider": "gryphe"
     },
     {
-      "id": "openai/gpt-4",
-      "name": "OpenAI: GPT-4",
-      "context_length": 8191,
-      "pricing": {
-        "prompt": 30.0,
-        "completion": 60.0
-      },
-      "scores": {
-        "overall": 1315,
-        "coding": 1350,
-        "vision": 1300,
-        "hard": 1280
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "openai"
-    },
-    {
       "id": "openai/gpt-4-0314",
       "name": "OpenAI: GPT-4 (older v0314)",
       "context_length": 8191,
@@ -5873,6 +5816,25 @@
         "coding": null,
         "vision": null,
         "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai"
+    },
+    {
+      "id": "openai/gpt-4",
+      "name": "OpenAI: GPT-4",
+      "context_length": 8191,
+      "pricing": {
+        "prompt": 30.0,
+        "completion": 60.0
+      },
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
       },
       "tags": [
         "Chat"

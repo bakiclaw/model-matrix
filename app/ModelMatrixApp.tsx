@@ -200,7 +200,30 @@ export default function ModelMatrixApp() {
         <h1 className="text-6xl font-black tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-400 to-cyan-400">
           ModelMatrix <span className="text-xl font-light text-slate-600 ml-2">6.0</span>
         </h1>
-        <p className="text-slate-500 text-sm tracking-[0.3em] uppercase font-bold">Intelligence Resource Efficiency Matrix</p>
+        <div className="flex flex-col items-center gap-4">
+          <p className="text-slate-500 text-sm tracking-[0.3em] uppercase font-bold">Intelligence Resource Efficiency Matrix</p>
+          
+          <div className="flex flex-wrap items-center justify-center gap-6 py-4 px-8 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 shadow-2xl">
+            <div className="flex items-center gap-2">
+              <span className="text-indigo-400">🧠⚡</span>
+              <span className="text-xs font-black uppercase tracking-widest text-slate-300">
+                Developed by <a href="https://github.com/bakiclaw" target="_blank" rel="noopener noreferrer" className="text-indigo-500 hover:text-indigo-400 transition-all hover:underline decoration-indigo-500/50 underline-offset-4">Baki</a>
+              </span>
+            </div>
+            
+            <div className="h-4 w-px bg-white/10 hidden sm:block"></div>
+            
+            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400">
+              <span className="text-indigo-500/80 italic">Last Sync:</span>
+              <span className="text-slate-200 font-mono">
+                {data?.metadata?.last_updated ? new Date(data.metadata.last_updated).toLocaleString('he-IL', { 
+                  day: '2-digit', month: '2-digit', year: '2-digit', 
+                  hour: '2-digit', minute: '2-digit' 
+                }) : 'Loading...'}
+              </span>
+            </div>
+          </div>
+        </div>
       </header>
 
       <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-32">
@@ -378,12 +401,9 @@ export default function ModelMatrixApp() {
       <footer className="py-20 px-4 bg-slate-950 border-t border-white/5 text-center relative mt-20">
          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent"></div>
          <p className="text-slate-700 text-[9px] font-black uppercase tracking-[0.5em] mb-4">ModelMatrix Efficiency Systems &copy; 2026</p>
-         <div className="text-[8px] font-bold text-slate-800 uppercase tracking-widest max-w-2xl mx-auto leading-loose mb-4">
-            Enterprise Grade Cost Mapping. Verified Data Sources from LMSYS Arena & OpenRouter API. Updated {data?.metadata?.last_updated ? new Date(data.metadata.last_updated).toLocaleString() : 'Recently'}.
+         <div className="text-[8px] font-bold text-slate-800 uppercase tracking-widest max-w-2xl mx-auto leading-loose">
+            Enterprise Grade Cost Mapping. Verified Data Sources from LMSYS Arena & OpenRouter API.
          </div>
-         <p className="text-slate-600 text-[10px] font-bold uppercase tracking-widest">
-           Developed by <a href="https://github.com/bakiclaw" target="_blank" rel="noopener noreferrer" className="text-indigo-500 hover:text-indigo-400 transition-colors">Baki 🧠⚡</a>
-         </p>
       </footer>
     </div>
   )
