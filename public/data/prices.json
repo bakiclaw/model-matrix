@@ -1,17 +1,36 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-12T05:54:14.890072Z",
-    "total_models": 308
+    "last_updated": "2026-02-13T02:00:36.670374Z",
+    "total_models": 306
   },
   "models": [
+    {
+      "id": "minimax/minimax-m2.5",
+      "name": "MiniMax: MiniMax M2.5",
+      "context_length": 204800,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 1.2
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "minimax"
+    },
     {
       "id": "z-ai/glm-5",
       "name": "Z.ai: GLM 5",
       "context_length": 202752,
       "pricing": {
-        "prompt": 1.0,
-        "completion": 3.2
+        "prompt": 0.8,
+        "completion": 2.56
       },
       "scores": {
         "overall": null,
@@ -1186,10 +1205,10 @@
     {
       "id": "qwen/qwen3-vl-32b-instruct",
       "name": "Qwen: Qwen3 VL 32B Instruct",
-      "context_length": 262144,
+      "context_length": 131072,
       "pricing": {
-        "prompt": 0.5,
-        "completion": 1.5
+        "prompt": 0.104,
+        "completion": 0.416
       },
       "scores": {
         "overall": null,
@@ -1302,8 +1321,8 @@
       "name": "Qwen: Qwen3 VL 8B Thinking",
       "context_length": 131072,
       "pricing": {
-        "prompt": 0.18,
-        "completion": 2.1
+        "prompt": 0.117,
+        "completion": 1.365
       },
       "scores": {
         "overall": null,
@@ -1451,32 +1470,12 @@
       "provider": "google"
     },
     {
-      "id": "qwen/qwen3-vl-30b-a3b-thinking",
-      "name": "Qwen: Qwen3 VL 30B A3B Thinking",
-      "context_length": 131072,
-      "pricing": {
-        "prompt": 0.2,
-        "completion": 1.0
-      },
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Vision",
-        "Logic"
-      ],
-      "provider": "qwen"
-    },
-    {
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
       "name": "Qwen: Qwen3 VL 30B A3B Instruct",
-      "context_length": 262144,
+      "context_length": 131072,
       "pricing": {
-        "prompt": 0.15,
-        "completion": 0.6
+        "prompt": 0.13,
+        "completion": 0.52
       },
       "scores": {
         "overall": null,
@@ -1659,26 +1658,6 @@
         "Chat"
       ],
       "provider": "google"
-    },
-    {
-      "id": "qwen/qwen3-vl-235b-a22b-thinking",
-      "name": "Qwen: Qwen3 VL 235B A22B Thinking",
-      "context_length": 262144,
-      "pricing": {
-        "prompt": 0.45,
-        "completion": 3.5
-      },
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Vision",
-        "Logic"
-      ],
-      "provider": "qwen"
     },
     {
       "id": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -3298,10 +3277,10 @@
     {
       "id": "qwen/qwen3-235b-a22b",
       "name": "Qwen: Qwen3 235B A22B",
-      "context_length": 131072,
+      "context_length": 40960,
       "pricing": {
-        "prompt": 0.22,
-        "completion": 0.88
+        "prompt": 0.3,
+        "completion": 1.2
       },
       "scores": {
         "overall": null,
@@ -4909,25 +4888,6 @@
         "Chat"
       ],
       "provider": "neversleep"
-    },
-    {
-      "id": "mistralai/pixtral-12b",
-      "name": "Mistral: Pixtral 12B",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 0.1,
-        "completion": 0.1
-      },
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "mistralai"
     },
     {
       "id": "cohere/command-r-08-2024",
