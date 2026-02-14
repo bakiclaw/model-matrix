@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-13T05:47:19.376020Z",
+    "last_updated": "2026-02-14T02:00:03.028497Z",
     "total_models": 306
   },
   "models": [
@@ -2458,25 +2458,6 @@
       "provider": "z-ai"
     },
     {
-      "id": "qwen/qwen3-235b-a22b-thinking-2507",
-      "name": "Qwen: Qwen3 235B A22B Thinking 2507",
-      "context_length": 262144,
-      "pricing": {
-        "prompt": 0.11,
-        "completion": 0.6
-      },
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Logic"
-      ],
-      "provider": "qwen"
-    },
-    {
       "id": "z-ai/glm-4-32b",
       "name": "Z.ai: GLM 4 32B ",
       "context_length": 128000,
@@ -3178,6 +3159,25 @@
         "Code"
       ],
       "provider": "inception"
+    },
+    {
+      "id": "qwen/qwen3-4b",
+      "name": "Qwen: Qwen3 4B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.0715,
+        "completion": 0.273
+      },
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen"
     },
     {
       "id": "meta-llama/llama-guard-4-12b",
