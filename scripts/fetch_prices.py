@@ -51,9 +51,27 @@ def fetch_openrouter_prices():
         print(f"Error fetching data: {e}")
         return []
 
-def normalize_data(raw_models):
+def generate_baki_report(model, scores):
+    """Generates a sharp, professional Baki Intelligence report for the model."""
+    pricing = model.get('pricing', {})
+    prompt_cost = float(pricing.get('prompt', 0)) * 1_000_000
+    
+    if scores['coding'] and scores['coding'] >= 1450:
+        return "Supreme architectural logic. Zero-shot coding accuracy exceeds industry baselines."
+    if scores['hard'] and scores['hard'] >= 1400:
+        return "Deep reasoning specialist. Ideal for complex chain-of-thought and logical verification."
+    if prompt_cost < 0.05:
+        return "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
+    if model.get('context_length', 0) >= 1000000:
+        return "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    
+    return "Balanced performance profile. Reliable generalist for standard agentic workflows."
+
+def normalize_data(raw_models, existing_models_map=None):
     """Processes raw API data into a clean format."""
     normalized = []
+    today = datetime.now(timezone.utc).isoformat().split('T')[0]
+    
     for model in raw_models:
         pricing = model.get('pricing', {})
         input_1m = float(pricing.get('prompt', 0)) * 1_000_000
@@ -80,17 +98,56 @@ def normalize_data(raw_models):
         
         if not tags: tags.append('Chat')
 
+        new_pricing = {
+            "prompt": round(input_1m, 4),
+            "completion": round(output_1m, 4),
+        }
+
+        # Handle History and Price Status
+        price_history = []
+        price_status = 'stable'
+        
+        if existing_models_map and model_id in existing_models_map:
+            old_model = existing_models_map[model_id]
+            price_history = old_model.get('price_history', [])
+            
+            # Check for changes
+            old_pricing = old_model.get('pricing', {})
+            if old_pricing.get('prompt') != new_pricing['prompt'] or old_pricing.get('completion') != new_pricing['completion']:
+                # Price changed!
+                if new_pricing['prompt'] < old_pricing.get('prompt', 0) or new_pricing['completion'] < old_pricing.get('completion', 0):
+                    price_status = 'drop'
+                else:
+                    price_status = 'hike'
+                
+                # Add to history if not already added today
+                if not price_history or price_history[-1]['date'] != today:
+                    price_history.append({
+                        "date": today,
+                        "prompt": new_pricing['prompt'],
+                        "completion": new_pricing['completion']
+                    })
+                    # Keep only last 10 entries
+                    price_history = price_history[-10:]
+        else:
+            # New model
+            price_history = [{
+                "date": today,
+                "prompt": new_pricing['prompt'],
+                "completion": new_pricing['completion']
+            }]
+
         normalized.append({
             "id": model_id,
             "name": model.get('name'),
             "context_length": model.get('context_length'),
-            "pricing": {
-                "prompt": round(input_1m, 4),
-                "completion": round(output_1m, 4),
-            },
+            "pricing": new_pricing,
+            "price_history": price_history,
+            "price_status": price_status,
             "scores": scores,
             "tags": tags,
-            "provider": model_id.split('/')[0] if '/' in model_id else "unknown"
+            "provider": model_id.split('/')[0] if '/' in model_id else "unknown",
+            "baki_report": generate_baki_report(model, scores)
         })
     return normalized
 
@@ -98,12 +155,22 @@ def main():
     print("Starting ModelMatrix Price & Score Update...")
     os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
     
+    # Load existing data for history tracking
+    existing_models_map = {}
+    if os.path.exists(DATA_FILE):
+        try:
+            with open(DATA_FILE, 'r') as f:
+                old_data = json.load(f)
+                existing_models_map = {m['id']: m for m in old_data.get('models', [])}
+        except Exception as e:
+            print(f"Warning: Could not load existing data: {e}")
+
     raw_data = fetch_openrouter_prices()
     if not raw_data:
         print("No data fetched. Exiting.")
         return
         
-    processed_models = normalize_data(raw_data)
+    processed_models = normalize_data(raw_data, existing_models_map)
     
     output = {
         "metadata": {

@@ -19,9 +19,12 @@ interface Model {
   name: string
   context_length: number
   pricing: ModelPricing
+  price_history?: { date: string, prompt: number, completion: number }[]
+  price_status?: 'stable' | 'drop' | 'hike'
   scores: ModelScores
   provider: string
   tags: string[]
+  baki_report?: string
 }
 
 interface ModelData {
@@ -97,12 +100,17 @@ export default function ModelMatrixApp() {
   const [data, setData] = useState<ModelData | null>(null)
   const [tokenVolume, setTokenVolume] = useState(7500000)
   const [search, setSearch] = useState("")
-  const [activeTab, setActiveTab] = useState<'matrix' | 'coding' | 'vision' | 'logic' | 'subs'>('matrix')
+  const [activeTab, setActiveTab] = useState<'matrix' | 'coding' | 'vision' | 'logic' | 'subs' | 'intel' | 'compare'>('matrix')
   const [viewMode, setViewMode] = useState<'grid' | 'table'>('grid')
   const [selectedProviders, setSelectedProviders] = useState<string[]>([])
   const [selectedTags, setSelectedTags] = useState<string[]>([])
   const [sortKey, setSortKey] = useState('cost')
   const [sortOrder, setSortOrder] = useState(1)
+  const [hardwareData, setHardwareData] = useState<any>(null)
+  const [selectedHardwareId, setSelectedHardwareId] = useState<string>('rtx_4090')
+  const [electricityRate, setElectricityRate] = useState(0.12)
+  const [usageHoursPerDay, setUsageHoursPerDay] = useState(8)
+  const [comparisonBaseModel, setComparisonBaseModel] = useState<string>('Llama 3.1 70B')
 
   useEffect(() => {
     fetch('/data/prices.json')
@@ -110,7 +118,14 @@ export default function ModelMatrixApp() {
       .then((resData: ModelData) => {
         setData(resData)
       })
-      .catch(err => console.error("Failed to load data", err))
+      .catch(err => console.error("Failed to load prices", err))
+
+    fetch('/data/hardware.json')
+      .then(res => res.json())
+      .then(hwData => {
+        setHardwareData(hwData)
+      })
+      .catch(err => console.error("Failed to load hardware", err))
   }, [])
 
   const models = useMemo(() => data?.models || [], [data])
@@ -235,7 +250,9 @@ export default function ModelMatrixApp() {
             { id: 'coding', label: 'Coding Arena', icon: '💻' },
             { id: 'vision', label: 'Vision Rank', icon: '👁️' },
             { id: 'logic', label: 'Hard Prompts', icon: '🧠' },
-            { id: 'subs', label: 'Subscription Efficiency', icon: '💎' }
+            { id: 'compare', label: 'Provider Compare', icon: '⚔️' },
+            { id: 'subs', label: 'Subscription Efficiency', icon: '💎' },
+            { id: 'intel', label: 'OpenClaw Intel', icon: '⚡' }
           ].map(tab => (
             <button
               key={tab.id}
@@ -247,7 +264,78 @@ export default function ModelMatrixApp() {
           ))}
         </nav>
 
-        {activeTab === 'subs' ? (
+        {activeTab === 'compare' ? (
+          <div className="space-y-12 animate-in fade-in slide-in-from-bottom-8 duration-700">
+            <div className="text-center max-w-3xl mx-auto">
+                <h2 className="text-3xl font-black text-white mb-4">Cross-Provider Comparison</h2>
+                <p className="text-slate-400">Select a model family to see how pricing and context window vary across different infrastructure providers.</p>
+            </div>
+
+            <div className="glass rounded-[2rem] p-6 bg-slate-900/40 border border-white/5 flex flex-wrap items-center justify-center gap-4">
+              {['Llama 3.1 70B', 'Llama 3.1 405B', 'Claude 3.5 Sonnet', 'GPT-4o', 'DeepSeek V3', 'Qwen 2.5 72B'].map(family => (
+                <button
+                  key={family}
+                  onClick={() => setComparisonBaseModel(family)}
+                  className={`px-5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest border transition-all ${comparisonBaseModel === family ? 'bg-indigo-600 border-indigo-400 text-white shadow-lg' : 'bg-slate-800 border-white/5 text-slate-500 hover:text-slate-300'}`}
+                >
+                  {family}
+                </button>
+              ))}
+            </div>
+
+            <div className="overflow-x-auto rounded-[2rem] border border-white/5 bg-slate-950/50 backdrop-blur-md">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-white/10 bg-white/5">
+                    <th className="px-8 py-6 text-[10px] font-black text-slate-500 uppercase tracking-widest">Provider</th>
+                    <th className="px-8 py-6 text-[10px] font-black text-slate-500 uppercase tracking-widest">Exact Model ID</th>
+                    <th className="px-8 py-6 text-[10px] font-black text-slate-500 uppercase tracking-widest">Input / 1M</th>
+                    <th className="px-8 py-6 text-[10px] font-black text-slate-500 uppercase tracking-widest">Output / 1M</th>
+                    <th className="px-8 py-6 text-[10px] font-black text-slate-500 uppercase tracking-widest">Context</th>
+                    <th className="px-8 py-6 text-[10px] font-black text-slate-500 uppercase tracking-widest">Efficiency</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/5">
+                  {models.filter(m => m.name.toLowerCase().includes(comparisonBaseModel.toLowerCase()) || m.id.toLowerCase().includes(comparisonBaseModel.toLowerCase().replace(' ', '-'))).sort((a, b) => a.pricing.prompt - b.pricing.prompt).map(model => (
+                    <tr key={model.id} className="hover:bg-white/5 transition-colors group">
+                      <td className="px-8 py-6">
+                        <div className="flex items-center gap-3">
+                          <div className="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-[10px] font-black text-indigo-400">
+                            {model.provider.charAt(0).toUpperCase()}
+                          </div>
+                          <span className="text-sm font-black text-white uppercase tracking-tight">{formatProviderName(model.provider)}</span>
+                        </div>
+                      </td>
+                      <td className="px-8 py-6">
+                        <span className="text-[10px] font-mono text-slate-500 group-hover:text-indigo-400 transition-colors">{model.id}</span>
+                      </td>
+                      <td className="px-8 py-6">
+                        <div className="flex items-center gap-2">
+                          <span className="text-sm font-black text-slate-300 tabular-nums">${model.pricing.prompt.toFixed(3)}</span>
+                          {model.price_status === 'drop' && <span className="text-[8px] font-black text-emerald-500 bg-emerald-500/10 px-1.5 py-0.5 rounded uppercase">Drop</span>}
+                        </div>
+                      </td>
+                      <td className="px-8 py-6">
+                        <span className="text-sm font-black text-slate-300 tabular-nums">${model.pricing.completion.toFixed(3)}</span>
+                      </td>
+                      <td className="px-8 py-6">
+                        <span className="text-xs font-bold text-slate-400 uppercase">{Math.floor(model.context_length / 1000)}K</span>
+                      </td>
+                      <td className="px-8 py-6">
+                        <div className="w-24 h-1.5 bg-slate-800 rounded-full overflow-hidden">
+                          <div 
+                            className="h-full bg-indigo-500" 
+                            style={{ width: `${Math.min(100, (1 / (model.pricing.prompt + 0.001)) * 5)}%` }}
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ) : activeTab === 'subs' ? (
           <div className="space-y-12 animate-in fade-in slide-in-from-bottom-8 duration-700">
             <div className="text-center max-w-3xl mx-auto">
                 <h2 className="text-3xl font-black text-white mb-4">Subscription Break-Even Analysis</h2>
@@ -311,6 +399,118 @@ export default function ModelMatrixApp() {
                 </div>
             </div>
           </div>
+        ) : activeTab === 'intel' ? (
+          <div className="space-y-12 animate-in fade-in slide-in-from-bottom-8 duration-700">
+            <div className="text-center max-w-3xl mx-auto">
+                <h2 className="text-3xl font-black text-white mb-4">OpenClaw Intelligence Layer</h2>
+                <p className="text-slate-400">Optimize your agentic workflows with model presets and local execution ROI analysis.</p>
+            </div>
+
+            {/* Presets Section */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {hardwareData?.presets.map((preset: any) => (
+                    <div key={preset.id} className="glass rounded-[2rem] p-8 border border-white/5 bg-slate-900/40 hover:border-indigo-500/30 transition-all group">
+                        <div className="flex items-center justify-between mb-4">
+                            <h3 className="text-xl font-black text-white uppercase tracking-tight">{preset.name}</h3>
+                            <span className="text-[10px] font-black bg-indigo-500/20 text-indigo-400 px-3 py-1 rounded-full uppercase">{preset.focus}</span>
+                        </div>
+                        <p className="text-slate-500 text-sm mb-6">{preset.description}</p>
+                        <div className="space-y-2">
+                            {preset.models.map((mId: string) => {
+                                const model = models.find(m => m.id === mId)
+                                return (
+                                    <div key={mId} className="flex items-center justify-between p-3 bg-slate-950/60 rounded-xl border border-white/5">
+                                        <span className="text-xs font-bold text-slate-300 truncate mr-2">{model?.name || mId}</span>
+                                        <span className="text-[10px] font-mono text-indigo-400">
+                                            {model ? `$${calculateModelCost(model).toFixed(2)}/mo` : 'N/A'}
+                                        </span>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Hardware ROI Section */}
+            <div className="glass rounded-[2.5rem] p-10 bg-slate-900/40 border border-white/5">
+                <div className="flex flex-col lg:flex-row gap-12">
+                    <div className="flex-1">
+                        <h3 className="text-2xl font-black text-white mb-6">Local ROI Calculator</h3>
+                        <div className="space-y-6">
+                            <div>
+                                <label className="block text-[10px] font-black text-slate-600 uppercase mb-3 tracking-widest italic">Select Your Node Hardware</label>
+                                <div className="grid grid-cols-2 gap-4">
+                                    {hardwareData?.hardware.map((hw: any) => (
+                                        <button
+                                            key={hw.id}
+                                            onClick={() => setSelectedHardwareId(hw.id)}
+                                            className={`p-4 rounded-2xl border text-left transition-all ${selectedHardwareId === hw.id ? 'border-indigo-500 bg-indigo-500/10' : 'border-white/5 bg-slate-950/40 hover:border-white/20'}`}
+                                        >
+                                            <div className="text-sm font-black text-white">{hw.name}</div>
+                                            <div className="text-[10px] text-slate-500 uppercase">{hw.type} • ${hw.price}</div>
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-2 gap-6">
+                                <div>
+                                    <label className="block text-[10px] font-black text-slate-600 uppercase mb-3 tracking-widest italic">Electricity ($/kWh)</label>
+                                    <input 
+                                        type="number" step="0.01" value={electricityRate} 
+                                        onChange={(e) => setElectricityRate(Number(e.target.value))}
+                                        className="w-full bg-slate-950 border border-white/5 rounded-xl py-3 px-5 text-sm text-white focus:ring-2 focus:ring-indigo-500 outline-none"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-[10px] font-black text-slate-600 uppercase mb-3 tracking-widest italic">Daily Usage (Hours)</label>
+                                    <input 
+                                        type="number" value={usageHoursPerDay} 
+                                        onChange={(e) => setUsageHoursPerDay(Number(e.target.value))}
+                                        className="w-full bg-slate-950 border border-white/5 rounded-xl py-3 px-5 text-sm text-white focus:ring-2 focus:ring-indigo-500 outline-none"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="lg:w-80 space-y-4">
+                        {(() => {
+                            const hw = hardwareData?.hardware.find((h: any) => h.id === selectedHardwareId)
+                            if (!hw) return null
+                            
+                            const dailyElecCost = (hw.wattage / 1000) * usageHoursPerDay * electricityRate
+                            const monthlyElecCost = dailyElecCost * 30
+                            const monthlyCloudCost = (tokenVolume / 1000000) * 8 // Assuming $8/M tokens avg blend
+                            const monthlySavings = monthlyCloudCost - monthlyElecCost
+                            const breakEvenMonths = hw.price / monthlySavings
+
+                            return (
+                                <>
+                                    <div className="p-6 bg-indigo-500/10 rounded-3xl border border-indigo-500/20">
+                                        <div className="text-[10px] font-black text-indigo-400 uppercase mb-1 tracking-widest">Monthly Local OpEx</div>
+                                        <div className="text-3xl font-black text-white">${monthlyElecCost.toFixed(2)}</div>
+                                        <div className="text-[10px] text-slate-500 mt-2 uppercase font-bold tracking-widest">Electricity only</div>
+                                    </div>
+
+                                    <div className="p-6 bg-emerald-500/10 rounded-3xl border border-emerald-500/20">
+                                        <div className="text-[10px] font-black text-emerald-400 uppercase mb-1 tracking-widest">Estimated Savings</div>
+                                        <div className="text-3xl font-black text-white">${monthlySavings.toFixed(2)}</div>
+                                        <div className="text-[10px] text-slate-500 mt-2 uppercase font-bold tracking-widest">vs. Cloud API</div>
+                                    </div>
+
+                                    <div className="p-6 bg-white/5 rounded-3xl border border-white/10 text-center">
+                                        <div className="text-[10px] font-black text-slate-500 uppercase mb-1 tracking-widest">Hardware Payback Period</div>
+                                        <div className="text-2xl font-black text-white">{breakEvenMonths > 0 ? `${breakEvenMonths.toFixed(1)} Months` : 'N/A'}</div>
+                                    </div>
+                                </>
+                            )
+                        })()}
+                    </div>
+                </div>
+            </div>
+          </div>
         ) : (
           <div className="animate-in fade-in duration-500">
             {/* Global Controls */}
@@ -354,6 +554,21 @@ export default function ModelMatrixApp() {
                 {filteredModels.map(model => (
                     <div key={model.id} className="glass rounded-[2.5rem] p-8 border border-white/5 bg-slate-900/40 relative overflow-hidden group transition-all hover:border-indigo-500/30 hover:-translate-y-2 shadow-xl">
                         <div className="absolute top-0 right-0 flex">
+                            {model.price_status === 'drop' && (
+                                <div className="bg-emerald-500/20 text-emerald-400 border-l border-b border-emerald-500/10 text-[8px] font-black px-3 py-1.5 uppercase tracking-widest animate-pulse">
+                                    📉 Price Drop
+                                </div>
+                            )}
+                            {model.price_status === 'hike' && (
+                                <div className="bg-red-500/20 text-red-400 border-l border-b border-red-500/10 text-[8px] font-black px-3 py-1.5 uppercase tracking-widest">
+                                    📈 Price Hike
+                                </div>
+                            )}
+                            {(model.scores.overall && model.scores.overall > 1300) && (
+                                <div className="bg-amber-500/20 text-amber-400 border-l border-b border-amber-500/10 text-[8px] font-black px-3 py-1.5 uppercase tracking-widest animate-pulse">
+                                    🔥 Trending
+                                </div>
+                            )}
                             {model.scores.overall && (
                                 <div className="bg-indigo-500/20 text-indigo-400 border-l border-b border-indigo-500/10 text-[10px] font-black px-4 py-2 rounded-bl-2xl backdrop-blur-md">
                                     {activeTab === 'coding' ? `CODE ${model.scores.coding}` : activeTab === 'vision' ? `VISION ${model.scores.vision}` : activeTab === 'logic' ? `HARD ${model.scores.hard}` : `ELO ${model.scores.overall}`}
@@ -368,7 +583,20 @@ export default function ModelMatrixApp() {
                         </div>
 
                         <h3 className="text-xl font-black text-white mb-1 group-hover:text-indigo-400 transition-colors uppercase tracking-tight truncate">{model.name}</h3>
-                        <p className="text-slate-600 text-[9px] font-mono mb-8 uppercase tracking-widest truncate">{model.id}</p>
+                        <p className="text-slate-600 text-[9px] font-mono mb-6 uppercase tracking-widest truncate">{model.id}</p>
+
+                        {/* Baki Insight Section */}
+                        <div className="mb-8 p-4 rounded-2xl bg-white/5 border border-white/5 group-hover:bg-white/10 transition-all">
+                            <div className="text-[7px] font-black text-indigo-500 uppercase tracking-[0.2em] mb-2 italic">Baki Intelligence Report</div>
+                            <p className="text-slate-400 text-[10px] leading-relaxed font-medium">
+                                {model.baki_report || (
+                                    model.scores.coding && model.scores.coding > 1300 ? "Elite architectural reasoning detected. Top-tier for autonomous coding agents." : 
+                                    model.pricing.prompt < 0.1 ? "Exceptional cost-to-performance ratio. Recommended for high-volume summarization." :
+                                    model.context_length > 500000 ? "Massive context window optimized for deep document analysis and RAG." :
+                                    "Balanced performance profile. Reliable for general purpose conversational AI."
+                                )}
+                            </p>
+                        </div>
 
                         <div className="grid grid-cols-2 gap-3 mb-10">
                             <div className="p-4 bg-slate-950/60 rounded-2xl border border-white/5">

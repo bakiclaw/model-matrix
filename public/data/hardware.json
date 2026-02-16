@@ -1,0 +1,59 @@
+{
+  "hardware": [
+    {
+      "id": "mac_m3_max",
+      "name": "Mac M3 Max (128GB)",
+      "wattage": 30,
+      "tflops": 100,
+      "price": 3500,
+      "type": "unified_memory"
+    },
+    {
+      "id": "rtx_4090",
+      "name": "NVIDIA RTX 4090 (24GB)",
+      "wattage": 450,
+      "tflops": 82,
+      "price": 1600,
+      "type": "gpu"
+    },
+    {
+      "id": "rtx_3080",
+      "name": "NVIDIA RTX 3080 (10GB)",
+      "wattage": 320,
+      "tflops": 30,
+      "price": 700,
+      "type": "gpu"
+    },
+    {
+      "id": "rpi_5",
+      "name": "Raspberry Pi 5 (8GB)",
+      "wattage": 10,
+      "tflops": 0.1,
+      "price": 80,
+      "type": "cpu"
+    }
+  ],
+  "presets": [
+    {
+      "id": "minimal_agent",
+      "name": "Minimal Agent",
+      "description": "Optimized for speed and low cost",
+      "models": ["google/gemini-3-flash-preview", "openai/gpt-5.1-codex-mini"],
+      "focus": "speed"
+    },
+    {
+      "id": "heavy_coder",
+      "name": "Heavy Coder",
+      "description": "Maximum coding performance",
+      "models": ["anthropic/claude-sonnet-4.5", "deepseek/deepseek-v3.2"],
+      "focus": "coding"
+    },
+    {
+      "id": "vision_researcher",
+      "name": "Vision Researcher",
+      "description": "Advanced image understanding",
+      "models": ["google/gemini-3-pro-image-preview", "qwen/qwen3-vl-32b-instruct"],
+      "focus": "vision"
+    }
+  ]
+}

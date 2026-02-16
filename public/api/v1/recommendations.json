@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2026-02-15T02:00:03.380440Z"
+  },
+  "strategies": {
+    "coding": {
+      "best_overall": "deepseek/deepseek-r1-0528",
+      "best_value": "deepseek/deepseek-r1-distill-llama-70b",
+      "best_local": "deepseek-coder-v2-lite"
+    },
+    "vision": {
+      "best_overall": "google/gemini-3-pro-image-preview",
+      "best_value": "deepseek/deepseek-r1-distill-llama-70b",
+      "best_local": "llama-3.2-11b-vision"
+    },
+    "general": {
+      "best_overall": "",
+      "best_value": "",
+      "best_local": "llama-3.1-8b-instruct"
+    }
+  }
+}
