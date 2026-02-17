@@ -31,6 +31,16 @@
       "tflops": 0.1,
       "price": 80,
       "type": "cpu"
+    },
+    {
+      "id": "rubin_platform_h100",
+      "name": "Rubin Platform (Next-Gen)",
+      "wattage": 1200,
+      "tflops": 2000,
+      "price": 30000,
+      "type": "enterprise_gpu",
+      "future_projection": true,
+      "inference_efficiency_gain": 10
     }
   ],
   "presets": [

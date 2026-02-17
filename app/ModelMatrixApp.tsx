@@ -111,6 +111,7 @@ export default function ModelMatrixApp() {
   const [electricityRate, setElectricityRate] = useState(0.12)
   const [usageHoursPerDay, setUsageHoursPerDay] = useState(8)
   const [comparisonBaseModel, setComparisonBaseModel] = useState<string>('Llama 3.1 70B')
+  const [projectionEnabled, setProjectionEnabled] = useState(false)
 
   useEffect(() => {
     fetch('/data/prices.json')
@@ -503,6 +504,19 @@ export default function ModelMatrixApp() {
                                     <div className="p-6 bg-white/5 rounded-3xl border border-white/10 text-center">
                                         <div className="text-[10px] font-black text-slate-500 uppercase mb-1 tracking-widest">Hardware Payback Period</div>
                                         <div className="text-2xl font-black text-white">{breakEvenMonths > 0 ? `${breakEvenMonths.toFixed(1)} Months` : 'N/A'}</div>
+                                    </div>
+
+                                    <div className={`p-6 rounded-3xl border transition-all cursor-pointer ${projectionEnabled ? 'bg-amber-500/20 border-amber-500/40 shadow-lg shadow-amber-500/10' : 'bg-white/5 border-white/10 opacity-60'}`} onClick={() => setProjectionEnabled(!projectionEnabled)}>
+                                        <div className="flex justify-between items-center mb-2">
+                                            <div className="text-[10px] font-black text-amber-500 uppercase tracking-widest">Rubin Projection (10x)</div>
+                                            <div className={`w-8 h-4 rounded-full relative transition-colors ${projectionEnabled ? 'bg-amber-500' : 'bg-slate-700'}`}>
+                                                <div className={`absolute top-0.5 w-3 h-3 bg-white rounded-full transition-transform ${projectionEnabled ? 'left-4.5' : 'left-0.5'}`} />
+                                            </div>
+                                        </div>
+                                        <div className="text-xl font-black text-white">
+                                            {projectionEnabled ? `$${(monthlyCloudCost / 10).toFixed(2)}` : '---'}
+                                        </div>
+                                        <div className="text-[9px] text-slate-500 mt-1 uppercase font-bold tracking-tighter">Projected Cloud Cost Floor</div>
                                     </div>
                                 </>
                             )
