@@ -1,18 +1,26 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-16T05:58:05.698189Z",
-    "total_models": 306
+    "last_updated": "2026-02-17T05:46:37.800872Z",
+    "total_models": 308
   },
   "models": [
     {
-      "id": "minimax/minimax-m2.5",
-      "name": "MiniMax: MiniMax M2.5",
-      "context_length": 196608,
+      "id": "qwen/qwen3.5-plus-02-15",
+      "name": "Qwen: Qwen3.5 Plus 2026-02-15",
+      "context_length": 1000000,
       "pricing": {
-        "prompt": 0.2,
-        "completion": 1.0
+        "prompt": 0.4,
+        "completion": 2.4
       },
+      "price_history": [
+        {
+          "date": "2026-02-17",
+          "prompt": 0.4,
+          "completion": 2.4
+        }
+      ],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -22,16 +30,81 @@
       "tags": [
         "Chat"
       ],
-      "provider": "minimax"
+      "provider": "qwen",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
+    {
+      "id": "qwen/qwen3.5-397b-a17b",
+      "name": "Qwen: Qwen3.5 397B A17B",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.6,
+        "completion": 3.6
+      },
+      "price_history": [
+        {
+          "date": "2026-02-17",
+          "prompt": 0.6,
+          "completion": 3.6
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "minimax/minimax-m2.5",
+      "name": "MiniMax: MiniMax M2.5",
+      "context_length": 196608,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 1.2
+      },
+      "price_history": [
+        {
+          "date": "2026-02-17",
+          "prompt": 0.3,
+          "completion": 1.2
+        }
+      ],
+      "price_status": "hike",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "minimax",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "z-ai/glm-5",
       "name": "Z.ai: GLM 5",
       "context_length": 204800,
       "pricing": {
-        "prompt": 0.75,
+        "prompt": 0.3,
         "completion": 2.55
       },
+      "price_history": [
+        {
+          "date": "2026-02-17",
+          "prompt": 0.3,
+          "completion": 2.55
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -41,7 +114,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "z-ai"
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-max-thinking",
@@ -51,6 +125,8 @@
         "prompt": 1.2,
         "completion": 6.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -60,7 +136,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "anthropic/claude-opus-4.6",
@@ -70,6 +147,8 @@
         "prompt": 5.0,
         "completion": 25.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -79,7 +158,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "qwen/qwen3-coder-next",
@@ -89,6 +169,8 @@
         "prompt": 0.07,
         "completion": 0.3
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -98,7 +180,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "stepfun/step-3.5-flash",
@@ -108,6 +191,8 @@
         "prompt": 0.1,
         "completion": 0.3
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -117,16 +202,25 @@
       "tags": [
         "Chat"
       ],
-      "provider": "stepfun"
+      "provider": "stepfun",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.45,
-        "completion": 2.2
+        "prompt": 0.23,
+        "completion": 3.0
       },
+      "price_history": [
+        {
+          "date": "2026-02-17",
+          "prompt": 0.23,
+          "completion": 3.0
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -136,7 +230,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "moonshotai"
+      "provider": "moonshotai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "minimax/minimax-m2-her",
@@ -146,6 +241,8 @@
         "prompt": 0.3,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -155,7 +252,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "minimax"
+      "provider": "minimax",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "writer/palmyra-x5",
@@ -165,6 +263,8 @@
         "prompt": 0.6,
         "completion": 6.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -174,7 +274,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "writer"
+      "provider": "writer",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "openai/gpt-audio",
@@ -184,6 +285,8 @@
         "prompt": 2.5,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -193,7 +296,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-audio-mini",
@@ -203,6 +307,8 @@
         "prompt": 0.6,
         "completion": 2.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -212,7 +318,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "z-ai/glm-4.7-flash",
@@ -222,6 +329,8 @@
         "prompt": 0.06,
         "completion": 0.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -231,7 +340,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "z-ai"
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5.2-codex",
@@ -241,6 +351,8 @@
         "prompt": 1.75,
         "completion": 14.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -250,7 +362,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "allenai/molmo-2-8b",
@@ -260,6 +373,8 @@
         "prompt": 0.2,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -269,7 +384,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "allenai"
+      "provider": "allenai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "allenai/olmo-3.1-32b-instruct",
@@ -279,6 +395,8 @@
         "prompt": 0.2,
         "completion": 0.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -288,7 +406,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "allenai"
+      "provider": "allenai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "bytedance-seed/seed-1.6-flash",
@@ -298,6 +417,8 @@
         "prompt": 0.075,
         "completion": 0.3
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -307,7 +428,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "bytedance-seed"
+      "provider": "bytedance-seed",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "bytedance-seed/seed-1.6",
@@ -317,6 +439,8 @@
         "prompt": 0.25,
         "completion": 2.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -326,7 +450,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "bytedance-seed"
+      "provider": "bytedance-seed",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "minimax/minimax-m2.1",
@@ -336,6 +461,8 @@
         "prompt": 0.27,
         "completion": 0.95
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -345,7 +472,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "minimax"
+      "provider": "minimax",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "z-ai/glm-4.7",
@@ -355,6 +483,8 @@
         "prompt": 0.4,
         "completion": 1.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -364,7 +494,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "z-ai"
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemini-3-flash-preview",
@@ -374,6 +505,8 @@
         "prompt": 0.5,
         "completion": 3.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1300,
         "coding": 1220,
@@ -383,7 +516,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "mistralai/mistral-small-creative",
@@ -393,6 +527,8 @@
         "prompt": 0.1,
         "completion": 0.3
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -402,7 +538,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "allenai/olmo-3.1-32b-think",
@@ -412,6 +549,8 @@
         "prompt": 0.15,
         "completion": 0.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -421,7 +560,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "allenai"
+      "provider": "allenai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "xiaomi/mimo-v2-flash",
@@ -431,6 +571,8 @@
         "prompt": 0.09,
         "completion": 0.29
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -440,7 +582,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "xiaomi"
+      "provider": "xiaomi",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "nvidia/nemotron-3-nano-30b-a3b",
@@ -450,6 +593,8 @@
         "prompt": 0.05,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -459,7 +604,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nvidia"
+      "provider": "nvidia",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "openai/gpt-5.2-chat",
@@ -469,6 +615,8 @@
         "prompt": 1.75,
         "completion": 14.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -478,7 +626,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5.2-pro",
@@ -488,6 +637,8 @@
         "prompt": 21.0,
         "completion": 168.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -497,7 +648,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5.2",
@@ -507,6 +659,8 @@
         "prompt": 1.75,
         "completion": 14.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -516,7 +670,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/devstral-2512",
@@ -526,6 +681,8 @@
         "prompt": 0.05,
         "completion": 0.22
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -535,7 +692,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "relace/relace-search",
@@ -545,6 +703,8 @@
         "prompt": 1.0,
         "completion": 3.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -554,7 +714,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "relace"
+      "provider": "relace",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "z-ai/glm-4.6v",
@@ -564,6 +725,8 @@
         "prompt": 0.3,
         "completion": 0.9
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -573,7 +736,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "z-ai"
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "nex-agi/deepseek-v3.1-nex-n1",
@@ -583,6 +747,8 @@
         "prompt": 0.27,
         "completion": 1.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -592,7 +758,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nex-agi"
+      "provider": "nex-agi",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "essentialai/rnj-1-instruct",
@@ -602,6 +769,8 @@
         "prompt": 0.15,
         "completion": 0.15
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -611,7 +780,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "essentialai"
+      "provider": "essentialai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5.1-codex-max",
@@ -621,6 +791,8 @@
         "prompt": 1.25,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -630,7 +802,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "amazon/nova-2-lite-v1",
@@ -640,6 +813,8 @@
         "prompt": 0.3,
         "completion": 2.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -649,7 +824,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "amazon"
+      "provider": "amazon",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "mistralai/ministral-14b-2512",
@@ -659,6 +835,8 @@
         "prompt": 0.2,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -668,7 +846,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/ministral-8b-2512",
@@ -678,6 +857,8 @@
         "prompt": 0.15,
         "completion": 0.15
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -687,7 +868,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/ministral-3b-2512",
@@ -697,6 +879,8 @@
         "prompt": 0.1,
         "completion": 0.1
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -706,7 +890,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-large-2512",
@@ -716,6 +901,8 @@
         "prompt": 0.5,
         "completion": 1.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -725,7 +912,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "arcee-ai/trinity-mini",
@@ -735,6 +923,8 @@
         "prompt": 0.045,
         "completion": 0.15
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -744,7 +934,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "arcee-ai"
+      "provider": "arcee-ai",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "deepseek/deepseek-v3.2-speciale",
@@ -754,6 +945,8 @@
         "prompt": 0.27,
         "completion": 0.41
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -763,16 +956,25 @@
       "tags": [
         "Chat"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
       "context_length": 163840,
       "pricing": {
-        "prompt": 0.25,
+        "prompt": 0.26,
         "completion": 0.38
       },
+      "price_history": [
+        {
+          "date": "2026-02-17",
+          "prompt": 0.26,
+          "completion": 0.38
+        }
+      ],
+      "price_status": "hike",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -782,7 +984,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "prime-intellect/intellect-3",
@@ -792,6 +995,8 @@
         "prompt": 0.2,
         "completion": 1.1
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -801,7 +1006,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "prime-intellect"
+      "provider": "prime-intellect",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "tngtech/tng-r1t-chimera",
@@ -811,6 +1017,8 @@
         "prompt": 0.25,
         "completion": 0.85
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -820,7 +1028,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "tngtech"
+      "provider": "tngtech",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "anthropic/claude-opus-4.5",
@@ -830,6 +1039,8 @@
         "prompt": 5.0,
         "completion": 25.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -839,7 +1050,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "allenai/olmo-3-32b-think",
@@ -849,6 +1061,8 @@
         "prompt": 0.15,
         "completion": 0.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -858,7 +1072,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "allenai"
+      "provider": "allenai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "allenai/olmo-3-7b-instruct",
@@ -868,6 +1083,8 @@
         "prompt": 0.1,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -877,7 +1094,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "allenai"
+      "provider": "allenai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "allenai/olmo-3-7b-think",
@@ -887,6 +1105,8 @@
         "prompt": 0.12,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -896,7 +1116,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "allenai"
+      "provider": "allenai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemini-3-pro-image-preview",
@@ -906,6 +1127,8 @@
         "prompt": 2.0,
         "completion": 12.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1350,
         "coding": 1320,
@@ -915,7 +1138,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "x-ai/grok-4.1-fast",
@@ -925,6 +1149,8 @@
         "prompt": 0.2,
         "completion": 0.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -934,7 +1160,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "x-ai"
+      "provider": "x-ai",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "google/gemini-3-pro-preview",
@@ -944,6 +1171,8 @@
         "prompt": 2.0,
         "completion": 12.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1350,
         "coding": 1320,
@@ -953,7 +1182,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "deepcogito/cogito-v2.1-671b",
@@ -963,6 +1193,8 @@
         "prompt": 1.25,
         "completion": 1.25
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -972,7 +1204,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "deepcogito"
+      "provider": "deepcogito",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5.1",
@@ -982,6 +1215,8 @@
         "prompt": 1.25,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -991,7 +1226,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5.1-chat",
@@ -1001,6 +1237,8 @@
         "prompt": 1.25,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1010,7 +1248,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5.1-codex",
@@ -1020,6 +1259,8 @@
         "prompt": 1.25,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1029,7 +1270,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5.1-codex-mini",
@@ -1039,6 +1281,8 @@
         "prompt": 0.25,
         "completion": 2.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1048,7 +1292,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "kwaipilot/kat-coder-pro",
@@ -1058,6 +1303,8 @@
         "prompt": 0.207,
         "completion": 0.828
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1067,7 +1314,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "kwaipilot"
+      "provider": "kwaipilot",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "moonshotai/kimi-k2-thinking",
@@ -1077,6 +1325,8 @@
         "prompt": 0.4,
         "completion": 1.75
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1086,7 +1336,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "moonshotai"
+      "provider": "moonshotai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "amazon/nova-premier-v1",
@@ -1096,6 +1347,8 @@
         "prompt": 2.5,
         "completion": 12.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1105,7 +1358,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "amazon"
+      "provider": "amazon",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "perplexity/sonar-pro-search",
@@ -1115,6 +1369,8 @@
         "prompt": 3.0,
         "completion": 15.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1124,7 +1380,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "perplexity"
+      "provider": "perplexity",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/voxtral-small-24b-2507",
@@ -1134,6 +1391,8 @@
         "prompt": 0.1,
         "completion": 0.3
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1143,7 +1402,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-oss-safeguard-20b",
@@ -1153,6 +1413,8 @@
         "prompt": 0.075,
         "completion": 0.3
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1162,7 +1424,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "nvidia/nemotron-nano-12b-v2-vl",
@@ -1172,6 +1435,8 @@
         "prompt": 0.2,
         "completion": 0.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1181,7 +1446,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "nvidia"
+      "provider": "nvidia",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "minimax/minimax-m2",
@@ -1191,6 +1457,8 @@
         "prompt": 0.255,
         "completion": 1.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1200,7 +1468,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "minimax"
+      "provider": "minimax",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-vl-32b-instruct",
@@ -1210,6 +1479,8 @@
         "prompt": 0.104,
         "completion": 0.416
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1219,7 +1490,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "liquid/lfm2-8b-a1b",
@@ -1229,6 +1501,8 @@
         "prompt": 0.01,
         "completion": 0.02
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1238,7 +1512,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "liquid"
+      "provider": "liquid",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "liquid/lfm-2.2-6b",
@@ -1248,6 +1523,8 @@
         "prompt": 0.01,
         "completion": 0.02
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1257,7 +1534,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "liquid"
+      "provider": "liquid",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "ibm-granite/granite-4.0-h-micro",
@@ -1267,6 +1545,8 @@
         "prompt": 0.017,
         "completion": 0.11
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1276,7 +1556,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "ibm-granite"
+      "provider": "ibm-granite",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "openai/gpt-5-image-mini",
@@ -1286,6 +1567,8 @@
         "prompt": 2.5,
         "completion": 2.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1295,7 +1578,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "anthropic/claude-haiku-4.5",
@@ -1305,6 +1589,8 @@
         "prompt": 1.0,
         "completion": 5.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1314,7 +1600,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-vl-8b-thinking",
@@ -1324,6 +1611,8 @@
         "prompt": 0.117,
         "completion": 1.365
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1334,7 +1623,8 @@
         "Vision",
         "Logic"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-vl-8b-instruct",
@@ -1344,6 +1634,8 @@
         "prompt": 0.08,
         "completion": 0.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1353,7 +1645,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5-image",
@@ -1363,6 +1656,8 @@
         "prompt": 10.0,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1372,7 +1667,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/o3-deep-research",
@@ -1382,6 +1678,8 @@
         "prompt": 10.0,
         "completion": 40.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1391,7 +1689,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/o4-mini-deep-research",
@@ -1401,6 +1700,8 @@
         "prompt": 2.0,
         "completion": 8.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1410,7 +1711,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
@@ -1420,6 +1722,8 @@
         "prompt": 0.1,
         "completion": 0.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1429,7 +1733,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nvidia"
+      "provider": "nvidia",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "baidu/ernie-4.5-21b-a3b-thinking",
@@ -1439,6 +1744,8 @@
         "prompt": 0.07,
         "completion": 0.28
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1448,7 +1755,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "baidu"
+      "provider": "baidu",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemini-2.5-flash-image",
@@ -1458,6 +1766,8 @@
         "prompt": 0.3,
         "completion": 2.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1467,7 +1777,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
@@ -1477,6 +1788,8 @@
         "prompt": 0.13,
         "completion": 0.52
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1486,7 +1799,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5-pro",
@@ -1496,6 +1810,8 @@
         "prompt": 15.0,
         "completion": 120.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1505,7 +1821,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "z-ai/glm-4.6",
@@ -1515,6 +1832,8 @@
         "prompt": 0.35,
         "completion": 1.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1524,7 +1843,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "z-ai"
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "z-ai/glm-4.6:exacto",
@@ -1534,6 +1854,8 @@
         "prompt": 0.44,
         "completion": 1.76
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1543,7 +1865,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "z-ai"
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "anthropic/claude-sonnet-4.5",
@@ -1553,6 +1876,8 @@
         "prompt": 3.0,
         "completion": 15.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1562,7 +1887,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "deepseek/deepseek-v3.2-exp",
@@ -1572,6 +1898,8 @@
         "prompt": 0.27,
         "completion": 0.41
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -1581,7 +1909,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "thedrummer/cydonia-24b-v4.1",
@@ -1591,6 +1920,8 @@
         "prompt": 0.3,
         "completion": 0.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1600,7 +1931,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "thedrummer"
+      "provider": "thedrummer",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "relace/relace-apply-3",
@@ -1610,6 +1942,8 @@
         "prompt": 0.85,
         "completion": 1.25
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1619,7 +1953,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "relace"
+      "provider": "relace",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemini-2.5-flash-preview-09-2025",
@@ -1629,6 +1964,8 @@
         "prompt": 0.3,
         "completion": 2.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1638,7 +1975,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "google/gemini-2.5-flash-lite-preview-09-2025",
@@ -1648,6 +1986,8 @@
         "prompt": 0.1,
         "completion": 0.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1657,7 +1997,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "qwen/qwen3-vl-235b-a22b-instruct",
@@ -1667,6 +2008,8 @@
         "prompt": 0.2,
         "completion": 0.88
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1676,7 +2019,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-max",
@@ -1686,6 +2030,8 @@
         "prompt": 1.2,
         "completion": 6.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1695,7 +2041,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-coder-plus",
@@ -1705,6 +2052,8 @@
         "prompt": 1.0,
         "completion": 5.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1714,7 +2063,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "openai/gpt-5-codex",
@@ -1724,6 +2074,8 @@
         "prompt": 1.25,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1733,7 +2085,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "deepseek/deepseek-v3.1-terminus:exacto",
@@ -1743,6 +2096,8 @@
         "prompt": 0.21,
         "completion": 0.79
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -1752,7 +2107,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "deepseek/deepseek-v3.1-terminus",
@@ -1762,6 +2118,8 @@
         "prompt": 0.21,
         "completion": 0.79
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -1771,7 +2129,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "x-ai/grok-4-fast",
@@ -1781,6 +2140,8 @@
         "prompt": 0.2,
         "completion": 0.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1790,7 +2151,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "x-ai"
+      "provider": "x-ai",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "alibaba/tongyi-deepresearch-30b-a3b",
@@ -1800,6 +2162,8 @@
         "prompt": 0.09,
         "completion": 0.45
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1809,7 +2173,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "alibaba"
+      "provider": "alibaba",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-coder-flash",
@@ -1819,6 +2184,8 @@
         "prompt": 0.3,
         "completion": 1.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1828,7 +2195,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "opengvlab/internvl3-78b",
@@ -1838,6 +2206,8 @@
         "prompt": 0.15,
         "completion": 0.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1847,7 +2217,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "opengvlab"
+      "provider": "opengvlab",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-thinking",
@@ -1857,6 +2228,8 @@
         "prompt": 0.15,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1866,7 +2239,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
@@ -1876,6 +2250,8 @@
         "prompt": 0.09,
         "completion": 1.1
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1885,7 +2261,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meituan/longcat-flash-chat",
@@ -1895,6 +2272,8 @@
         "prompt": 0.2,
         "completion": 0.8
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1904,7 +2283,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meituan"
+      "provider": "meituan",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen-plus-2025-07-28",
@@ -1914,6 +2294,8 @@
         "prompt": 0.4,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1923,7 +2305,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "qwen/qwen-plus-2025-07-28:thinking",
@@ -1933,6 +2316,8 @@
         "prompt": 0.4,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1942,7 +2327,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "nvidia/nemotron-nano-9b-v2",
@@ -1952,6 +2338,8 @@
         "prompt": 0.04,
         "completion": 0.16
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1961,7 +2349,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nvidia"
+      "provider": "nvidia",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "moonshotai/kimi-k2-0905",
@@ -1971,6 +2360,8 @@
         "prompt": 0.4,
         "completion": 2.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1980,7 +2371,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "moonshotai"
+      "provider": "moonshotai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "moonshotai/kimi-k2-0905:exacto",
@@ -1990,6 +2382,8 @@
         "prompt": 0.6,
         "completion": 2.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1999,7 +2393,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "moonshotai"
+      "provider": "moonshotai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-30b-a3b-thinking-2507",
@@ -2009,6 +2404,8 @@
         "prompt": 0.051,
         "completion": 0.34
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2018,7 +2415,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "x-ai/grok-code-fast-1",
@@ -2028,6 +2426,8 @@
         "prompt": 0.2,
         "completion": 1.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2037,7 +2437,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "x-ai"
+      "provider": "x-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "nousresearch/hermes-4-70b",
@@ -2047,6 +2448,8 @@
         "prompt": 0.11,
         "completion": 0.38
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2056,7 +2459,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nousresearch"
+      "provider": "nousresearch",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "nousresearch/hermes-4-405b",
@@ -2066,6 +2470,8 @@
         "prompt": 1.0,
         "completion": 3.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2075,7 +2481,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nousresearch"
+      "provider": "nousresearch",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "deepseek/deepseek-chat-v3.1",
@@ -2085,6 +2492,8 @@
         "prompt": 0.15,
         "completion": 0.75
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2094,7 +2503,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4o-audio-preview",
@@ -2104,6 +2514,8 @@
         "prompt": 2.5,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1315,
         "coding": 1350,
@@ -2113,7 +2525,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-medium-3.1",
@@ -2123,6 +2536,8 @@
         "prompt": 0.4,
         "completion": 2.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2132,7 +2547,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "baidu/ernie-4.5-21b-a3b",
@@ -2142,6 +2558,8 @@
         "prompt": 0.07,
         "completion": 0.28
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2151,7 +2569,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "baidu"
+      "provider": "baidu",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "baidu/ernie-4.5-vl-28b-a3b",
@@ -2161,6 +2580,8 @@
         "prompt": 0.14,
         "completion": 0.56
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2170,7 +2591,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "baidu"
+      "provider": "baidu",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "z-ai/glm-4.5v",
@@ -2180,6 +2602,8 @@
         "prompt": 0.6,
         "completion": 1.8
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2189,7 +2613,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "z-ai"
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "ai21/jamba-large-1.7",
@@ -2199,6 +2624,8 @@
         "prompt": 2.0,
         "completion": 8.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2208,7 +2635,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "ai21"
+      "provider": "ai21",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5-chat",
@@ -2218,6 +2646,8 @@
         "prompt": 1.25,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2227,7 +2657,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5",
@@ -2237,6 +2668,8 @@
         "prompt": 1.25,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2246,7 +2679,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5-mini",
@@ -2256,6 +2690,8 @@
         "prompt": 0.25,
         "completion": 2.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2265,7 +2701,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5-nano",
@@ -2275,6 +2712,8 @@
         "prompt": 0.05,
         "completion": 0.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2284,7 +2723,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "openai/gpt-oss-120b",
@@ -2294,6 +2734,8 @@
         "prompt": 0.039,
         "completion": 0.19
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2303,7 +2745,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "openai/gpt-oss-120b:exacto",
@@ -2313,6 +2756,8 @@
         "prompt": 0.039,
         "completion": 0.19
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2322,7 +2767,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "openai/gpt-oss-20b",
@@ -2332,6 +2778,8 @@
         "prompt": 0.03,
         "completion": 0.14
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2341,7 +2789,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "anthropic/claude-opus-4.1",
@@ -2351,6 +2800,8 @@
         "prompt": 15.0,
         "completion": 75.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2360,7 +2811,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/codestral-2508",
@@ -2370,6 +2822,8 @@
         "prompt": 0.3,
         "completion": 0.9
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2379,7 +2833,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-coder-30b-a3b-instruct",
@@ -2389,6 +2844,8 @@
         "prompt": 0.07,
         "completion": 0.27
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2398,7 +2855,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
@@ -2408,6 +2866,8 @@
         "prompt": 0.08,
         "completion": 0.33
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2417,7 +2877,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "z-ai/glm-4.5",
@@ -2427,6 +2888,8 @@
         "prompt": 0.35,
         "completion": 1.55
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2436,7 +2899,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "z-ai"
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "z-ai/glm-4.5-air",
@@ -2446,6 +2910,8 @@
         "prompt": 0.13,
         "completion": 0.85
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2455,7 +2921,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "z-ai"
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "z-ai/glm-4-32b",
@@ -2465,6 +2932,8 @@
         "prompt": 0.1,
         "completion": 0.1
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2474,7 +2943,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "z-ai"
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-coder",
@@ -2484,6 +2954,8 @@
         "prompt": 0.22,
         "completion": 1.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2493,7 +2965,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-coder:exacto",
@@ -2503,6 +2976,8 @@
         "prompt": 0.22,
         "completion": 1.8
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2512,7 +2987,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "bytedance/ui-tars-1.5-7b",
@@ -2522,6 +2998,8 @@
         "prompt": 0.1,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2531,7 +3009,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "bytedance"
+      "provider": "bytedance",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemini-2.5-flash-lite",
@@ -2541,6 +3020,8 @@
         "prompt": 0.1,
         "completion": 0.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2550,7 +3031,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "qwen/qwen3-235b-a22b-2507",
@@ -2560,6 +3042,8 @@
         "prompt": 0.071,
         "completion": 0.1
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2569,7 +3053,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "moonshotai/kimi-k2",
@@ -2579,6 +3064,8 @@
         "prompt": 0.5,
         "completion": 2.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2588,7 +3075,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "moonshotai"
+      "provider": "moonshotai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/devstral-medium",
@@ -2598,6 +3086,8 @@
         "prompt": 0.4,
         "completion": 2.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2607,7 +3097,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/devstral-small",
@@ -2617,6 +3108,8 @@
         "prompt": 0.1,
         "completion": 0.3
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2626,7 +3119,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "x-ai/grok-4",
@@ -2636,6 +3130,8 @@
         "prompt": 3.0,
         "completion": 15.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2645,7 +3141,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "x-ai"
+      "provider": "x-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "tencent/hunyuan-a13b-instruct",
@@ -2655,6 +3152,8 @@
         "prompt": 0.14,
         "completion": 0.57
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2664,7 +3163,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "tencent"
+      "provider": "tencent",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "tngtech/deepseek-r1t2-chimera",
@@ -2674,6 +3174,8 @@
         "prompt": 0.25,
         "completion": 0.85
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2683,7 +3185,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "tngtech"
+      "provider": "tngtech",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "morph/morph-v3-large",
@@ -2693,6 +3196,8 @@
         "prompt": 0.9,
         "completion": 1.9
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2702,7 +3207,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "morph"
+      "provider": "morph",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "morph/morph-v3-fast",
@@ -2712,6 +3218,8 @@
         "prompt": 0.8,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2721,7 +3229,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "morph"
+      "provider": "morph",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "baidu/ernie-4.5-vl-424b-a47b",
@@ -2731,6 +3240,8 @@
         "prompt": 0.42,
         "completion": 1.25
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2740,7 +3251,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "baidu"
+      "provider": "baidu",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "baidu/ernie-4.5-300b-a47b",
@@ -2750,6 +3262,8 @@
         "prompt": 0.28,
         "completion": 1.1
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2759,7 +3273,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "baidu"
+      "provider": "baidu",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "inception/mercury",
@@ -2769,6 +3284,8 @@
         "prompt": 0.25,
         "completion": 1.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2778,7 +3295,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "inception"
+      "provider": "inception",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-small-3.2-24b-instruct",
@@ -2788,6 +3306,8 @@
         "prompt": 0.06,
         "completion": 0.18
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2797,7 +3317,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "minimax/minimax-m1",
@@ -2807,6 +3328,8 @@
         "prompt": 0.4,
         "completion": 2.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2816,7 +3339,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "minimax"
+      "provider": "minimax",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "google/gemini-2.5-flash",
@@ -2826,6 +3350,8 @@
         "prompt": 0.3,
         "completion": 2.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2835,7 +3361,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "google/gemini-2.5-pro",
@@ -2845,6 +3372,8 @@
         "prompt": 1.25,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2854,7 +3383,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "openai/o3-pro",
@@ -2864,6 +3394,8 @@
         "prompt": 20.0,
         "completion": 80.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2873,7 +3405,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "x-ai/grok-3-mini",
@@ -2883,6 +3416,8 @@
         "prompt": 0.3,
         "completion": 0.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2892,7 +3427,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "x-ai"
+      "provider": "x-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "x-ai/grok-3",
@@ -2902,6 +3438,8 @@
         "prompt": 3.0,
         "completion": 15.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2911,7 +3449,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "x-ai"
+      "provider": "x-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemini-2.5-pro-preview",
@@ -2921,6 +3460,8 @@
         "prompt": 1.25,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2930,7 +3471,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "deepseek/deepseek-r1-0528",
@@ -2940,6 +3482,8 @@
         "prompt": 0.4,
         "completion": 1.75
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1350,
         "coding": 1460,
@@ -2949,7 +3493,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Supreme architectural logic. Zero-shot coding accuracy exceeds industry baselines."
     },
     {
       "id": "anthropic/claude-opus-4",
@@ -2959,6 +3504,8 @@
         "prompt": 15.0,
         "completion": 75.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2968,7 +3515,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "anthropic/claude-sonnet-4",
@@ -2978,6 +3526,8 @@
         "prompt": 3.0,
         "completion": 15.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2987,7 +3537,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "google/gemma-3n-e4b-it",
@@ -2997,6 +3548,8 @@
         "prompt": 0.02,
         "completion": 0.04
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3006,7 +3559,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "nousresearch/deephermes-3-mistral-24b-preview",
@@ -3016,6 +3570,8 @@
         "prompt": 0.02,
         "completion": 0.1
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3025,7 +3581,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nousresearch"
+      "provider": "nousresearch",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "mistralai/mistral-medium-3",
@@ -3035,6 +3592,8 @@
         "prompt": 0.4,
         "completion": 2.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3044,7 +3603,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemini-2.5-pro-preview-05-06",
@@ -3054,6 +3614,8 @@
         "prompt": 1.25,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3063,7 +3625,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "arcee-ai/spotlight",
@@ -3073,6 +3636,8 @@
         "prompt": 0.18,
         "completion": 0.18
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3082,7 +3647,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "arcee-ai"
+      "provider": "arcee-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "arcee-ai/maestro-reasoning",
@@ -3092,6 +3658,8 @@
         "prompt": 0.9,
         "completion": 3.3
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3101,7 +3669,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "arcee-ai"
+      "provider": "arcee-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "arcee-ai/virtuoso-large",
@@ -3111,6 +3680,8 @@
         "prompt": 0.75,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3120,7 +3691,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "arcee-ai"
+      "provider": "arcee-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "arcee-ai/coder-large",
@@ -3130,6 +3702,8 @@
         "prompt": 0.5,
         "completion": 0.8
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3139,7 +3713,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "arcee-ai"
+      "provider": "arcee-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "inception/mercury-coder",
@@ -3149,6 +3724,8 @@
         "prompt": 0.25,
         "completion": 1.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3158,7 +3735,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "inception"
+      "provider": "inception",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-4b",
@@ -3168,6 +3746,8 @@
         "prompt": 0.0715,
         "completion": 0.273
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3177,7 +3757,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meta-llama/llama-guard-4-12b",
@@ -3187,6 +3768,8 @@
         "prompt": 0.18,
         "completion": 0.18
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3196,7 +3779,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-30b-a3b",
@@ -3206,6 +3790,8 @@
         "prompt": 0.06,
         "completion": 0.22
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3215,7 +3801,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-8b",
@@ -3225,6 +3812,8 @@
         "prompt": 0.05,
         "completion": 0.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3234,7 +3823,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "qwen/qwen3-14b",
@@ -3244,6 +3834,8 @@
         "prompt": 0.05,
         "completion": 0.22
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3253,7 +3845,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "qwen/qwen3-32b",
@@ -3263,6 +3856,8 @@
         "prompt": 0.08,
         "completion": 0.24
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3272,7 +3867,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-235b-a22b",
@@ -3282,6 +3878,8 @@
         "prompt": 0.3,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3291,7 +3889,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "tngtech/deepseek-r1t-chimera",
@@ -3301,6 +3900,8 @@
         "prompt": 0.3,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3310,7 +3911,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "tngtech"
+      "provider": "tngtech",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/o4-mini-high",
@@ -3320,6 +3922,8 @@
         "prompt": 1.1,
         "completion": 4.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3329,7 +3933,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/o3",
@@ -3339,6 +3944,8 @@
         "prompt": 2.0,
         "completion": 8.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1340,
         "coding": 1420,
@@ -3348,7 +3955,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/o4-mini",
@@ -3358,6 +3966,8 @@
         "prompt": 1.1,
         "completion": 4.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3367,7 +3977,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen2.5-coder-7b-instruct",
@@ -3377,6 +3988,8 @@
         "prompt": 0.03,
         "completion": 0.09
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3386,7 +3999,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "openai/gpt-4.1",
@@ -3396,6 +4010,8 @@
         "prompt": 2.0,
         "completion": 8.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3405,7 +4021,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "openai/gpt-4.1-mini",
@@ -3415,6 +4032,8 @@
         "prompt": 0.4,
         "completion": 1.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3424,7 +4043,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "openai/gpt-4.1-nano",
@@ -3434,6 +4054,8 @@
         "prompt": 0.1,
         "completion": 0.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3443,7 +4065,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "eleutherai/llemma_7b",
@@ -3453,6 +4076,8 @@
         "prompt": 0.8,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3462,7 +4087,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "eleutherai"
+      "provider": "eleutherai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "alfredpros/codellama-7b-instruct-solidity",
@@ -3472,6 +4098,8 @@
         "prompt": 0.8,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3481,7 +4109,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "alfredpros"
+      "provider": "alfredpros",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "x-ai/grok-3-mini-beta",
@@ -3491,6 +4120,8 @@
         "prompt": 0.3,
         "completion": 0.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3500,7 +4131,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "x-ai"
+      "provider": "x-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "x-ai/grok-3-beta",
@@ -3510,6 +4142,8 @@
         "prompt": 3.0,
         "completion": 15.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3519,7 +4153,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "x-ai"
+      "provider": "x-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
@@ -3529,6 +4164,8 @@
         "prompt": 0.6,
         "completion": 1.8
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3538,7 +4175,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nvidia"
+      "provider": "nvidia",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meta-llama/llama-4-maverick",
@@ -3548,6 +4186,8 @@
         "prompt": 0.15,
         "completion": 0.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3557,7 +4197,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "meta-llama/llama-4-scout",
@@ -3567,6 +4208,8 @@
         "prompt": 0.08,
         "completion": 0.3
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3576,7 +4219,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen2.5-vl-32b-instruct",
@@ -3586,6 +4230,8 @@
         "prompt": 0.05,
         "completion": 0.22
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3595,7 +4241,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "deepseek/deepseek-chat-v3-0324",
@@ -3605,6 +4252,8 @@
         "prompt": 0.19,
         "completion": 0.87
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3614,7 +4263,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/o1-pro",
@@ -3624,6 +4274,8 @@
         "prompt": 150.0,
         "completion": 600.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3633,7 +4285,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-small-3.1-24b-instruct",
@@ -3643,6 +4296,8 @@
         "prompt": 0.03,
         "completion": 0.11
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3652,7 +4307,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "allenai/olmo-2-0325-32b-instruct",
@@ -3662,6 +4318,8 @@
         "prompt": 0.05,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3671,7 +4329,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "allenai"
+      "provider": "allenai",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "google/gemma-3-4b-it",
@@ -3681,6 +4340,8 @@
         "prompt": 0.017,
         "completion": 0.0682
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3690,7 +4351,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "google/gemma-3-12b-it",
@@ -3700,6 +4362,8 @@
         "prompt": 0.03,
         "completion": 0.1
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3709,7 +4373,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "cohere/command-a",
@@ -3719,6 +4384,8 @@
         "prompt": 2.5,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3728,7 +4395,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "cohere"
+      "provider": "cohere",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4o-mini-search-preview",
@@ -3738,6 +4406,8 @@
         "prompt": 0.15,
         "completion": 0.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1315,
         "coding": 1350,
@@ -3747,7 +4417,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4o-search-preview",
@@ -3757,6 +4428,8 @@
         "prompt": 2.5,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1315,
         "coding": 1350,
@@ -3766,7 +4439,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemma-3-27b-it",
@@ -3776,6 +4450,8 @@
         "prompt": 0.04,
         "completion": 0.15
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3785,7 +4461,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "thedrummer/skyfall-36b-v2",
@@ -3795,6 +4472,8 @@
         "prompt": 0.55,
         "completion": 0.8
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3804,7 +4483,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "thedrummer"
+      "provider": "thedrummer",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "perplexity/sonar-reasoning-pro",
@@ -3814,6 +4494,8 @@
         "prompt": 2.0,
         "completion": 8.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3823,7 +4505,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "perplexity"
+      "provider": "perplexity",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "perplexity/sonar-pro",
@@ -3833,6 +4516,8 @@
         "prompt": 3.0,
         "completion": 15.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3842,7 +4527,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "perplexity"
+      "provider": "perplexity",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "perplexity/sonar-deep-research",
@@ -3852,6 +4538,8 @@
         "prompt": 2.0,
         "completion": 8.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3861,7 +4549,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "perplexity"
+      "provider": "perplexity",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwq-32b",
@@ -3871,6 +4560,8 @@
         "prompt": 0.15,
         "completion": 0.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3880,7 +4571,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemini-2.0-flash-lite-001",
@@ -3890,6 +4582,8 @@
         "prompt": 0.075,
         "completion": 0.3
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3899,7 +4593,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "anthropic/claude-3.7-sonnet",
@@ -3909,6 +4604,8 @@
         "prompt": 3.0,
         "completion": 15.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3918,7 +4615,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "anthropic/claude-3.7-sonnet:thinking",
@@ -3928,6 +4626,8 @@
         "prompt": 3.0,
         "completion": 15.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3937,7 +4637,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-saba",
@@ -3947,6 +4648,8 @@
         "prompt": 0.2,
         "completion": 0.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3956,7 +4659,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meta-llama/llama-guard-3-8b",
@@ -3966,6 +4670,8 @@
         "prompt": 0.02,
         "completion": 0.06
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3975,7 +4681,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "openai/o3-mini-high",
@@ -3985,6 +4692,8 @@
         "prompt": 1.1,
         "completion": 4.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1340,
         "coding": 1420,
@@ -3994,7 +4703,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemini-2.0-flash-001",
@@ -4004,6 +4714,8 @@
         "prompt": 0.1,
         "completion": 0.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4013,7 +4725,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "qwen/qwen-vl-plus",
@@ -4023,6 +4736,8 @@
         "prompt": 0.21,
         "completion": 0.63
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4032,7 +4747,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "aion-labs/aion-1.0",
@@ -4042,6 +4758,8 @@
         "prompt": 4.0,
         "completion": 8.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4051,7 +4769,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "aion-labs"
+      "provider": "aion-labs",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "aion-labs/aion-1.0-mini",
@@ -4061,6 +4780,8 @@
         "prompt": 0.7,
         "completion": 1.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4070,7 +4791,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "aion-labs"
+      "provider": "aion-labs",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "aion-labs/aion-rp-llama-3.1-8b",
@@ -4080,6 +4802,8 @@
         "prompt": 0.8,
         "completion": 1.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4089,7 +4813,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "aion-labs"
+      "provider": "aion-labs",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen-vl-max",
@@ -4099,6 +4824,8 @@
         "prompt": 0.8,
         "completion": 3.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4108,7 +4835,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen-turbo",
@@ -4118,6 +4846,8 @@
         "prompt": 0.05,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4127,7 +4857,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "qwen/qwen2.5-vl-72b-instruct",
@@ -4137,6 +4868,8 @@
         "prompt": 0.15,
         "completion": 0.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4146,7 +4879,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen-plus",
@@ -4156,6 +4890,8 @@
         "prompt": 0.4,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4165,7 +4901,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "qwen/qwen-max",
@@ -4175,6 +4912,8 @@
         "prompt": 1.6,
         "completion": 6.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4184,7 +4923,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/o3-mini",
@@ -4194,6 +4934,8 @@
         "prompt": 1.1,
         "completion": 4.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1340,
         "coding": 1420,
@@ -4203,7 +4945,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-small-24b-instruct-2501",
@@ -4213,6 +4956,8 @@
         "prompt": 0.05,
         "completion": 0.08
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4222,7 +4967,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "deepseek/deepseek-r1-distill-qwen-32b",
@@ -4232,6 +4978,8 @@
         "prompt": 0.29,
         "completion": 0.29
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1350,
         "coding": 1460,
@@ -4241,7 +4989,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Supreme architectural logic. Zero-shot coding accuracy exceeds industry baselines."
     },
     {
       "id": "perplexity/sonar",
@@ -4251,6 +5000,8 @@
         "prompt": 1.0,
         "completion": 1.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4260,7 +5011,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "perplexity"
+      "provider": "perplexity",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "deepseek/deepseek-r1-distill-llama-70b",
@@ -4270,6 +5022,8 @@
         "prompt": 0.03,
         "completion": 0.11
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1350,
         "coding": 1460,
@@ -4279,7 +5033,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Supreme architectural logic. Zero-shot coding accuracy exceeds industry baselines."
     },
     {
       "id": "deepseek/deepseek-r1",
@@ -4289,6 +5044,8 @@
         "prompt": 0.7,
         "completion": 2.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1350,
         "coding": 1460,
@@ -4298,7 +5055,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Supreme architectural logic. Zero-shot coding accuracy exceeds industry baselines."
     },
     {
       "id": "minimax/minimax-01",
@@ -4308,6 +5066,8 @@
         "prompt": 0.2,
         "completion": 1.1
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4317,7 +5077,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "minimax"
+      "provider": "minimax",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "microsoft/phi-4",
@@ -4327,6 +5088,8 @@
         "prompt": 0.06,
         "completion": 0.14
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4336,7 +5099,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "microsoft"
+      "provider": "microsoft",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "sao10k/l3.1-70b-hanami-x1",
@@ -4346,6 +5110,8 @@
         "prompt": 3.0,
         "completion": 3.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4355,7 +5121,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "sao10k"
+      "provider": "sao10k",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "deepseek/deepseek-chat",
@@ -4365,6 +5132,8 @@
         "prompt": 0.3,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4374,7 +5143,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "deepseek"
+      "provider": "deepseek",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "sao10k/l3.3-euryale-70b",
@@ -4384,6 +5154,8 @@
         "prompt": 0.65,
         "completion": 0.75
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4393,7 +5165,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "sao10k"
+      "provider": "sao10k",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/o1",
@@ -4403,6 +5176,8 @@
         "prompt": 15.0,
         "completion": 60.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1355,
         "coding": 1450,
@@ -4412,7 +5187,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Supreme architectural logic. Zero-shot coding accuracy exceeds industry baselines."
     },
     {
       "id": "cohere/command-r7b-12-2024",
@@ -4422,6 +5198,8 @@
         "prompt": 0.0375,
         "completion": 0.15
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4431,7 +5209,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "cohere"
+      "provider": "cohere",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "meta-llama/llama-3.3-70b-instruct",
@@ -4441,6 +5220,8 @@
         "prompt": 0.1,
         "completion": 0.32
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4450,7 +5231,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "amazon/nova-lite-v1",
@@ -4460,6 +5242,8 @@
         "prompt": 0.06,
         "completion": 0.24
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4469,7 +5253,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "amazon"
+      "provider": "amazon",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "amazon/nova-micro-v1",
@@ -4479,6 +5264,8 @@
         "prompt": 0.035,
         "completion": 0.14
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4488,7 +5275,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "amazon"
+      "provider": "amazon",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "amazon/nova-pro-v1",
@@ -4498,6 +5286,8 @@
         "prompt": 0.8,
         "completion": 3.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4507,7 +5297,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "amazon"
+      "provider": "amazon",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4o-2024-11-20",
@@ -4517,6 +5308,8 @@
         "prompt": 2.5,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1315,
         "coding": 1350,
@@ -4526,7 +5319,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-large-2411",
@@ -4536,6 +5330,8 @@
         "prompt": 2.0,
         "completion": 6.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4545,7 +5341,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-large-2407",
@@ -4555,6 +5352,8 @@
         "prompt": 2.0,
         "completion": 6.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4564,7 +5363,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/pixtral-large-2411",
@@ -4574,6 +5374,8 @@
         "prompt": 2.0,
         "completion": 6.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4583,7 +5385,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen-2.5-coder-32b-instruct",
@@ -4593,6 +5396,8 @@
         "prompt": 0.03,
         "completion": 0.11
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4602,7 +5407,8 @@
       "tags": [
         "Code"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "raifle/sorcererlm-8x22b",
@@ -4612,6 +5418,8 @@
         "prompt": 4.5,
         "completion": 4.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4621,7 +5429,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "raifle"
+      "provider": "raifle",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "thedrummer/unslopnemo-12b",
@@ -4631,6 +5440,8 @@
         "prompt": 0.4,
         "completion": 0.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4640,7 +5451,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "thedrummer"
+      "provider": "thedrummer",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "anthropic/claude-3.5-haiku",
@@ -4650,6 +5462,8 @@
         "prompt": 0.8,
         "completion": 4.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4659,7 +5473,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "anthracite-org/magnum-v4-72b",
@@ -4669,6 +5484,8 @@
         "prompt": 3.0,
         "completion": 5.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4678,7 +5495,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthracite-org"
+      "provider": "anthracite-org",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "anthropic/claude-3.5-sonnet",
@@ -4688,6 +5506,8 @@
         "prompt": 6.0,
         "completion": 30.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1310,
         "coding": 1380,
@@ -4697,7 +5517,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen-2.5-7b-instruct",
@@ -4707,6 +5528,8 @@
         "prompt": 0.04,
         "completion": 0.1
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4716,7 +5539,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "nvidia/llama-3.1-nemotron-70b-instruct",
@@ -4726,6 +5550,8 @@
         "prompt": 1.2,
         "completion": 1.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4735,7 +5561,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nvidia"
+      "provider": "nvidia",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "inflection/inflection-3-pi",
@@ -4745,6 +5572,8 @@
         "prompt": 2.5,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4754,7 +5583,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "inflection"
+      "provider": "inflection",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "inflection/inflection-3-productivity",
@@ -4764,6 +5594,8 @@
         "prompt": 2.5,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4773,7 +5605,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "inflection"
+      "provider": "inflection",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "thedrummer/rocinante-12b",
@@ -4783,6 +5616,8 @@
         "prompt": 0.17,
         "completion": 0.43
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4792,7 +5627,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "thedrummer"
+      "provider": "thedrummer",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meta-llama/llama-3.2-3b-instruct",
@@ -4802,6 +5638,8 @@
         "prompt": 0.02,
         "completion": 0.02
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4811,7 +5649,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "meta-llama/llama-3.2-1b-instruct",
@@ -4821,6 +5660,8 @@
         "prompt": 0.027,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4830,7 +5671,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "meta-llama/llama-3.2-11b-vision-instruct",
@@ -4840,6 +5682,8 @@
         "prompt": 0.049,
         "completion": 0.049
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4849,7 +5693,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "qwen/qwen-2.5-72b-instruct",
@@ -4859,6 +5704,8 @@
         "prompt": 0.12,
         "completion": 0.39
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4868,7 +5715,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "neversleep/llama-3.1-lumimaid-8b",
@@ -4878,6 +5726,8 @@
         "prompt": 0.09,
         "completion": 0.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4887,7 +5737,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "neversleep"
+      "provider": "neversleep",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "cohere/command-r-08-2024",
@@ -4897,6 +5748,8 @@
         "prompt": 0.15,
         "completion": 0.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4906,7 +5759,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "cohere"
+      "provider": "cohere",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "cohere/command-r-plus-08-2024",
@@ -4916,6 +5770,8 @@
         "prompt": 2.5,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4925,7 +5781,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "cohere"
+      "provider": "cohere",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "sao10k/l3.1-euryale-70b",
@@ -4935,6 +5792,8 @@
         "prompt": 0.65,
         "completion": 0.75
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4944,7 +5803,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "sao10k"
+      "provider": "sao10k",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen-2.5-vl-7b-instruct",
@@ -4954,6 +5814,8 @@
         "prompt": 0.2,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4963,7 +5825,8 @@
       "tags": [
         "Vision"
       ],
-      "provider": "qwen"
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "nousresearch/hermes-3-llama-3.1-70b",
@@ -4973,6 +5836,8 @@
         "prompt": 0.3,
         "completion": 0.3
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4982,7 +5847,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nousresearch"
+      "provider": "nousresearch",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "nousresearch/hermes-3-llama-3.1-405b",
@@ -4992,6 +5858,8 @@
         "prompt": 1.0,
         "completion": 1.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5001,7 +5869,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nousresearch"
+      "provider": "nousresearch",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/chatgpt-4o-latest",
@@ -5011,6 +5880,8 @@
         "prompt": 5.0,
         "completion": 15.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5020,7 +5891,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "sao10k/l3-lunaris-8b",
@@ -5030,6 +5902,8 @@
         "prompt": 0.04,
         "completion": 0.05
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5039,7 +5913,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "sao10k"
+      "provider": "sao10k",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "openai/gpt-4o-2024-08-06",
@@ -5049,6 +5924,8 @@
         "prompt": 2.5,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1315,
         "coding": 1350,
@@ -5058,7 +5935,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meta-llama/llama-3.1-405b",
@@ -5068,6 +5946,8 @@
         "prompt": 4.0,
         "completion": 4.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5077,7 +5957,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meta-llama/llama-3.1-8b-instruct",
@@ -5087,6 +5968,8 @@
         "prompt": 0.02,
         "completion": 0.05
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5096,7 +5979,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "meta-llama/llama-3.1-405b-instruct",
@@ -5106,6 +5990,8 @@
         "prompt": 4.0,
         "completion": 4.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5115,7 +6001,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meta-llama/llama-3.1-70b-instruct",
@@ -5125,6 +6012,8 @@
         "prompt": 0.4,
         "completion": 0.4
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5134,7 +6023,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-nemo",
@@ -5144,6 +6034,8 @@
         "prompt": 0.02,
         "completion": 0.04
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5153,7 +6045,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "openai/gpt-4o-mini-2024-07-18",
@@ -5163,6 +6056,8 @@
         "prompt": 0.15,
         "completion": 0.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1315,
         "coding": 1350,
@@ -5172,7 +6067,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4o-mini",
@@ -5182,6 +6078,8 @@
         "prompt": 0.15,
         "completion": 0.6
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1270,
         "coding": 1220,
@@ -5191,7 +6089,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemma-2-27b-it",
@@ -5201,6 +6100,8 @@
         "prompt": 0.65,
         "completion": 0.65
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5210,7 +6111,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "google/gemma-2-9b-it",
@@ -5220,6 +6122,8 @@
         "prompt": 0.03,
         "completion": 0.09
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5229,7 +6133,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "google"
+      "provider": "google",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "sao10k/l3-euryale-70b",
@@ -5239,6 +6144,8 @@
         "prompt": 1.48,
         "completion": 1.48
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5248,7 +6155,8 @@
       "tags": [
         "Logic"
       ],
-      "provider": "sao10k"
+      "provider": "sao10k",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "nousresearch/hermes-2-pro-llama-3-8b",
@@ -5258,6 +6166,8 @@
         "prompt": 0.14,
         "completion": 0.14
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5267,7 +6177,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "nousresearch"
+      "provider": "nousresearch",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-7b-instruct",
@@ -5277,6 +6188,8 @@
         "prompt": 0.2,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5286,7 +6199,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-7b-instruct-v0.3",
@@ -5296,6 +6210,8 @@
         "prompt": 0.2,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5305,7 +6221,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meta-llama/llama-guard-2-8b",
@@ -5315,6 +6232,8 @@
         "prompt": 0.2,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5324,7 +6243,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4o-2024-05-13",
@@ -5334,6 +6254,8 @@
         "prompt": 5.0,
         "completion": 15.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1315,
         "coding": 1350,
@@ -5343,7 +6265,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4o",
@@ -5353,6 +6276,8 @@
         "prompt": 2.5,
         "completion": 10.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1315,
         "coding": 1350,
@@ -5362,7 +6287,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4o:extended",
@@ -5372,6 +6298,8 @@
         "prompt": 6.0,
         "completion": 18.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1315,
         "coding": 1350,
@@ -5381,7 +6309,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meta-llama/llama-3-70b-instruct",
@@ -5391,6 +6320,8 @@
         "prompt": 0.51,
         "completion": 0.74
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5400,7 +6331,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meta-llama/llama-3-8b-instruct",
@@ -5410,6 +6342,8 @@
         "prompt": 0.03,
         "completion": 0.04
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5419,7 +6353,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "meta-llama"
+      "provider": "meta-llama",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "mistralai/mixtral-8x22b-instruct",
@@ -5429,6 +6364,8 @@
         "prompt": 2.0,
         "completion": 6.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5438,7 +6375,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "microsoft/wizardlm-2-8x22b",
@@ -5448,6 +6386,8 @@
         "prompt": 0.62,
         "completion": 0.62
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5457,7 +6397,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "microsoft"
+      "provider": "microsoft",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4-turbo",
@@ -5467,6 +6408,8 @@
         "prompt": 10.0,
         "completion": 30.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5476,7 +6419,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "anthropic/claude-3-haiku",
@@ -5486,6 +6430,8 @@
         "prompt": 0.25,
         "completion": 1.25
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5495,7 +6441,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "anthropic"
+      "provider": "anthropic",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-large",
@@ -5505,6 +6452,8 @@
         "prompt": 2.0,
         "completion": 6.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5514,7 +6463,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-3.5-turbo-0613",
@@ -5524,6 +6474,8 @@
         "prompt": 1.0,
         "completion": 2.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5533,7 +6485,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4-turbo-preview",
@@ -5543,6 +6496,8 @@
         "prompt": 10.0,
         "completion": 30.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5552,7 +6507,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-7b-instruct-v0.2",
@@ -5562,6 +6518,8 @@
         "prompt": 0.2,
         "completion": 0.2
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5571,7 +6529,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mixtral-8x7b-instruct",
@@ -5581,6 +6540,8 @@
         "prompt": 0.54,
         "completion": 0.54
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5590,7 +6551,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "neversleep/noromaid-20b",
@@ -5600,6 +6562,8 @@
         "prompt": 1.0,
         "completion": 1.75
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5609,7 +6573,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "neversleep"
+      "provider": "neversleep",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "alpindale/goliath-120b",
@@ -5619,6 +6584,8 @@
         "prompt": 3.75,
         "completion": 7.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5628,7 +6595,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "alpindale"
+      "provider": "alpindale",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4-1106-preview",
@@ -5638,6 +6606,8 @@
         "prompt": 10.0,
         "completion": 30.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5647,7 +6617,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-3.5-turbo-instruct",
@@ -5657,6 +6628,8 @@
         "prompt": 1.5,
         "completion": 2.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5666,7 +6639,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-7b-instruct-v0.1",
@@ -5676,6 +6650,8 @@
         "prompt": 0.11,
         "completion": 0.19
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5685,7 +6661,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mistralai"
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-3.5-turbo-16k",
@@ -5695,6 +6672,8 @@
         "prompt": 3.0,
         "completion": 4.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5704,7 +6683,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mancer/weaver",
@@ -5714,6 +6694,8 @@
         "prompt": 0.75,
         "completion": 1.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5723,7 +6705,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "mancer"
+      "provider": "mancer",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "undi95/remm-slerp-l2-13b",
@@ -5733,6 +6716,8 @@
         "prompt": 0.45,
         "completion": 0.65
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5742,7 +6727,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "undi95"
+      "provider": "undi95",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "gryphe/mythomax-l2-13b",
@@ -5752,6 +6738,8 @@
         "prompt": 0.06,
         "completion": 0.06
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5761,7 +6749,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "gryphe"
+      "provider": "gryphe",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4-0314",
@@ -5771,6 +6760,8 @@
         "prompt": 30.0,
         "completion": 60.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5780,7 +6771,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-4",
@@ -5790,6 +6782,8 @@
         "prompt": 30.0,
         "completion": 60.0
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": 1315,
         "coding": 1350,
@@ -5799,7 +6793,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-3.5-turbo",
@@ -5809,6 +6804,8 @@
         "prompt": 0.5,
         "completion": 1.5
       },
+      "price_history": [],
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5818,7 +6815,8 @@
       "tags": [
         "Chat"
       ],
-      "provider": "openai"
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     }
   ]
 }
