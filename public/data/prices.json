@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-18T05:47:56.379143Z",
-    "total_models": 305
+    "last_updated": "2026-02-19T05:45:34.190777Z",
+    "total_models": 296
   },
   "models": [
     {
@@ -81,7 +81,7 @@
           "completion": 1.0
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -114,7 +114,7 @@
           "completion": 1.1
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -214,7 +214,7 @@
           "completion": 0.75
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -298,28 +298,6 @@
       ],
       "provider": "minimax",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "writer/palmyra-x5",
-      "name": "Writer: Palmyra X5",
-      "context_length": 1040000,
-      "pricing": {
-        "prompt": 0.6,
-        "completion": 6.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "writer",
-      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "openai/gpt-audio",
@@ -534,7 +512,7 @@
           "completion": 1.7
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -738,7 +716,7 @@
           "completion": 2.0
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -860,28 +838,6 @@
       ],
       "provider": "openai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "amazon/nova-2-lite-v1",
-      "name": "Amazon: Nova 2 Lite",
-      "context_length": 1000000,
-      "pricing": {
-        "prompt": 0.3,
-        "completion": 2.5
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "amazon",
-      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "mistralai/ministral-14b-2512",
@@ -1008,7 +964,7 @@
           "completion": 1.2
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -1360,13 +1316,19 @@
     {
       "id": "moonshotai/kimi-k2-thinking",
       "name": "MoonshotAI: Kimi K2 Thinking",
-      "context_length": 262144,
+      "context_length": 131072,
       "pricing": {
-        "prompt": 0.4,
-        "completion": 1.75
+        "prompt": 0.47,
+        "completion": 2.0
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-02-19",
+          "prompt": 0.47,
+          "completion": 2.0
+        }
+      ],
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1378,28 +1340,6 @@
       ],
       "provider": "moonshotai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "amazon/nova-premier-v1",
-      "name": "Amazon: Nova Premier 1.0",
-      "context_length": 1000000,
-      "pricing": {
-        "prompt": 2.5,
-        "completion": 12.5
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "amazon",
-      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "perplexity/sonar-pro-search",
@@ -1472,11 +1412,17 @@
       "name": "NVIDIA: Nemotron Nano 12B 2 VL",
       "context_length": 131072,
       "pricing": {
-        "prompt": 0.2,
-        "completion": 0.6
+        "prompt": 0.07,
+        "completion": 0.2
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-02-19",
+          "prompt": 0.07,
+          "completion": 0.2
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1879,7 +1825,7 @@
           "completion": 1.71
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2479,7 +2425,7 @@
           "completion": 0.4
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2903,7 +2849,7 @@
           "completion": 0.3
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2931,7 +2877,7 @@
           "completion": 2.0
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3759,28 +3705,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "qwen/qwen3-4b",
-      "name": "Qwen: Qwen3 4B",
-      "context_length": 131072,
-      "pricing": {
-        "prompt": 0.0715,
-        "completion": 0.273
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "qwen",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "meta-llama/llama-guard-4-12b",
       "name": "Meta: Llama Guard 4 12B",
       "context_length": 163840,
@@ -3817,7 +3741,7 @@
           "completion": 0.28
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3867,7 +3791,7 @@
           "completion": 0.24
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3917,7 +3841,7 @@
           "completion": 1.82
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3928,28 +3852,6 @@
         "Chat"
       ],
       "provider": "qwen",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "tngtech/deepseek-r1t-chimera",
-      "name": "TNG: DeepSeek R1T Chimera",
-      "context_length": 163840,
-      "pricing": {
-        "prompt": 0.3,
-        "completion": 1.2
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Logic"
-      ],
-      "provider": "tngtech",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -4275,7 +4177,7 @@
           "completion": 0.6
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4347,7 +4249,7 @@
           "completion": 0.56
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4385,13 +4287,19 @@
     {
       "id": "google/gemma-3-4b-it",
       "name": "Google: Gemma 3 4B",
-      "context_length": 96000,
+      "context_length": 131072,
       "pricing": {
-        "prompt": 0.017,
-        "completion": 0.0682
+        "prompt": 0.04,
+        "completion": 0.08
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-02-19",
+          "prompt": 0.04,
+          "completion": 0.08
+        }
+      ],
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4419,7 +4327,7 @@
           "completion": 0.13
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4919,13 +4827,19 @@
     {
       "id": "qwen/qwen2.5-vl-72b-instruct",
       "name": "Qwen: Qwen2.5 VL 72B Instruct",
-      "context_length": 32768,
+      "context_length": 32000,
       "pricing": {
-        "prompt": 0.15,
-        "completion": 0.6
+        "prompt": 0.25,
+        "completion": 0.75
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-02-19",
+          "prompt": 0.25,
+          "completion": 0.75
+        }
+      ],
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5085,7 +4999,7 @@
           "completion": 0.8
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": 1350,
         "coding": 1460,
@@ -5191,11 +5105,17 @@
       "name": "DeepSeek: DeepSeek V3",
       "context_length": 163840,
       "pricing": {
-        "prompt": 0.3,
-        "completion": 1.2
+        "prompt": 0.32,
+        "completion": 0.89
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-02-19",
+          "prompt": 0.32,
+          "completion": 0.89
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5294,72 +5214,6 @@
         "Chat"
       ],
       "provider": "meta-llama",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "amazon/nova-lite-v1",
-      "name": "Amazon: Nova Lite 1.0",
-      "context_length": 300000,
-      "pricing": {
-        "prompt": 0.06,
-        "completion": 0.24
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "amazon",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "amazon/nova-micro-v1",
-      "name": "Amazon: Nova Micro 1.0",
-      "context_length": 128000,
-      "pricing": {
-        "prompt": 0.035,
-        "completion": 0.14
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "amazon",
-      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
-    },
-    {
-      "id": "amazon/nova-pro-v1",
-      "name": "Amazon: Nova Pro 1.0",
-      "context_length": 300000,
-      "pricing": {
-        "prompt": 0.8,
-        "completion": 3.2
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "amazon",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -5465,7 +5319,7 @@
           "completion": 0.2
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5564,28 +5418,6 @@
         "Chat"
       ],
       "provider": "anthracite-org",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "anthropic/claude-3.5-sonnet",
-      "name": "Anthropic: Claude 3.5 Sonnet",
-      "context_length": 200000,
-      "pricing": {
-        "prompt": 6.0,
-        "completion": 30.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": 1310,
-        "coding": 1380,
-        "vision": 1280,
-        "hard": 1290
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "anthropic",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
