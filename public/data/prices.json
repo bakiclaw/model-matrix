@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-21T05:13:11.621989Z",
+    "last_updated": "2026-02-22T05:38:24.206490Z",
     "total_models": 304
   },
   "models": [
@@ -160,7 +160,7 @@
       "name": "Z.ai: GLM 5",
       "context_length": 204800,
       "pricing": {
-        "prompt": 0.3,
+        "prompt": 0.95,
         "completion": 2.55
       },
       "price_history": [
@@ -168,9 +168,14 @@
           "date": "2026-02-17",
           "prompt": 0.3,
           "completion": 2.55
+        },
+        {
+          "date": "2026-02-22",
+          "prompt": 0.95,
+          "completion": 2.55
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -282,17 +287,22 @@
       "name": "MoonshotAI: Kimi K2.5",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.23,
-        "completion": 3.0
+        "prompt": 0.45,
+        "completion": 2.2
       },
       "price_history": [
         {
           "date": "2026-02-17",
           "prompt": 0.23,
           "completion": 3.0
+        },
+        {
+          "date": "2026-02-22",
+          "prompt": 0.45,
+          "completion": 2.2
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
