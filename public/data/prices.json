@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-23T05:57:00.628991Z",
+    "last_updated": "2026-02-24T05:45:51.079737Z",
     "total_models": 304
   },
   "models": [
@@ -94,8 +94,8 @@
       "name": "Qwen: Qwen3.5 397B A17B",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.15,
-        "completion": 1.0
+        "prompt": 0.55,
+        "completion": 3.5
       },
       "price_history": [
         {
@@ -107,9 +107,14 @@
           "date": "2026-02-18",
           "prompt": 0.15,
           "completion": 1.0
+        },
+        {
+          "date": "2026-02-24",
+          "prompt": 0.55,
+          "completion": 3.5
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4949,19 +4954,24 @@
     {
       "id": "qwen/qwen2.5-vl-72b-instruct",
       "name": "Qwen: Qwen2.5 VL 72B Instruct",
-      "context_length": 32000,
+      "context_length": 32768,
       "pricing": {
-        "prompt": 0.25,
-        "completion": 0.75
+        "prompt": 0.8,
+        "completion": 0.8
       },
       "price_history": [
         {
           "date": "2026-02-19",
           "prompt": 0.25,
           "completion": 0.75
+        },
+        {
+          "date": "2026-02-24",
+          "prompt": 0.8,
+          "completion": 0.8
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
