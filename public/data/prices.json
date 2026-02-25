@@ -1,10 +1,66 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-24T05:45:51.079737Z",
-    "total_models": 304
+    "last_updated": "2026-02-25T05:47:29.900451Z",
+    "total_models": 306
   },
   "models": [
+    {
+      "id": "openai/gpt-5.3-codex",
+      "name": "OpenAI: GPT-5.3-Codex",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 1.75,
+        "completion": 14.0
+      },
+      "price_history": [
+        {
+          "date": "2026-02-25",
+          "prompt": 1.75,
+          "completion": 14.0
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Code"
+      ],
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "aion-labs/aion-2.0",
+      "name": "AionLabs: Aion-2.0",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.8,
+        "completion": 1.6
+      },
+      "price_history": [
+        {
+          "date": "2026-02-25",
+          "prompt": 0.8,
+          "completion": 1.6
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "aion-labs",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
     {
       "id": "google/gemini-3.1-pro-preview",
       "name": "Google: Gemini 3.1 Pro Preview",
@@ -114,7 +170,7 @@
           "completion": 3.5
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -573,17 +629,22 @@
       "name": "Z.ai: GLM 4.7",
       "context_length": 202752,
       "pricing": {
-        "prompt": 0.38,
-        "completion": 1.7
+        "prompt": 0.3,
+        "completion": 1.4
       },
       "price_history": [
         {
           "date": "2026-02-18",
           "prompt": 0.38,
           "completion": 1.7
+        },
+        {
+          "date": "2026-02-25",
+          "prompt": 0.3,
+          "completion": 1.4
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1081,17 +1142,22 @@
       "name": "DeepSeek: DeepSeek V3.2",
       "context_length": 163840,
       "pricing": {
-        "prompt": 0.26,
-        "completion": 0.38
+        "prompt": 0.25,
+        "completion": 0.4
       },
       "price_history": [
         {
           "date": "2026-02-17",
           "prompt": 0.26,
           "completion": 0.38
+        },
+        {
+          "date": "2026-02-25",
+          "prompt": 0.25,
+          "completion": 0.4
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -4971,7 +5037,7 @@
           "completion": 0.8
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
