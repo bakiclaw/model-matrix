@@ -1,10 +1,178 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-25T05:47:29.900451Z",
-    "total_models": 306
+    "last_updated": "2026-02-26T05:44:43.103812Z",
+    "total_models": 311
   },
   "models": [
+    {
+      "id": "qwen/qwen3.5-35b-a3b",
+      "name": "Qwen: Qwen3.5-35B-A3B",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 2.0
+      },
+      "price_history": [
+        {
+          "date": "2026-02-26",
+          "prompt": 0.25,
+          "completion": 2.0
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "qwen/qwen3.5-27b",
+      "name": "Qwen: Qwen3.5-27B",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.3,
+        "completion": 2.4
+      },
+      "price_history": [
+        {
+          "date": "2026-02-26",
+          "prompt": 0.3,
+          "completion": 2.4
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "qwen/qwen3.5-122b-a10b",
+      "name": "Qwen: Qwen3.5-122B-A10B",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 3.2
+      },
+      "price_history": [
+        {
+          "date": "2026-02-26",
+          "prompt": 0.4,
+          "completion": 3.2
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "qwen/qwen3.5-flash-02-23",
+      "name": "Qwen: Qwen3.5-Flash",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.4
+      },
+      "price_history": [
+        {
+          "date": "2026-02-26",
+          "prompt": 0.1,
+          "completion": 0.4
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
+    {
+      "id": "liquid/lfm-2-24b-a2b",
+      "name": "LiquidAI: LFM2-24B-A2B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.03,
+        "completion": 0.12
+      },
+      "price_history": [
+        {
+          "date": "2026-02-26",
+          "prompt": 0.03,
+          "completion": 0.12
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "liquid",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
+    },
+    {
+      "id": "google/gemini-3.1-pro-preview-customtools",
+      "name": "Google: Gemini 3.1 Pro Preview Custom Tools",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 2.0,
+        "completion": 12.0
+      },
+      "price_history": [
+        {
+          "date": "2026-02-26",
+          "prompt": 2.0,
+          "completion": 12.0
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
     {
       "id": "openai/gpt-5.3-codex",
       "name": "OpenAI: GPT-5.3-Codex",
@@ -644,7 +812,7 @@
           "completion": 1.4
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1157,7 +1325,7 @@
           "completion": 0.4
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -2450,28 +2618,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "qwen/qwen-plus-2025-07-28",
-      "name": "Qwen: Qwen Plus 0728",
-      "context_length": 1000000,
-      "pricing": {
-        "prompt": 0.4,
-        "completion": 1.2
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "qwen",
-      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
-    },
-    {
       "id": "qwen/qwen-plus-2025-07-28:thinking",
       "name": "Qwen: Qwen Plus 0728 (thinking)",
       "context_length": 1000000,
@@ -2489,6 +2635,28 @@
       },
       "tags": [
         "Logic"
+      ],
+      "provider": "qwen",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
+    {
+      "id": "qwen/qwen-plus-2025-07-28",
+      "name": "Qwen: Qwen Plus 0728",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 1.2
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
       ],
       "provider": "qwen",
       "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
@@ -4287,28 +4455,6 @@
         "Chat"
       ],
       "provider": "x-ai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
-      "name": "NVIDIA: Llama 3.1 Nemotron Ultra 253B v1",
-      "context_length": 131072,
-      "pricing": {
-        "prompt": 0.6,
-        "completion": 1.8
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "nvidia",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
