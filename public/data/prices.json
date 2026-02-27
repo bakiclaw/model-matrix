@@ -1,10 +1,66 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-26T05:44:43.103812Z",
-    "total_models": 311
+    "last_updated": "2026-02-27T05:39:34.271759Z",
+    "total_models": 312
   },
   "models": [
+    {
+      "id": "bytedance-seed/seed-2.0-mini",
+      "name": "ByteDance Seed: Seed-2.0-Mini",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.4
+      },
+      "price_history": [
+        {
+          "date": "2026-02-27",
+          "prompt": 0.1,
+          "completion": 0.4
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "bytedance-seed",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "google/gemini-3.1-flash-image-preview",
+      "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
+      "context_length": 65536,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 1.5
+      },
+      "price_history": [
+        {
+          "date": "2026-02-27",
+          "prompt": 0.25,
+          "completion": 1.5
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
     {
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
@@ -1773,17 +1829,22 @@
       "name": "NVIDIA: Nemotron Nano 12B 2 VL",
       "context_length": 131072,
       "pricing": {
-        "prompt": 0.07,
-        "completion": 0.2
+        "prompt": 0.2,
+        "completion": 0.6
       },
       "price_history": [
         {
           "date": "2026-02-19",
           "prompt": 0.07,
           "completion": 0.2
+        },
+        {
+          "date": "2026-02-27",
+          "prompt": 0.2,
+          "completion": 0.6
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2107,7 +2168,7 @@
     },
     {
       "id": "google/gemini-2.5-flash-image",
-      "name": "Google: Gemini 2.5 Flash Image (Nano Banana)",
+      "name": "Google: Nano Banana (Gemini 2.5 Flash Image)",
       "context_length": 32768,
       "pricing": {
         "prompt": 0.3,
@@ -3408,13 +3469,19 @@
     {
       "id": "moonshotai/kimi-k2",
       "name": "MoonshotAI: Kimi K2 0711",
-      "context_length": 131072,
+      "context_length": 131000,
       "pricing": {
-        "prompt": 0.5,
-        "completion": 2.4
+        "prompt": 0.55,
+        "completion": 2.2
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-02-27",
+          "prompt": 0.55,
+          "completion": 2.2
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6842,28 +6909,6 @@
         "Chat"
       ],
       "provider": "openai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "mistralai/mistral-7b-instruct-v0.2",
-      "name": "Mistral: Mistral 7B Instruct v0.2",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 0.2,
-        "completion": 0.2
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "mistralai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
