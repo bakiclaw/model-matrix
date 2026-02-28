@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-27T05:39:34.271759Z",
-    "total_models": 312
+    "last_updated": "2026-02-28T05:01:45.133304Z",
+    "total_models": 311
   },
   "models": [
     {
@@ -412,8 +412,8 @@
       "name": "MiniMax: MiniMax M2.5",
       "context_length": 196608,
       "pricing": {
-        "prompt": 0.3,
-        "completion": 1.1
+        "prompt": 0.295,
+        "completion": 1.2
       },
       "price_history": [
         {
@@ -425,9 +425,14 @@
           "date": "2026-02-18",
           "prompt": 0.3,
           "completion": 1.1
+        },
+        {
+          "date": "2026-02-28",
+          "prompt": 0.295,
+          "completion": 1.2
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -923,28 +928,6 @@
         "Chat"
       ],
       "provider": "mistralai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "allenai/olmo-3.1-32b-think",
-      "name": "AllenAI: Olmo 3.1 32B Think",
-      "context_length": 65536,
-      "pricing": {
-        "prompt": 0.15,
-        "completion": 0.5
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "allenai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -1844,7 +1827,7 @@
           "completion": 0.6
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3481,7 +3464,7 @@
           "completion": 2.2
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3895,11 +3878,17 @@
       "name": "DeepSeek: R1 0528",
       "context_length": 163840,
       "pricing": {
-        "prompt": 0.4,
-        "completion": 1.75
+        "prompt": 0.45,
+        "completion": 2.15
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-02-28",
+          "prompt": 0.45,
+          "completion": 2.15
+        }
+      ],
+      "price_status": "hike",
       "scores": {
         "overall": 1350,
         "coding": 1460,
@@ -4185,7 +4174,7 @@
     {
       "id": "qwen/qwen3-8b",
       "name": "Qwen: Qwen3 8B",
-      "context_length": 32000,
+      "context_length": 40960,
       "pricing": {
         "prompt": 0.05,
         "completion": 0.4
@@ -4601,11 +4590,17 @@
       "name": "DeepSeek: DeepSeek V3 0324",
       "context_length": 163840,
       "pricing": {
-        "prompt": 0.19,
-        "completion": 0.87
+        "prompt": 0.2,
+        "completion": 0.77
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-02-28",
+          "prompt": 0.2,
+          "completion": 0.77
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
