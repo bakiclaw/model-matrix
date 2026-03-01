@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-02-28T05:01:45.133304Z",
+    "last_updated": "2026-03-01T05:38:52.872074Z",
     "total_models": 311
   },
   "models": [
@@ -432,7 +432,7 @@
           "completion": 1.2
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3888,7 +3888,7 @@
           "completion": 2.15
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": 1350,
         "coding": 1460,
@@ -4600,7 +4600,7 @@
           "completion": 0.77
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
