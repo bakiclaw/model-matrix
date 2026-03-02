@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-01T05:38:52.872074Z",
-    "total_models": 311
+    "last_updated": "2026-03-02T05:40:00.629676Z",
+    "total_models": 310
   },
   "models": [
     {
@@ -2572,28 +2572,6 @@
       ],
       "provider": "qwen",
       "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
-    },
-    {
-      "id": "opengvlab/internvl3-78b",
-      "name": "OpenGVLab: InternVL3 78B",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 0.15,
-        "completion": 0.6
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Vision"
-      ],
-      "provider": "opengvlab",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "qwen/qwen3-next-80b-a3b-thinking",
