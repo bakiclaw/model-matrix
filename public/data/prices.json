@@ -1,10 +1,66 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-03T05:35:29.639390Z",
-    "total_models": 311
+    "last_updated": "2026-03-04T05:15:05.307373Z",
+    "total_models": 312
   },
   "models": [
+    {
+      "id": "openai/gpt-5.3-chat",
+      "name": "OpenAI: GPT-5.3 Chat",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 1.75,
+        "completion": 14.0
+      },
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 1.75,
+          "completion": 14.0
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "google/gemini-3.1-flash-lite-preview",
+      "name": "Google: Gemini 3.1 Flash Lite Preview",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 0.25,
+        "completion": 1.5
+      },
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 0.25,
+          "completion": 1.5
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "google",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
     {
       "id": "bytedance-seed/seed-2.0-mini",
       "name": "ByteDance Seed: Seed-2.0-Mini",
@@ -38,17 +94,22 @@
       "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
       "context_length": 65536,
       "pricing": {
-        "prompt": 0.25,
-        "completion": 1.5
+        "prompt": 0.5,
+        "completion": 3.0
       },
       "price_history": [
         {
           "date": "2026-02-27",
           "prompt": 0.25,
           "completion": 1.5
+        },
+        {
+          "date": "2026-03-04",
+          "prompt": 0.5,
+          "completion": 3.0
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -66,8 +127,8 @@
       "name": "Qwen: Qwen3.5-35B-A3B",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.25,
-        "completion": 1.0
+        "prompt": 0.1625,
+        "completion": 1.3
       },
       "price_history": [
         {
@@ -79,6 +140,11 @@
           "date": "2026-03-03",
           "prompt": 0.25,
           "completion": 1.0
+        },
+        {
+          "date": "2026-03-04",
+          "prompt": 0.1625,
+          "completion": 1.3
         }
       ],
       "price_status": "drop",
@@ -99,17 +165,22 @@
       "name": "Qwen: Qwen3.5-27B",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.3,
-        "completion": 2.4
+        "prompt": 0.195,
+        "completion": 1.56
       },
       "price_history": [
         {
           "date": "2026-02-26",
           "prompt": 0.3,
           "completion": 2.4
+        },
+        {
+          "date": "2026-03-04",
+          "prompt": 0.195,
+          "completion": 1.56
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -127,17 +198,22 @@
       "name": "Qwen: Qwen3.5-122B-A10B",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.4,
-        "completion": 3.2
+        "prompt": 0.26,
+        "completion": 2.08
       },
       "price_history": [
         {
           "date": "2026-02-26",
           "prompt": 0.4,
           "completion": 3.2
+        },
+        {
+          "date": "2026-03-04",
+          "prompt": 0.26,
+          "completion": 2.08
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -351,17 +427,22 @@
       "name": "Qwen: Qwen3.5 Plus 2026-02-15",
       "context_length": 1000000,
       "pricing": {
-        "prompt": 0.4,
-        "completion": 2.4
+        "prompt": 0.26,
+        "completion": 1.56
       },
       "price_history": [
         {
           "date": "2026-02-17",
           "prompt": 0.4,
           "completion": 2.4
+        },
+        {
+          "date": "2026-03-04",
+          "prompt": 0.26,
+          "completion": 1.56
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -379,8 +460,8 @@
       "name": "Qwen: Qwen3.5 397B A17B",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.55,
-        "completion": 3.5
+        "prompt": 0.39,
+        "completion": 2.34
       },
       "price_history": [
         {
@@ -397,9 +478,14 @@
           "date": "2026-02-24",
           "prompt": 0.55,
           "completion": 3.5
+        },
+        {
+          "date": "2026-03-04",
+          "prompt": 0.39,
+          "completion": 2.34
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -475,7 +561,7 @@
           "completion": 2.56
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -493,11 +579,17 @@
       "name": "Qwen: Qwen3 Max Thinking",
       "context_length": 262144,
       "pricing": {
-        "prompt": 1.2,
-        "completion": 6.0
+        "prompt": 0.78,
+        "completion": 3.9
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 0.78,
+          "completion": 3.9
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1359,6 +1451,34 @@
       ],
       "provider": "mistralai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "arcee-ai/trinity-mini",
+      "name": "Arcee AI: Trinity Mini",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.045,
+        "completion": 0.15
+      },
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 0.045,
+          "completion": 0.15
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "arcee-ai",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "deepseek/deepseek-v3.2-speciale",
@@ -2468,11 +2588,17 @@
       "name": "Qwen: Qwen3 Coder Plus",
       "context_length": 1000000,
       "pricing": {
-        "prompt": 1.0,
-        "completion": 5.0
+        "prompt": 0.65,
+        "completion": 3.25
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 0.65,
+          "completion": 3.25
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2600,11 +2726,17 @@
       "name": "Qwen: Qwen3 Coder Flash",
       "context_length": 1000000,
       "pricing": {
-        "prompt": 0.3,
-        "completion": 1.5
+        "prompt": 0.195,
+        "completion": 0.975
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 0.195,
+          "completion": 0.975
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2688,11 +2820,17 @@
       "name": "Qwen: Qwen Plus 0728 (thinking)",
       "context_length": 1000000,
       "pricing": {
-        "prompt": 0.4,
-        "completion": 1.2
+        "prompt": 0.26,
+        "completion": 0.78
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 0.26,
+          "completion": 0.78
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2710,11 +2848,17 @@
       "name": "Qwen: Qwen Plus 0728",
       "context_length": 1000000,
       "pricing": {
-        "prompt": 0.4,
-        "completion": 1.2
+        "prompt": 0.26,
+        "completion": 0.78
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 0.26,
+          "completion": 0.78
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3703,10 +3847,16 @@
       "context_length": 128000,
       "pricing": {
         "prompt": 0.25,
-        "completion": 1.0
+        "completion": 0.75
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 0.25,
+          "completion": 0.75
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4127,10 +4277,16 @@
       "context_length": 128000,
       "pricing": {
         "prompt": 0.25,
-        "completion": 1.0
+        "completion": 0.75
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 0.25,
+          "completion": 0.75
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5120,11 +5276,17 @@
       "name": "Qwen: Qwen VL Plus",
       "context_length": 131072,
       "pricing": {
-        "prompt": 0.21,
-        "completion": 0.63
+        "prompt": 0.1365,
+        "completion": 0.4095
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 0.1365,
+          "completion": 0.4095
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5230,11 +5392,17 @@
       "name": "Qwen: Qwen-Turbo",
       "context_length": 131072,
       "pricing": {
-        "prompt": 0.05,
-        "completion": 0.2
+        "prompt": 0.0325,
+        "completion": 0.13
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 0.0325,
+          "completion": 0.13
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5307,11 +5475,17 @@
       "name": "Qwen: Qwen-Max ",
       "context_length": 32768,
       "pricing": {
-        "prompt": 1.6,
-        "completion": 6.4
+        "prompt": 1.04,
+        "completion": 4.16
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-04",
+          "prompt": 1.04,
+          "completion": 4.16
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6085,7 +6259,7 @@
           "completion": 0.34
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6602,50 +6776,6 @@
         "Chat"
       ],
       "provider": "nousresearch",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "mistralai/mistral-7b-instruct",
-      "name": "Mistral: Mistral 7B Instruct",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 0.2,
-        "completion": 0.2
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "mistralai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "mistralai/mistral-7b-instruct-v0.3",
-      "name": "Mistral: Mistral 7B Instruct v0.3",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 0.2,
-        "completion": 0.2
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "mistralai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
