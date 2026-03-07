@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-06T03:57:46.264962Z",
-    "total_models": 315
+    "last_updated": "2026-03-07T03:49:19.038877Z",
+    "total_models": 316
   },
   "models": [
     {
@@ -1072,8 +1072,8 @@
       "name": "Z.ai: GLM 4.7",
       "context_length": 202752,
       "pricing": {
-        "prompt": 0.3,
-        "completion": 1.4
+        "prompt": 0.38,
+        "completion": 1.98
       },
       "price_history": [
         {
@@ -1085,9 +1085,14 @@
           "date": "2026-02-25",
           "prompt": 0.3,
           "completion": 1.4
+        },
+        {
+          "date": "2026-03-07",
+          "prompt": 0.38,
+          "completion": 1.98
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3575,6 +3580,34 @@
         "Chat"
       ],
       "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-thinking-2507",
+      "name": "Qwen: Qwen3 235B A22B Thinking 2507",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.11,
+        "completion": 0.6
+      },
+      "price_history": [
+        {
+          "date": "2026-03-07",
+          "prompt": 0.11,
+          "completion": 0.6
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Logic"
+      ],
+      "provider": "qwen",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
