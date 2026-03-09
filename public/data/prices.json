@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-08T03:59:27.721092Z",
+    "last_updated": "2026-03-09T04:04:33.823574Z",
     "total_models": 316
   },
   "models": [
@@ -5117,11 +5117,17 @@
       "name": "Google: Gemma 3 27B",
       "context_length": 128000,
       "pricing": {
-        "prompt": 0.04,
-        "completion": 0.15
+        "prompt": 0.03,
+        "completion": 0.11
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-09",
+          "prompt": 0.03,
+          "completion": 0.11
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
