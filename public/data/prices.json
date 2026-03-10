@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-09T04:04:33.823574Z",
+    "last_updated": "2026-03-10T03:57:15.994254Z",
     "total_models": 316
   },
   "models": [
@@ -2868,7 +2868,7 @@
     {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
       "name": "Qwen: Qwen3 Next 80B A3B Instruct",
-      "context_length": 262144,
+      "context_length": 131072,
       "pricing": {
         "prompt": 0.09,
         "completion": 1.1
@@ -5127,7 +5127,7 @@
           "completion": 0.11
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
