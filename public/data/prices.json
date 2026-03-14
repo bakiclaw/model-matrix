@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-13T04:00:39.333528Z",
+    "last_updated": "2026-03-14T03:59:14.795289Z",
     "total_models": 313
   },
   "models": [
@@ -92,9 +92,9 @@
     {
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
-      "context_length": 262144,
+      "context_length": 256000,
       "pricing": {
-        "prompt": 0.1,
+        "prompt": 0.05,
         "completion": 0.15
       },
       "price_history": [
@@ -102,9 +102,14 @@
           "date": "2026-03-11",
           "prompt": 0.1,
           "completion": 0.15
+        },
+        {
+          "date": "2026-03-14",
+          "prompt": 0.05,
+          "completion": 0.15
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -115,7 +120,7 @@
         "Chat"
       ],
       "provider": "qwen",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "openai/gpt-5.4-pro",
