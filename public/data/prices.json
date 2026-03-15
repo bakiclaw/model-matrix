@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-14T03:59:14.795289Z",
+    "last_updated": "2026-03-15T04:21:23.263079Z",
     "total_models": 313
   },
   "models": [
@@ -109,7 +109,7 @@
           "completion": 0.15
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -704,8 +704,8 @@
       "name": "MiniMax: MiniMax M2.5",
       "context_length": 196608,
       "pricing": {
-        "prompt": 0.27,
-        "completion": 0.95
+        "prompt": 0.25,
+        "completion": 1.2
       },
       "price_history": [
         {
@@ -727,9 +727,14 @@
           "date": "2026-03-11",
           "prompt": 0.27,
           "completion": 0.95
+        },
+        {
+          "date": "2026-03-15",
+          "prompt": 0.25,
+          "completion": 1.2
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
