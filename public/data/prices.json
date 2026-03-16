@@ -1,10 +1,38 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-15T04:21:23.263079Z",
-    "total_models": 313
+    "last_updated": "2026-03-16T04:28:20.909277Z",
+    "total_models": 314
   },
   "models": [
+    {
+      "id": "z-ai/glm-5-turbo",
+      "name": "Z.ai: GLM 5 Turbo",
+      "context_length": 202752,
+      "pricing": {
+        "prompt": 0.96,
+        "completion": 3.2
+      },
+      "price_history": [
+        {
+          "date": "2026-03-16",
+          "prompt": 0.96,
+          "completion": 3.2
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
     {
       "id": "x-ai/grok-4.20-multi-agent-beta",
       "name": "xAI: Grok 4.20 Multi-Agent Beta",
@@ -734,7 +762,7 @@
           "completion": 1.2
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
