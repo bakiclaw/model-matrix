@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-16T04:28:20.909277Z",
-    "total_models": 314
+    "last_updated": "2026-03-17T04:05:33.977181Z",
+    "total_models": 313
   },
   "models": [
     {
@@ -460,17 +460,22 @@
       "name": "Qwen: Qwen3.5-Flash",
       "context_length": 1000000,
       "pricing": {
-        "prompt": 0.1,
-        "completion": 0.4
+        "prompt": 0.065,
+        "completion": 0.26
       },
       "price_history": [
         {
           "date": "2026-02-26",
           "prompt": 0.1,
           "completion": 0.4
+        },
+        {
+          "date": "2026-03-17",
+          "prompt": 0.065,
+          "completion": 0.26
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2861,11 +2866,17 @@
       "name": "Qwen: Qwen3 Max",
       "context_length": 262144,
       "pricing": {
-        "prompt": 1.2,
-        "completion": 6.0
+        "prompt": 0.78,
+        "completion": 3.9
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-17",
+          "prompt": 0.78,
+          "completion": 3.9
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5622,11 +5633,17 @@
       "name": "Qwen: Qwen VL Max",
       "context_length": 131072,
       "pricing": {
-        "prompt": 0.8,
-        "completion": 3.2
+        "prompt": 0.52,
+        "completion": 2.08
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-17",
+          "prompt": 0.52,
+          "completion": 2.08
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5705,11 +5722,17 @@
       "name": "Qwen: Qwen-Plus",
       "context_length": 1000000,
       "pricing": {
-        "prompt": 0.4,
-        "completion": 1.2
+        "prompt": 0.26,
+        "completion": 0.78
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-17",
+          "prompt": 0.26,
+          "completion": 0.78
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6247,17 +6270,22 @@
       "name": "Qwen2.5 Coder 32B Instruct",
       "context_length": 32768,
       "pricing": {
-        "prompt": 0.2,
-        "completion": 0.2
+        "prompt": 0.66,
+        "completion": 1.0
       },
       "price_history": [
         {
           "date": "2026-02-18",
           "prompt": 0.2,
           "completion": 0.2
+        },
+        {
+          "date": "2026-03-17",
+          "prompt": 0.66,
+          "completion": 1.0
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6793,28 +6821,6 @@
       ],
       "provider": "meta-llama",
       "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
-    },
-    {
-      "id": "meta-llama/llama-3.1-405b-instruct",
-      "name": "Meta: Llama 3.1 405B Instruct",
-      "context_length": 131000,
-      "pricing": {
-        "prompt": 4.0,
-        "completion": 4.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "meta-llama",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "meta-llama/llama-3.1-70b-instruct",
