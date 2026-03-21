@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-20T04:02:15.810967Z",
+    "last_updated": "2026-03-21T03:53:17.906340Z",
     "total_models": 320
   },
   "models": [
@@ -934,7 +934,7 @@
       "context_length": 196608,
       "pricing": {
         "prompt": 0.2,
-        "completion": 1.2
+        "completion": 1.17
       },
       "price_history": [
         {
@@ -966,9 +966,14 @@
           "date": "2026-03-18",
           "prompt": 0.2,
           "completion": 1.2
+        },
+        {
+          "date": "2026-03-21",
+          "prompt": 0.2,
+          "completion": 1.17
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1468,7 +1473,7 @@
           "completion": 1.75
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3175,7 +3180,7 @@
           "completion": 0.78
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -5317,19 +5322,24 @@
     {
       "id": "mistralai/mistral-small-3.1-24b-instruct",
       "name": "Mistral: Mistral Small 3.1 24B",
-      "context_length": 128000,
+      "context_length": 131072,
       "pricing": {
-        "prompt": 0.35,
-        "completion": 0.56
+        "prompt": 0.03,
+        "completion": 0.11
       },
       "price_history": [
         {
           "date": "2026-02-18",
           "prompt": 0.35,
           "completion": 0.56
+        },
+        {
+          "date": "2026-03-21",
+          "prompt": 0.03,
+          "completion": 0.11
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5340,7 +5350,7 @@
         "Chat"
       ],
       "provider": "mistralai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "allenai/olmo-2-0325-32b-instruct",
