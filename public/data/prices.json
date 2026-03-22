@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-21T03:53:17.906340Z",
-    "total_models": 320
+    "last_updated": "2026-03-22T04:07:40.460020Z",
+    "total_models": 322
   },
   "models": [
     {
@@ -973,7 +973,7 @@
           "completion": 1.17
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3807,10 +3807,16 @@
       "context_length": 131072,
       "pricing": {
         "prompt": 0.03,
-        "completion": 0.14
+        "completion": 0.11
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-22",
+          "prompt": 0.03,
+          "completion": 0.11
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5198,6 +5204,34 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
+      "id": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+      "name": "NVIDIA: Llama 3.1 Nemotron Ultra 253B v1",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.6,
+        "completion": 1.8
+      },
+      "price_history": [
+        {
+          "date": "2026-03-22",
+          "prompt": 0.6,
+          "completion": 1.8
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "nvidia",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
       "id": "meta-llama/llama-4-maverick",
       "name": "Meta: Llama 4 Maverick",
       "context_length": 1048576,
@@ -5339,7 +5373,7 @@
           "completion": 0.11
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6865,6 +6899,34 @@
         "Chat"
       ],
       "provider": "qwen",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "mistralai/pixtral-12b",
+      "name": "Mistral: Pixtral 12B",
+      "context_length": 32768,
+      "pricing": {
+        "prompt": 0.1,
+        "completion": 0.1
+      },
+      "price_history": [
+        {
+          "date": "2026-03-22",
+          "prompt": 0.1,
+          "completion": 0.1
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
