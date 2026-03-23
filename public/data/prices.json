@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-22T04:07:40.460020Z",
-    "total_models": 322
+    "last_updated": "2026-03-23T04:14:58.616738Z",
+    "total_models": 319
   },
   "models": [
     {
@@ -1329,28 +1329,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "allenai/molmo-2-8b",
-      "name": "AllenAI: Molmo2 8B",
-      "context_length": 36864,
-      "pricing": {
-        "prompt": 0.2,
-        "completion": 0.2
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "allenai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "allenai/olmo-3.1-32b-instruct",
       "name": "AllenAI: Olmo 3.1 32B Instruct",
       "context_length": 65536,
@@ -2077,50 +2055,6 @@
       "pricing": {
         "prompt": 0.15,
         "completion": 0.5
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "allenai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "allenai/olmo-3-7b-instruct",
-      "name": "AllenAI: Olmo 3 7B Instruct",
-      "context_length": 65536,
-      "pricing": {
-        "prompt": 0.1,
-        "completion": 0.2
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "allenai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "allenai/olmo-3-7b-think",
-      "name": "AllenAI: Olmo 3 7B Think",
-      "context_length": 65536,
-      "pricing": {
-        "prompt": 0.12,
-        "completion": 0.2
       },
       "price_history": [],
       "price_status": "stable",
@@ -3171,16 +3105,21 @@
       "context_length": 163840,
       "pricing": {
         "prompt": 0.21,
-        "completion": 0.78
+        "completion": 0.79
       },
       "price_history": [
         {
           "date": "2026-03-20",
           "prompt": 0.21,
           "completion": 0.78
+        },
+        {
+          "date": "2026-03-23",
+          "prompt": 0.21,
+          "completion": 0.79
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -3816,7 +3755,7 @@
           "completion": 0.11
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4242,11 +4181,17 @@
       "name": "TNG: DeepSeek R1T2 Chimera",
       "context_length": 163840,
       "pricing": {
-        "prompt": 0.25,
-        "completion": 0.85
+        "prompt": 0.3,
+        "completion": 1.1
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-23",
+          "prompt": 0.3,
+          "completion": 1.1
+        }
+      ],
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
