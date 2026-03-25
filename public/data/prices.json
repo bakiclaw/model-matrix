@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-03-24T04:06:20.666647Z",
-    "total_models": 319
+    "last_updated": "2026-03-25T04:07:28.243598Z",
+    "total_models": 316
   },
   "models": [
     {
@@ -193,7 +193,7 @@
           "completion": 4.0
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1728,11 +1728,17 @@
       "name": "Nex AGI: DeepSeek V3.1 Nex N1",
       "context_length": 131072,
       "pricing": {
-        "prompt": 0.27,
-        "completion": 1.0
+        "prompt": 0.135,
+        "completion": 0.5
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-03-25",
+          "prompt": 0.135,
+          "completion": 0.5
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4068,19 +4074,24 @@
     {
       "id": "moonshotai/kimi-k2",
       "name": "MoonshotAI: Kimi K2 0711",
-      "context_length": 131000,
+      "context_length": 131072,
       "pricing": {
-        "prompt": 0.55,
-        "completion": 2.2
+        "prompt": 0.57,
+        "completion": 2.3
       },
       "price_history": [
         {
           "date": "2026-02-27",
           "prompt": 0.55,
           "completion": 2.2
+        },
+        {
+          "date": "2026-03-25",
+          "prompt": 0.57,
+          "completion": 2.3
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6598,28 +6609,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "anthracite-org/magnum-v4-72b",
-      "name": "Magnum v4 72B",
-      "context_length": 16384,
-      "pricing": {
-        "prompt": 3.0,
-        "completion": 5.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "anthracite-org",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "anthropic/claude-3.5-sonnet",
       "name": "Anthropic: Claude 3.5 Sonnet",
       "context_length": 200000,
@@ -6645,6 +6634,28 @@
         "Chat"
       ],
       "provider": "anthropic",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "anthracite-org/magnum-v4-72b",
+      "name": "Magnum v4 72B",
+      "context_length": 16384,
+      "pricing": {
+        "prompt": 3.0,
+        "completion": 5.0
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthracite-org",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -6692,8 +6703,8 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "inflection/inflection-3-pi",
-      "name": "Inflection: Inflection 3 Pi",
+      "id": "inflection/inflection-3-productivity",
+      "name": "Inflection: Inflection 3 Productivity",
       "context_length": 8000,
       "pricing": {
         "prompt": 2.5,
@@ -6714,8 +6725,8 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "inflection/inflection-3-productivity",
-      "name": "Inflection: Inflection 3 Productivity",
+      "id": "inflection/inflection-3-pi",
+      "name": "Inflection: Inflection 3 Pi",
       "context_length": 8000,
       "pricing": {
         "prompt": 2.5,
@@ -6852,40 +6863,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "mistralai/pixtral-12b",
-      "name": "Mistral: Pixtral 12B",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 0.1,
-        "completion": 0.1
-      },
-      "price_history": [
-        {
-          "date": "2026-03-22",
-          "prompt": 0.1,
-          "completion": 0.1
-        }
-      ],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "mistralai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "cohere/command-r-08-2024",
-      "name": "Cohere: Command R (08-2024)",
+      "id": "cohere/command-r-plus-08-2024",
+      "name": "Cohere: Command R+ (08-2024)",
       "context_length": 128000,
       "pricing": {
-        "prompt": 0.15,
-        "completion": 0.6
+        "prompt": 2.5,
+        "completion": 10.0
       },
       "price_history": [],
       "price_status": "stable",
@@ -6902,12 +6885,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "cohere/command-r-plus-08-2024",
-      "name": "Cohere: Command R+ (08-2024)",
+      "id": "cohere/command-r-08-2024",
+      "name": "Cohere: Command R (08-2024)",
       "context_length": 128000,
       "pricing": {
-        "prompt": 2.5,
-        "completion": 10.0
+        "prompt": 0.15,
+        "completion": 0.6
       },
       "price_history": [],
       "price_status": "stable",
@@ -6949,28 +6932,6 @@
         "Logic"
       ],
       "provider": "sao10k",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "qwen/qwen-2.5-vl-7b-instruct",
-      "name": "Qwen: Qwen2.5-VL 7B Instruct",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 0.2,
-        "completion": 0.2
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Vision"
-      ],
-      "provider": "qwen",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -7059,28 +7020,6 @@
         "Chat"
       ],
       "provider": "openai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "meta-llama/llama-3.1-405b",
-      "name": "Meta: Llama 3.1 405B (base)",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 4.0,
-        "completion": 4.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "meta-llama",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -7348,28 +7287,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "meta-llama/llama-3-70b-instruct",
-      "name": "Meta: Llama 3 70B Instruct",
-      "context_length": 8192,
-      "pricing": {
-        "prompt": 0.51,
-        "completion": 0.74
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "meta-llama",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "meta-llama/llama-3-8b-instruct",
       "name": "Meta: Llama 3 8B Instruct",
       "context_length": 8192,
@@ -7390,6 +7307,28 @@
       ],
       "provider": "meta-llama",
       "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
+    },
+    {
+      "id": "meta-llama/llama-3-70b-instruct",
+      "name": "Meta: Llama 3 70B Instruct",
+      "context_length": 8192,
+      "pricing": {
+        "prompt": 0.51,
+        "completion": 0.74
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mixtral-8x22b-instruct",
@@ -7502,12 +7441,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "openai/gpt-3.5-turbo-0613",
-      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
-      "context_length": 4095,
+      "id": "openai/gpt-4-turbo-preview",
+      "name": "OpenAI: GPT-4 Turbo Preview",
+      "context_length": 128000,
       "pricing": {
-        "prompt": 1.0,
-        "completion": 2.0
+        "prompt": 10.0,
+        "completion": 30.0
       },
       "price_history": [],
       "price_status": "stable",
@@ -7524,12 +7463,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "openai/gpt-4-turbo-preview",
-      "name": "OpenAI: GPT-4 Turbo Preview",
-      "context_length": 128000,
+      "id": "openai/gpt-3.5-turbo-0613",
+      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
+      "context_length": 4095,
       "pricing": {
-        "prompt": 10.0,
-        "completion": 30.0
+        "prompt": 1.0,
+        "completion": 2.0
       },
       "price_history": [],
       "price_status": "stable",
