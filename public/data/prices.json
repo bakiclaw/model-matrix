@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-04T04:04:39.381639Z",
-    "total_models": 319
+    "last_updated": "2026-04-05T04:26:14.474166Z",
+    "total_models": 318
   },
   "models": [
     {
@@ -1166,7 +1166,7 @@
           "completion": 0.99
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1362,7 +1362,7 @@
           "completion": 1.72
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6776,34 +6776,6 @@
         "Chat"
       ],
       "provider": "anthracite-org",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "anthropic/claude-3.5-sonnet",
-      "name": "Anthropic: Claude 3.5 Sonnet",
-      "context_length": 200000,
-      "pricing": {
-        "prompt": 6.0,
-        "completion": 30.0
-      },
-      "price_history": [
-        {
-          "date": "2026-02-20",
-          "prompt": 6.0,
-          "completion": 30.0
-        }
-      ],
-      "price_status": "stable",
-      "scores": {
-        "overall": 1310,
-        "coding": 1380,
-        "vision": 1280,
-        "hard": 1290
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "anthropic",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
