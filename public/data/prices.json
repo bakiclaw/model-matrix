@@ -1,10 +1,66 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-07T04:22:01.078883Z",
-    "total_models": 317
+    "last_updated": "2026-04-08T04:25:25.521868Z",
+    "total_models": 320
   },
   "models": [
+    {
+      "id": "anthropic/claude-opus-4.6-fast",
+      "name": "Anthropic: Claude Opus 4.6 (Fast)",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 30.0,
+        "completion": 150.0
+      },
+      "price_history": [
+        {
+          "date": "2026-04-08",
+          "prompt": 30.0,
+          "completion": 150.0
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "anthropic",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
+    {
+      "id": "z-ai/glm-5.1",
+      "name": "Z.ai: GLM 5.1",
+      "context_length": 202752,
+      "pricing": {
+        "prompt": 1.26,
+        "completion": 3.96
+      },
+      "price_history": [
+        {
+          "date": "2026-04-08",
+          "prompt": 1.26,
+          "completion": 3.96
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "z-ai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
     {
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
@@ -60,6 +116,34 @@
       ],
       "provider": "google",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "qwen/qwen3.6-plus",
+      "name": "Qwen: Qwen3.6 Plus",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 0.325,
+        "completion": 1.95
+      },
+      "price_history": [
+        {
+          "date": "2026-04-08",
+          "prompt": 0.325,
+          "completion": 1.95
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "qwen",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "z-ai/glm-5v-turbo",
