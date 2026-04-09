@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-08T04:25:25.521868Z",
+    "last_updated": "2026-04-09T04:22:02.158407Z",
     "total_models": 320
   },
   "models": [
@@ -38,17 +38,22 @@
       "name": "Z.ai: GLM 5.1",
       "context_length": 202752,
       "pricing": {
-        "prompt": 1.26,
-        "completion": 3.96
+        "prompt": 1.395,
+        "completion": 4.4
       },
       "price_history": [
         {
           "date": "2026-04-08",
           "prompt": 1.26,
           "completion": 3.96
+        },
+        {
+          "date": "2026-04-09",
+          "prompt": 1.395,
+          "completion": 4.4
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1696,11 +1701,17 @@
       "name": "MiniMax: MiniMax M2.1",
       "context_length": 196608,
       "pricing": {
-        "prompt": 0.27,
+        "prompt": 0.29,
         "completion": 0.95
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-04-09",
+          "prompt": 0.29,
+          "completion": 0.95
+        }
+      ],
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2502,19 +2513,24 @@
     {
       "id": "moonshotai/kimi-k2-thinking",
       "name": "MoonshotAI: Kimi K2 Thinking",
-      "context_length": 131072,
+      "context_length": 262144,
       "pricing": {
-        "prompt": 0.47,
-        "completion": 2.0
+        "prompt": 0.6,
+        "completion": 2.5
       },
       "price_history": [
         {
           "date": "2026-02-19",
           "prompt": 0.47,
           "completion": 2.0
+        },
+        {
+          "date": "2026-04-09",
+          "prompt": 0.6,
+          "completion": 2.5
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3544,7 +3560,7 @@
     {
       "id": "moonshotai/kimi-k2-0905",
       "name": "MoonshotAI: Kimi K2 0905",
-      "context_length": 131072,
+      "context_length": 262144,
       "pricing": {
         "prompt": 0.4,
         "completion": 2.0
