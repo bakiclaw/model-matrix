@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-09T04:22:02.158407Z",
+    "last_updated": "2026-04-10T04:35:41.603878Z",
     "total_models": 320
   },
   "models": [
@@ -38,8 +38,8 @@
       "name": "Z.ai: GLM 5.1",
       "context_length": 202752,
       "pricing": {
-        "prompt": 1.395,
-        "completion": 4.4
+        "prompt": 1.26,
+        "completion": 3.96
       },
       "price_history": [
         {
@@ -51,9 +51,14 @@
           "date": "2026-04-09",
           "prompt": 1.395,
           "completion": 4.4
+        },
+        {
+          "date": "2026-04-10",
+          "prompt": 1.26,
+          "completion": 3.96
         }
       ],
-      "price_status": "hike",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1711,7 +1716,7 @@
           "completion": 0.95
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2530,7 +2535,7 @@
           "completion": 2.5
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6895,8 +6900,8 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "inflection/inflection-3-pi",
-      "name": "Inflection: Inflection 3 Pi",
+      "id": "inflection/inflection-3-productivity",
+      "name": "Inflection: Inflection 3 Productivity",
       "context_length": 8000,
       "pricing": {
         "prompt": 2.5,
@@ -6917,8 +6922,8 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "inflection/inflection-3-productivity",
-      "name": "Inflection: Inflection 3 Productivity",
+      "id": "inflection/inflection-3-pi",
+      "name": "Inflection: Inflection 3 Pi",
       "context_length": 8000,
       "pricing": {
         "prompt": 2.5,
@@ -7055,12 +7060,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "cohere/command-r-08-2024",
-      "name": "Cohere: Command R (08-2024)",
+      "id": "cohere/command-r-plus-08-2024",
+      "name": "Cohere: Command R+ (08-2024)",
       "context_length": 128000,
       "pricing": {
-        "prompt": 0.15,
-        "completion": 0.6
+        "prompt": 2.5,
+        "completion": 10.0
       },
       "price_history": [],
       "price_status": "stable",
@@ -7077,12 +7082,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "cohere/command-r-plus-08-2024",
-      "name": "Cohere: Command R+ (08-2024)",
+      "id": "cohere/command-r-08-2024",
+      "name": "Cohere: Command R (08-2024)",
       "context_length": 128000,
       "pricing": {
-        "prompt": 2.5,
-        "completion": 10.0
+        "prompt": 0.15,
+        "completion": 0.6
       },
       "price_history": [],
       "price_status": "stable",
@@ -7413,6 +7418,28 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
+      "id": "openai/gpt-4o-2024-05-13",
+      "name": "OpenAI: GPT-4o (2024-05-13)",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 5.0,
+        "completion": 15.0
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
       "id": "openai/gpt-4o",
       "name": "OpenAI: GPT-4o",
       "context_length": 128000,
@@ -7441,28 +7468,6 @@
       "pricing": {
         "prompt": 6.0,
         "completion": 18.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": 1315,
-        "coding": 1350,
-        "vision": 1300,
-        "hard": 1280
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "openai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "openai/gpt-4o-2024-05-13",
-      "name": "OpenAI: GPT-4o (2024-05-13)",
-      "context_length": 128000,
-      "pricing": {
-        "prompt": 5.0,
-        "completion": 15.0
       },
       "price_history": [],
       "price_status": "stable",
@@ -7633,12 +7638,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "openai/gpt-3.5-turbo-0613",
-      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
-      "context_length": 4095,
+      "id": "openai/gpt-4-turbo-preview",
+      "name": "OpenAI: GPT-4 Turbo Preview",
+      "context_length": 128000,
       "pricing": {
-        "prompt": 1.0,
-        "completion": 2.0
+        "prompt": 10.0,
+        "completion": 30.0
       },
       "price_history": [],
       "price_status": "stable",
@@ -7655,12 +7660,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "openai/gpt-4-turbo-preview",
-      "name": "OpenAI: GPT-4 Turbo Preview",
-      "context_length": 128000,
+      "id": "openai/gpt-3.5-turbo-0613",
+      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
+      "context_length": 4095,
       "pricing": {
-        "prompt": 10.0,
-        "completion": 30.0
+        "prompt": 1.0,
+        "completion": 2.0
       },
       "price_history": [],
       "price_status": "stable",
@@ -7743,28 +7748,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "mistralai/mistral-7b-instruct-v0.1",
-      "name": "Mistral: Mistral 7B Instruct v0.1",
-      "context_length": 2824,
-      "pricing": {
-        "prompt": 0.11,
-        "completion": 0.19
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "mistralai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "openai/gpt-3.5-turbo-instruct",
       "name": "OpenAI: GPT-3.5 Turbo Instruct",
       "context_length": 4095,
@@ -7784,6 +7767,28 @@
         "Chat"
       ],
       "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v0.1",
+      "name": "Mistral: Mistral 7B Instruct v0.1",
+      "context_length": 2824,
+      "pricing": {
+        "prompt": 0.11,
+        "completion": 0.19
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -7897,28 +7902,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "openai/gpt-3.5-turbo",
-      "name": "OpenAI: GPT-3.5 Turbo",
-      "context_length": 16385,
-      "pricing": {
-        "prompt": 0.5,
-        "completion": 1.5
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "openai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "openai/gpt-4",
       "name": "OpenAI: GPT-4",
       "context_length": 8191,
@@ -7933,6 +7916,28 @@
         "coding": 1350,
         "vision": 1300,
         "hard": 1280
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "openai/gpt-3.5-turbo",
+      "name": "OpenAI: GPT-3.5 Turbo",
+      "context_length": 16385,
+      "pricing": {
+        "prompt": 0.5,
+        "completion": 1.5
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
       },
       "tags": [
         "Chat"
