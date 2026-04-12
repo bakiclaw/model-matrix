@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-11T04:08:38.904365Z",
+    "last_updated": "2026-04-12T04:36:13.851401Z",
     "total_models": 320
   },
   "models": [
@@ -63,7 +63,7 @@
           "completion": 3.15
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -96,7 +96,7 @@
           "completion": 0.4
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3978,7 +3978,7 @@
           "completion": 0.14
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4783,7 +4783,7 @@
     {
       "id": "anthropic/claude-sonnet-4",
       "name": "Anthropic: Claude Sonnet 4",
-      "context_length": 200000,
+      "context_length": 1000000,
       "pricing": {
         "prompt": 3.0,
         "completion": 15.0
@@ -4800,7 +4800,7 @@
         "Chat"
       ],
       "provider": "anthropic",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
     },
     {
       "id": "google/gemma-3n-e4b-it",
@@ -5529,10 +5529,10 @@
     {
       "id": "mistralai/mistral-small-3.1-24b-instruct",
       "name": "Mistral: Mistral Small 3.1 24B",
-      "context_length": 131072,
+      "context_length": 128000,
       "pricing": {
-        "prompt": 0.03,
-        "completion": 0.11
+        "prompt": 0.35,
+        "completion": 0.56
       },
       "price_history": [
         {
@@ -5544,9 +5544,14 @@
           "date": "2026-03-21",
           "prompt": 0.03,
           "completion": 0.11
+        },
+        {
+          "date": "2026-04-12",
+          "prompt": 0.35,
+          "completion": 0.56
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5557,7 +5562,7 @@
         "Chat"
       ],
       "provider": "mistralai",
-      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "allenai/olmo-2-0325-32b-instruct",
@@ -7045,7 +7050,7 @@
           "completion": 0.245
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
