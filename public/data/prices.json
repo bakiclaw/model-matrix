@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-15T04:35:11.209810Z",
+    "last_updated": "2026-04-16T04:41:10.132970Z",
     "total_models": 313
   },
   "models": [
@@ -4777,11 +4777,17 @@
       "name": "Google: Gemma 3n 4B",
       "context_length": 32768,
       "pricing": {
-        "prompt": 0.02,
-        "completion": 0.04
+        "prompt": 0.06,
+        "completion": 0.12
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-04-16",
+          "prompt": 0.06,
+          "completion": 0.12
+        }
+      ],
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4792,7 +4798,7 @@
         "Chat"
       ],
       "provider": "google",
-      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-medium-3",
@@ -5858,7 +5864,7 @@
           "completion": 0.03
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
