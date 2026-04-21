@@ -1,10 +1,38 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-20T04:47:09.417038Z",
-    "total_models": 311
+    "last_updated": "2026-04-21T04:38:05.974452Z",
+    "total_models": 312
   },
   "models": [
+    {
+      "id": "moonshotai/kimi-k2.6",
+      "name": "MoonshotAI: Kimi K2.6",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.6,
+        "completion": 2.8
+      },
+      "price_history": [
+        {
+          "date": "2026-04-21",
+          "prompt": 0.6,
+          "completion": 2.8
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "moonshotai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
     {
       "id": "anthropic/claude-opus-4.7",
       "name": "Anthropic: Claude Opus 4.7",
@@ -66,8 +94,8 @@
       "name": "Z.ai: GLM 5.1",
       "context_length": 202752,
       "pricing": {
-        "prompt": 0.95,
-        "completion": 3.15
+        "prompt": 0.698,
+        "completion": 4.4
       },
       "price_history": [
         {
@@ -89,9 +117,14 @@
           "date": "2026-04-11",
           "prompt": 0.95,
           "completion": 3.15
+        },
+        {
+          "date": "2026-04-21",
+          "prompt": 0.698,
+          "completion": 4.4
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1273,15 +1306,10 @@
       "name": "MiniMax: MiniMax M2.5",
       "context_length": 196608,
       "pricing": {
-        "prompt": 0.118,
-        "completion": 0.99
+        "prompt": 0.15,
+        "completion": 1.2
       },
       "price_history": [
-        {
-          "date": "2026-02-28",
-          "prompt": 0.295,
-          "completion": 1.2
-        },
         {
           "date": "2026-03-11",
           "prompt": 0.27,
@@ -1326,9 +1354,14 @@
           "date": "2026-04-04",
           "prompt": 0.118,
           "completion": 0.99
+        },
+        {
+          "date": "2026-04-21",
+          "prompt": 0.15,
+          "completion": 1.2
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1494,17 +1527,22 @@
       "name": "MoonshotAI: Kimi K2.5",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.3827,
-        "completion": 1.72
+        "prompt": 0.44,
+        "completion": 2.0
       },
       "price_history": [
         {
           "date": "2026-04-19",
           "prompt": 0.3827,
           "completion": 1.72
+        },
+        {
+          "date": "2026-04-21",
+          "prompt": 0.44,
+          "completion": 2.0
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1782,8 +1820,8 @@
       "name": "Z.ai: GLM 4.7",
       "context_length": 202752,
       "pricing": {
-        "prompt": 0.39,
-        "completion": 1.75
+        "prompt": 0.38,
+        "completion": 1.74
       },
       "price_history": [
         {
@@ -1810,9 +1848,14 @@
           "date": "2026-03-20",
           "prompt": 0.39,
           "completion": 1.75
+        },
+        {
+          "date": "2026-04-21",
+          "prompt": 0.38,
+          "completion": 1.74
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2298,10 +2341,10 @@
     {
       "id": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
-      "context_length": 163840,
+      "context_length": 131072,
       "pricing": {
-        "prompt": 0.259,
-        "completion": 0.42
+        "prompt": 0.252,
+        "completion": 0.378
       },
       "price_history": [
         {
@@ -2333,9 +2376,14 @@
           "date": "2026-04-18",
           "prompt": 0.259,
           "completion": 0.42
+        },
+        {
+          "date": "2026-04-21",
+          "prompt": 0.252,
+          "completion": 0.378
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": 1305,
         "coding": 1370,
