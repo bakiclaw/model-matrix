@@ -1,10 +1,66 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-22T04:35:22.699587Z",
-    "total_models": 314
+    "last_updated": "2026-04-23T04:40:20.953548Z",
+    "total_models": 316
   },
   "models": [
+    {
+      "id": "xiaomi/mimo-v2.5-pro",
+      "name": "Xiaomi: MiMo-V2.5-Pro",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 1.0,
+        "completion": 3.0
+      },
+      "price_history": [
+        {
+          "date": "2026-04-23",
+          "prompt": 1.0,
+          "completion": 3.0
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "xiaomi",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
+    {
+      "id": "xiaomi/mimo-v2.5",
+      "name": "Xiaomi: MiMo-V2.5",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 2.0
+      },
+      "price_history": [
+        {
+          "date": "2026-04-23",
+          "prompt": 0.4,
+          "completion": 2.0
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "xiaomi",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
     {
       "id": "openai/gpt-5.4-image-2",
       "name": "OpenAI: GPT-5.4 Image 2",
@@ -66,7 +122,7 @@
       "name": "MoonshotAI: Kimi K2.6",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.8,
+        "prompt": 0.75,
         "completion": 3.5
       },
       "price_history": [
@@ -79,9 +135,14 @@
           "date": "2026-04-22",
           "prompt": 0.8,
           "completion": 3.5
+        },
+        {
+          "date": "2026-04-23",
+          "prompt": 0.75,
+          "completion": 3.5
         }
       ],
-      "price_status": "hike",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -190,7 +251,7 @@
           "completion": 3.5
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -209,7 +270,7 @@
       "context_length": 262144,
       "pricing": {
         "prompt": 0.07,
-        "completion": 0.35
+        "completion": 0.34
       },
       "price_history": [
         {
@@ -241,6 +302,11 @@
           "date": "2026-04-22",
           "prompt": 0.07,
           "completion": 0.35
+        },
+        {
+          "date": "2026-04-23",
+          "prompt": 0.07,
+          "completion": 0.34
         }
       ],
       "price_status": "drop",
@@ -1480,7 +1546,7 @@
           "completion": 2.08
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1596,6 +1662,34 @@
         "Chat"
       ],
       "provider": "stepfun",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "arcee-ai/trinity-large-preview",
+      "name": "Arcee AI: Trinity Large Preview",
+      "context_length": 131000,
+      "pricing": {
+        "prompt": 0.15,
+        "completion": 0.45
+      },
+      "price_history": [
+        {
+          "date": "2026-04-23",
+          "prompt": 0.15,
+          "completion": 0.45
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "arcee-ai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -2581,28 +2675,6 @@
       ],
       "provider": "x-ai",
       "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
-    },
-    {
-      "id": "deepcogito/cogito-v2.1-671b",
-      "name": "Deep Cogito: Cogito v2.1 671B",
-      "context_length": 128000,
-      "pricing": {
-        "prompt": 1.25,
-        "completion": 1.25
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "deepcogito",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5.1",
@@ -4288,10 +4360,10 @@
     {
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
       "name": "Qwen: Qwen3 235B A22B Thinking 2507",
-      "context_length": 262144,
+      "context_length": 131072,
       "pricing": {
-        "prompt": 0.13,
-        "completion": 0.6
+        "prompt": 0.1495,
+        "completion": 1.495
       },
       "price_history": [
         {
@@ -4308,9 +4380,14 @@
           "date": "2026-04-17",
           "prompt": 0.13,
           "completion": 0.6
+        },
+        {
+          "date": "2026-04-23",
+          "prompt": 0.1495,
+          "completion": 1.495
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6009,7 +6086,7 @@
     {
       "id": "google/gemini-2.0-flash-001",
       "name": "Google: Gemini 2.0 Flash",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "pricing": {
         "prompt": 0.1,
         "completion": 0.4
@@ -6596,7 +6673,7 @@
           "completion": 0.32
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
