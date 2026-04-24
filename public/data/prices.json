@@ -1,10 +1,66 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-23T04:40:20.953548Z",
-    "total_models": 316
+    "last_updated": "2026-04-24T04:44:04.645033Z",
+    "total_models": 319
   },
   "models": [
+    {
+      "id": "deepseek/deepseek-v4-pro",
+      "name": "DeepSeek: DeepSeek V4 Pro",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 1.74,
+        "completion": 3.48
+      },
+      "price_history": [
+        {
+          "date": "2026-04-24",
+          "prompt": 1.74,
+          "completion": 3.48
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepseek",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash",
+      "name": "DeepSeek: DeepSeek V4 Flash",
+      "context_length": 1048576,
+      "pricing": {
+        "prompt": 0.14,
+        "completion": 0.28
+      },
+      "price_history": [
+        {
+          "date": "2026-04-24",
+          "prompt": 0.14,
+          "completion": 0.28
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepseek",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
     {
       "id": "xiaomi/mimo-v2.5-pro",
       "name": "Xiaomi: MiMo-V2.5-Pro",
@@ -120,10 +176,10 @@
     {
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
-      "context_length": 262144,
+      "context_length": 256000,
       "pricing": {
-        "prompt": 0.75,
-        "completion": 3.5
+        "prompt": 0.7448,
+        "completion": 4.655
       },
       "price_history": [
         {
@@ -140,6 +196,11 @@
           "date": "2026-04-23",
           "prompt": 0.75,
           "completion": 3.5
+        },
+        {
+          "date": "2026-04-24",
+          "prompt": 0.7448,
+          "completion": 4.655
         }
       ],
       "price_status": "drop",
@@ -269,8 +330,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.07,
-        "completion": 0.34
+        "prompt": 0.06,
+        "completion": 0.33
       },
       "price_history": [
         {
@@ -307,6 +368,11 @@
           "date": "2026-04-23",
           "prompt": 0.07,
           "completion": 0.34
+        },
+        {
+          "date": "2026-04-24",
+          "prompt": 0.06,
+          "completion": 0.33
         }
       ],
       "price_status": "drop",
@@ -1444,14 +1510,9 @@
       "context_length": 196608,
       "pricing": {
         "prompt": 0.15,
-        "completion": 1.2
+        "completion": 1.15
       },
       "price_history": [
-        {
-          "date": "2026-03-11",
-          "prompt": 0.27,
-          "completion": 0.95
-        },
         {
           "date": "2026-03-15",
           "prompt": 0.25,
@@ -1496,9 +1557,14 @@
           "date": "2026-04-21",
           "prompt": 0.15,
           "completion": 1.2
+        },
+        {
+          "date": "2026-04-24",
+          "prompt": 0.15,
+          "completion": 1.15
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1516,7 +1582,7 @@
       "name": "Z.ai: GLM 5",
       "context_length": 202752,
       "pricing": {
-        "prompt": 0.65,
+        "prompt": 0.6,
         "completion": 2.08
       },
       "price_history": [
@@ -1544,9 +1610,14 @@
           "date": "2026-04-22",
           "prompt": 0.65,
           "completion": 2.08
+        },
+        {
+          "date": "2026-04-24",
+          "prompt": 0.6,
+          "completion": 2.08
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2675,6 +2746,34 @@
       ],
       "provider": "x-ai",
       "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
+    {
+      "id": "deepcogito/cogito-v2.1-671b",
+      "name": "Deep Cogito: Cogito v2.1 671B",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 1.25
+      },
+      "price_history": [
+        {
+          "date": "2026-04-24",
+          "prompt": 1.25,
+          "completion": 1.25
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "deepcogito",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5.1",
@@ -4387,7 +4486,7 @@
           "completion": 1.495
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6086,7 +6185,7 @@
     {
       "id": "google/gemini-2.0-flash-001",
       "name": "Google: Gemini 2.0 Flash",
-      "context_length": 1000000,
+      "context_length": 1048576,
       "pricing": {
         "prompt": 0.1,
         "completion": 0.4
@@ -7002,8 +7101,8 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "inflection/inflection-3-productivity",
-      "name": "Inflection: Inflection 3 Productivity",
+      "id": "inflection/inflection-3-pi",
+      "name": "Inflection: Inflection 3 Pi",
       "context_length": 8000,
       "pricing": {
         "prompt": 2.5,
@@ -7024,8 +7123,8 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "inflection/inflection-3-pi",
-      "name": "Inflection: Inflection 3 Pi",
+      "id": "inflection/inflection-3-productivity",
+      "name": "Inflection: Inflection 3 Productivity",
       "context_length": 8000,
       "pricing": {
         "prompt": 2.5,
@@ -7328,28 +7427,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "meta-llama/llama-3.1-8b-instruct",
-      "name": "Meta: Llama 3.1 8B Instruct",
-      "context_length": 16384,
-      "pricing": {
-        "prompt": 0.02,
-        "completion": 0.05
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "meta-llama",
-      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
-    },
-    {
       "id": "meta-llama/llama-3.1-70b-instruct",
       "name": "Meta: Llama 3.1 70B Instruct",
       "context_length": 131072,
@@ -7372,15 +7449,43 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "name": "Meta: Llama 3.1 8B Instruct",
+      "context_length": 16384,
+      "pricing": {
+        "prompt": 0.02,
+        "completion": 0.05
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
+    },
+    {
       "id": "mistralai/mistral-nemo",
       "name": "Mistral: Mistral Nemo",
       "context_length": 131072,
       "pricing": {
-        "prompt": 0.02,
-        "completion": 0.04
+        "prompt": 0.01,
+        "completion": 0.03
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-04-24",
+          "prompt": 0.01,
+          "completion": 0.03
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -7702,12 +7807,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "openai/gpt-4-turbo-preview",
-      "name": "OpenAI: GPT-4 Turbo Preview",
-      "context_length": 128000,
+      "id": "openai/gpt-3.5-turbo-0613",
+      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
+      "context_length": 4095,
       "pricing": {
-        "prompt": 10.0,
-        "completion": 30.0
+        "prompt": 1.0,
+        "completion": 2.0
       },
       "price_history": [],
       "price_status": "stable",
@@ -7724,12 +7829,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "openai/gpt-3.5-turbo-0613",
-      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
-      "context_length": 4095,
+      "id": "openai/gpt-4-turbo-preview",
+      "name": "OpenAI: GPT-4 Turbo Preview",
+      "context_length": 128000,
       "pricing": {
-        "prompt": 1.0,
-        "completion": 2.0
+        "prompt": 10.0,
+        "completion": 30.0
       },
       "price_history": [],
       "price_status": "stable",
@@ -7812,28 +7917,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "openai/gpt-3.5-turbo-instruct",
-      "name": "OpenAI: GPT-3.5 Turbo Instruct",
-      "context_length": 4095,
-      "pricing": {
-        "prompt": 1.5,
-        "completion": 2.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "openai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "mistralai/mistral-7b-instruct-v0.1",
       "name": "Mistral: Mistral 7B Instruct v0.1",
       "context_length": 2824,
@@ -7853,6 +7936,28 @@
         "Chat"
       ],
       "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-instruct",
+      "name": "OpenAI: GPT-3.5 Turbo Instruct",
+      "context_length": 4095,
+      "pricing": {
+        "prompt": 1.5,
+        "completion": 2.0
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -7944,28 +8049,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "openai/gpt-4-0314",
-      "name": "OpenAI: GPT-4 (older v0314)",
-      "context_length": 8191,
-      "pricing": {
-        "prompt": 30.0,
-        "completion": 60.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "openai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "openai/gpt-4",
       "name": "OpenAI: GPT-4",
       "context_length": 8191,
@@ -7994,6 +8077,28 @@
       "pricing": {
         "prompt": 0.5,
         "completion": 1.5
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "openai/gpt-4-0314",
+      "name": "OpenAI: GPT-4 (older v0314)",
+      "context_length": 8191,
+      "pricing": {
+        "prompt": 30.0,
+        "completion": 60.0
       },
       "price_history": [],
       "price_status": "stable",
