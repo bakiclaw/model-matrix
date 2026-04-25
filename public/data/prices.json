@@ -1,10 +1,66 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-24T04:44:04.645033Z",
-    "total_models": 319
+    "last_updated": "2026-04-25T04:25:31.913967Z",
+    "total_models": 321
   },
   "models": [
+    {
+      "id": "openai/gpt-5.5-pro",
+      "name": "OpenAI: GPT-5.5 Pro",
+      "context_length": 1050000,
+      "pricing": {
+        "prompt": 30.0,
+        "completion": 180.0
+      },
+      "price_history": [
+        {
+          "date": "2026-04-25",
+          "prompt": 30.0,
+          "completion": 180.0
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
+    {
+      "id": "openai/gpt-5.5",
+      "name": "OpenAI: GPT-5.5",
+      "context_length": 1050000,
+      "pricing": {
+        "prompt": 5.0,
+        "completion": 30.0
+      },
+      "price_history": [
+        {
+          "date": "2026-04-25",
+          "prompt": 5.0,
+          "completion": 30.0
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
     {
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro",
@@ -203,7 +259,7 @@
           "completion": 4.655
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -375,7 +431,7 @@
           "completion": 0.33
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1564,7 +1620,7 @@
           "completion": 1.15
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1617,7 +1673,7 @@
           "completion": 2.08
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1685,7 +1741,7 @@
       "name": "Qwen: Qwen3 Coder Next",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.15,
+        "prompt": 0.14,
         "completion": 0.8
       },
       "price_history": [
@@ -1698,9 +1754,14 @@
           "date": "2026-04-13",
           "prompt": 0.15,
           "completion": 0.8
+        },
+        {
+          "date": "2026-04-25",
+          "prompt": 0.14,
+          "completion": 0.8
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -7167,34 +7228,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "meta-llama/llama-3.2-3b-instruct",
-      "name": "Meta: Llama 3.2 3B Instruct",
-      "context_length": 80000,
-      "pricing": {
-        "prompt": 0.051,
-        "completion": 0.34
-      },
-      "price_history": [
-        {
-          "date": "2026-03-03",
-          "prompt": 0.051,
-          "completion": 0.34
-        }
-      ],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "meta-llama",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "meta-llama/llama-3.2-1b-instruct",
       "name": "Meta: Llama 3.2 1B Instruct",
       "context_length": 60000,
@@ -7245,6 +7278,34 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
+      "id": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Meta: Llama 3.2 3B Instruct",
+      "context_length": 80000,
+      "pricing": {
+        "prompt": 0.051,
+        "completion": 0.34
+      },
+      "price_history": [
+        {
+          "date": "2026-03-03",
+          "prompt": 0.051,
+          "completion": 0.34
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
       "id": "qwen/qwen-2.5-72b-instruct",
       "name": "Qwen2.5 72B Instruct",
       "context_length": 32768,
@@ -7267,12 +7328,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "cohere/command-r-plus-08-2024",
-      "name": "Cohere: Command R+ (08-2024)",
+      "id": "cohere/command-r-08-2024",
+      "name": "Cohere: Command R (08-2024)",
       "context_length": 128000,
       "pricing": {
-        "prompt": 2.5,
-        "completion": 10.0
+        "prompt": 0.15,
+        "completion": 0.6
       },
       "price_history": [],
       "price_status": "stable",
@@ -7289,12 +7350,12 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "cohere/command-r-08-2024",
-      "name": "Cohere: Command R (08-2024)",
+      "id": "cohere/command-r-plus-08-2024",
+      "name": "Cohere: Command R+ (08-2024)",
       "context_length": 128000,
       "pricing": {
-        "prompt": 0.15,
-        "completion": 0.6
+        "prompt": 2.5,
+        "completion": 10.0
       },
       "price_history": [],
       "price_status": "stable",
@@ -7485,7 +7546,7 @@
           "completion": 0.03
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -7653,28 +7714,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "meta-llama/llama-3-8b-instruct",
-      "name": "Meta: Llama 3 8B Instruct",
-      "context_length": 8192,
-      "pricing": {
-        "prompt": 0.03,
-        "completion": 0.04
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "meta-llama",
-      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
-    },
-    {
       "id": "meta-llama/llama-3-70b-instruct",
       "name": "Meta: Llama 3 70B Instruct",
       "context_length": 8192,
@@ -7695,6 +7734,28 @@
       ],
       "provider": "meta-llama",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "meta-llama/llama-3-8b-instruct",
+      "name": "Meta: Llama 3 8B Instruct",
+      "context_length": 8192,
+      "pricing": {
+        "prompt": 0.03,
+        "completion": 0.04
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
       "id": "mistralai/mixtral-8x22b-instruct",
@@ -8049,28 +8110,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "openai/gpt-4",
-      "name": "OpenAI: GPT-4",
-      "context_length": 8191,
-      "pricing": {
-        "prompt": 30.0,
-        "completion": 60.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": 1315,
-        "coding": 1350,
-        "vision": 1300,
-        "hard": 1280
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "openai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "openai/gpt-3.5-turbo",
       "name": "OpenAI: GPT-3.5 Turbo",
       "context_length": 16385,
@@ -8107,6 +8146,28 @@
         "coding": null,
         "vision": null,
         "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "openai/gpt-4",
+      "name": "OpenAI: GPT-4",
+      "context_length": 8191,
+      "pricing": {
+        "prompt": 30.0,
+        "completion": 60.0
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
       },
       "tags": [
         "Chat"
