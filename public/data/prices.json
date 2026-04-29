@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-28T05:19:12.169207Z",
+    "last_updated": "2026-04-29T05:15:48.166236Z",
     "total_models": 333
   },
   "models": [
@@ -290,17 +290,22 @@
       "name": "Qwen: Qwen3.6 Max Preview",
       "context_length": 262144,
       "pricing": {
-        "prompt": 1.3,
-        "completion": 7.8
+        "prompt": 1.04,
+        "completion": 6.24
       },
       "price_history": [
         {
           "date": "2026-04-27",
           "prompt": 1.3,
           "completion": 7.8
+        },
+        {
+          "date": "2026-04-29",
+          "prompt": 1.04,
+          "completion": 6.24
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -316,10 +321,10 @@
     {
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
-      "context_length": 262144,
+      "context_length": 256000,
       "pricing": {
-        "prompt": 0.5,
-        "completion": 2.0
+        "prompt": 0.325,
+        "completion": 3.25
       },
       "price_history": [
         {
@@ -331,9 +336,14 @@
           "date": "2026-04-28",
           "prompt": 0.5,
           "completion": 2.0
+        },
+        {
+          "date": "2026-04-29",
+          "prompt": 0.325,
+          "completion": 3.25
         }
       ],
-      "price_status": "hike",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -545,6 +555,34 @@
         "Chat"
       ],
       "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "inclusionai/ling-2.6-flash",
+      "name": "inclusionAI: Ling-2.6-flash",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 0.08,
+        "completion": 0.24
+      },
+      "price_history": [
+        {
+          "date": "2026-04-29",
+          "prompt": 0.08,
+          "completion": 0.24
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "inclusionai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -6430,34 +6468,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "qwen/qwq-32b",
-      "name": "Qwen: QwQ 32B",
-      "context_length": 131072,
-      "pricing": {
-        "prompt": 0.15,
-        "completion": 0.58
-      },
-      "price_history": [
-        {
-          "date": "2026-03-19",
-          "prompt": 0.15,
-          "completion": 0.58
-        }
-      ],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "qwen",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "google/gemini-2.0-flash-lite-001",
       "name": "Google: Gemini 2.0 Flash Lite",
       "context_length": 1048576,
@@ -7846,28 +7856,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "meta-llama/llama-3.1-70b-instruct",
-      "name": "Meta: Llama 3.1 70B Instruct",
-      "context_length": 131072,
-      "pricing": {
-        "prompt": 0.4,
-        "completion": 0.4
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "meta-llama",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "meta-llama/llama-3.1-8b-instruct",
       "name": "Meta: Llama 3.1 8B Instruct",
       "context_length": 16384,
@@ -7890,12 +7878,34 @@
       "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
     },
     {
+      "id": "meta-llama/llama-3.1-70b-instruct",
+      "name": "Meta: Llama 3.1 70B Instruct",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.4,
+        "completion": 0.4
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "meta-llama",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
       "id": "mistralai/mistral-nemo",
       "name": "Mistral: Mistral Nemo",
       "context_length": 131072,
       "pricing": {
         "prompt": 0.02,
-        "completion": 0.04
+        "completion": 0.03
       },
       "price_history": [
         {
@@ -7907,9 +7917,14 @@
           "date": "2026-04-28",
           "prompt": 0.02,
           "completion": 0.04
+        },
+        {
+          "date": "2026-04-29",
+          "prompt": 0.02,
+          "completion": 0.03
         }
       ],
-      "price_status": "hike",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -8341,28 +8356,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "mistralai/mistral-7b-instruct-v0.1",
-      "name": "Mistral: Mistral 7B Instruct v0.1",
-      "context_length": 2824,
-      "pricing": {
-        "prompt": 0.11,
-        "completion": 0.19
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "mistralai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "openai/gpt-3.5-turbo-instruct",
       "name": "OpenAI: GPT-3.5 Turbo Instruct",
       "context_length": 4095,
@@ -8382,6 +8375,28 @@
         "Chat"
       ],
       "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "mistralai/mistral-7b-instruct-v0.1",
+      "name": "Mistral: Mistral 7B Instruct v0.1",
+      "context_length": 2824,
+      "pricing": {
+        "prompt": 0.11,
+        "completion": 0.19
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -8473,28 +8488,6 @@
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
-      "id": "openai/gpt-4",
-      "name": "OpenAI: GPT-4",
-      "context_length": 8191,
-      "pricing": {
-        "prompt": 30.0,
-        "completion": 60.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": 1315,
-        "coding": 1350,
-        "vision": 1300,
-        "hard": 1280
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "openai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
       "id": "openai/gpt-4-0314",
       "name": "OpenAI: GPT-4 (older v0314)",
       "context_length": 8191,
@@ -8509,6 +8502,28 @@
         "coding": null,
         "vision": null,
         "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
+    {
+      "id": "openai/gpt-4",
+      "name": "OpenAI: GPT-4",
+      "context_length": 8191,
+      "pricing": {
+        "prompt": 30.0,
+        "completion": 60.0
+      },
+      "price_history": [],
+      "price_status": "stable",
+      "scores": {
+        "overall": 1315,
+        "coding": 1350,
+        "vision": 1300,
+        "hard": 1280
       },
       "tags": [
         "Chat"
