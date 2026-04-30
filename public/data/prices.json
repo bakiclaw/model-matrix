@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-29T05:15:48.166236Z",
-    "total_models": 333
+    "last_updated": "2026-04-30T05:18:46.257955Z",
+    "total_models": 332
   },
   "models": [
     {
@@ -92,19 +92,24 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI Kimi Latest",
-      "context_length": 256000,
+      "context_length": 262144,
       "pricing": {
-        "prompt": 0.7448,
-        "completion": 4.655
+        "prompt": 0.75,
+        "completion": 3.5
       },
       "price_history": [
         {
           "date": "2026-04-28",
           "prompt": 0.7448,
           "completion": 4.655
+        },
+        {
+          "date": "2026-04-30",
+          "prompt": 0.75,
+          "completion": 3.5
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -305,7 +310,7 @@
           "completion": 6.24
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -343,7 +348,7 @@
           "completion": 3.25
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -616,10 +621,10 @@
     {
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
-      "context_length": 256000,
+      "context_length": 262144,
       "pricing": {
-        "prompt": 0.7448,
-        "completion": 4.655
+        "prompt": 0.75,
+        "completion": 3.5
       },
       "price_history": [
         {
@@ -641,9 +646,14 @@
           "date": "2026-04-24",
           "prompt": 0.7448,
           "completion": 4.655
+        },
+        {
+          "date": "2026-04-30",
+          "prompt": 0.75,
+          "completion": 3.5
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2575,28 +2585,6 @@
       ],
       "provider": "google",
       "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
-    },
-    {
-      "id": "mistralai/mistral-small-creative",
-      "name": "Mistral: Mistral Small Creative",
-      "context_length": 32768,
-      "pricing": {
-        "prompt": 0.1,
-        "completion": 0.3
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "mistralai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "xiaomi/mimo-v2-flash",
@@ -7924,7 +7912,7 @@
           "completion": 0.03
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
