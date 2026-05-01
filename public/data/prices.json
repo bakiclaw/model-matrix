@@ -1,10 +1,66 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-04-30T05:18:46.257955Z",
-    "total_models": 332
+    "last_updated": "2026-05-01T05:31:03.731411Z",
+    "total_models": 334
   },
   "models": [
+    {
+      "id": "x-ai/grok-4.3",
+      "name": "xAI: Grok 4.3",
+      "context_length": 1000000,
+      "pricing": {
+        "prompt": 1.25,
+        "completion": 2.5
+      },
+      "price_history": [
+        {
+          "date": "2026-05-01",
+          "prompt": 1.25,
+          "completion": 2.5
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "x-ai",
+      "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
+    },
+    {
+      "id": "ibm-granite/granite-4.1-8b",
+      "name": "IBM: Granite 4.1 8B",
+      "context_length": 131072,
+      "pricing": {
+        "prompt": 0.05,
+        "completion": 0.1
+      },
+      "price_history": [
+        {
+          "date": "2026-05-01",
+          "prompt": 0.05,
+          "completion": 0.1
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "ibm-granite",
+      "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
+    },
     {
       "id": "~anthropic/claude-haiku-latest",
       "name": "Anthropic Claude Haiku Latest",
@@ -92,10 +148,10 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI Kimi Latest",
-      "context_length": 262144,
+      "context_length": 262142,
       "pricing": {
-        "prompt": 0.75,
-        "completion": 3.5
+        "prompt": 0.74,
+        "completion": 3.49
       },
       "price_history": [
         {
@@ -107,6 +163,11 @@
           "date": "2026-04-30",
           "prompt": 0.75,
           "completion": 3.5
+        },
+        {
+          "date": "2026-05-01",
+          "prompt": 0.74,
+          "completion": 3.49
         }
       ],
       "price_status": "drop",
@@ -621,10 +682,10 @@
     {
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
-      "context_length": 262144,
+      "context_length": 262142,
       "pricing": {
-        "prompt": 0.75,
-        "completion": 3.5
+        "prompt": 0.74,
+        "completion": 3.49
       },
       "price_history": [
         {
@@ -651,6 +712,11 @@
           "date": "2026-04-30",
           "prompt": 0.75,
           "completion": 3.5
+        },
+        {
+          "date": "2026-05-01",
+          "prompt": 0.74,
+          "completion": 3.49
         }
       ],
       "price_status": "drop",
@@ -993,17 +1059,22 @@
       "name": "xAI: Grok 4.20",
       "context_length": 2000000,
       "pricing": {
-        "prompt": 2.0,
-        "completion": 6.0
+        "prompt": 1.25,
+        "completion": 2.5
       },
       "price_history": [
         {
           "date": "2026-04-01",
           "prompt": 2.0,
           "completion": 6.0
+        },
+        {
+          "date": "2026-05-01",
+          "prompt": 1.25,
+          "completion": 2.5
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2135,7 +2206,7 @@
       "name": "Qwen: Qwen3 Coder Next",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.14,
+        "prompt": 0.12,
         "completion": 0.8
       },
       "price_history": [
@@ -2153,9 +2224,14 @@
           "date": "2026-04-25",
           "prompt": 0.14,
           "completion": 0.8
+        },
+        {
+          "date": "2026-05-01",
+          "prompt": 0.12,
+          "completion": 0.8
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4691,10 +4767,16 @@
       "context_length": 131072,
       "pricing": {
         "prompt": 0.039,
-        "completion": 0.19
+        "completion": 0.18
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-05-01",
+          "prompt": 0.039,
+          "completion": 0.18
+        }
+      ],
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6596,7 +6678,7 @@
     {
       "id": "google/gemini-2.0-flash-001",
       "name": "Google: Gemini 2.0 Flash",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "pricing": {
         "prompt": 0.1,
         "completion": 0.4
