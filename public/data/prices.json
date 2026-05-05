@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-05-04T05:21:20.106827Z",
-    "total_models": 334
+    "last_updated": "2026-05-05T04:50:17.796960Z",
+    "total_models": 335
   },
   "models": [
     {
@@ -60,6 +60,34 @@
       ],
       "provider": "ibm-granite",
       "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
+    },
+    {
+      "id": "mistralai/mistral-medium-3-5",
+      "name": "Mistral: Mistral Medium 3.5",
+      "context_length": 262144,
+      "pricing": {
+        "prompt": 1.5,
+        "completion": 7.5
+      },
+      "price_history": [
+        {
+          "date": "2026-05-05",
+          "prompt": 1.5,
+          "completion": 7.5
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "mistralai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "~anthropic/claude-haiku-latest",
@@ -343,7 +371,7 @@
           "completion": 1.0
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1684,7 +1712,7 @@
           "completion": 1.0
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4204,7 +4232,7 @@
           "completion": 0.95
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -5848,7 +5876,7 @@
           "completion": 0.45
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6703,7 +6731,7 @@
     {
       "id": "google/gemini-2.0-flash-001",
       "name": "Google: Gemini 2.0 Flash",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "pricing": {
         "prompt": 0.1,
         "completion": 0.4
