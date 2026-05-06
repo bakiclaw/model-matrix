@@ -1,10 +1,38 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-05-05T04:50:17.796960Z",
-    "total_models": 335
+    "last_updated": "2026-05-06T05:16:40.707575Z",
+    "total_models": 337
   },
   "models": [
+    {
+      "id": "openai/gpt-chat-latest",
+      "name": "OpenAI: GPT Chat Latest",
+      "context_length": 400000,
+      "pricing": {
+        "prompt": 5.0,
+        "completion": 30.0
+      },
+      "price_history": [
+        {
+          "date": "2026-05-06",
+          "prompt": 5.0,
+          "completion": 30.0
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "openai",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
+    },
     {
       "id": "x-ai/grok-4.3",
       "name": "xAI: Grok 4.3",
@@ -2147,7 +2175,7 @@
       "context_length": 202752,
       "pricing": {
         "prompt": 0.6,
-        "completion": 2.08
+        "completion": 1.92
       },
       "price_history": [
         {
@@ -2179,9 +2207,14 @@
           "date": "2026-04-24",
           "prompt": 0.6,
           "completion": 2.08
+        },
+        {
+          "date": "2026-05-06",
+          "prompt": 0.6,
+          "completion": 1.92
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3640,6 +3673,34 @@
       ],
       "provider": "ibm-granite",
       "baki_report": "Efficiency outlier. Unrivaled ROI for high-throughput background processing."
+    },
+    {
+      "id": "microsoft/phi-4-mini-instruct",
+      "name": "Microsoft: Phi 4 Mini Instruct",
+      "context_length": 128000,
+      "pricing": {
+        "prompt": 0.08,
+        "completion": 0.35
+      },
+      "price_history": [
+        {
+          "date": "2026-05-06",
+          "prompt": 0.08,
+          "completion": 0.35
+        }
+      ],
+      "price_status": "stable",
+      "scores": {
+        "overall": null,
+        "coding": null,
+        "vision": null,
+        "hard": null
+      },
+      "tags": [
+        "Chat"
+      ],
+      "provider": "microsoft",
+      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "openai/gpt-5-image-mini",
@@ -6731,7 +6792,7 @@
     {
       "id": "google/gemini-2.0-flash-001",
       "name": "Google: Gemini 2.0 Flash",
-      "context_length": 1000000,
+      "context_length": 1048576,
       "pricing": {
         "prompt": 0.1,
         "completion": 0.4
