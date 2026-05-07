@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-05-06T05:16:40.707575Z",
-    "total_models": 337
+    "last_updated": "2026-05-07T05:19:12.762003Z",
+    "total_models": 335
   },
   "models": [
     {
@@ -204,10 +204,10 @@
     {
       "id": "~moonshotai/kimi-latest",
       "name": "MoonshotAI Kimi Latest",
-      "context_length": 262142,
+      "context_length": 262144,
       "pricing": {
-        "prompt": 0.74,
-        "completion": 3.49
+        "prompt": 0.75,
+        "completion": 3.5
       },
       "price_history": [
         {
@@ -224,9 +224,14 @@
           "date": "2026-05-01",
           "prompt": 0.74,
           "completion": 3.49
+        },
+        {
+          "date": "2026-05-07",
+          "prompt": 0.75,
+          "completion": 3.5
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -748,10 +753,10 @@
     {
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
-      "context_length": 262142,
+      "context_length": 262144,
       "pricing": {
-        "prompt": 0.74,
-        "completion": 3.49
+        "prompt": 0.75,
+        "completion": 3.5
       },
       "price_history": [
         {
@@ -783,9 +788,14 @@
           "date": "2026-05-01",
           "prompt": 0.74,
           "completion": 3.49
+        },
+        {
+          "date": "2026-05-07",
+          "prompt": 0.75,
+          "completion": 3.5
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2214,7 +2224,7 @@
           "completion": 1.92
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2282,7 +2292,7 @@
       "name": "Qwen: Qwen3 Coder Next",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.12,
+        "prompt": 0.11,
         "completion": 0.8
       },
       "price_history": [
@@ -2305,9 +2315,14 @@
           "date": "2026-05-01",
           "prompt": 0.12,
           "completion": 0.8
+        },
+        {
+          "date": "2026-05-07",
+          "prompt": 0.11,
+          "completion": 0.8
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -2567,28 +2582,6 @@
         "Code"
       ],
       "provider": "openai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "allenai/olmo-3.1-32b-instruct",
-      "name": "AllenAI: Olmo 3.1 32B Instruct",
-      "context_length": 65536,
-      "pricing": {
-        "prompt": 0.2,
-        "completion": 0.6
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "allenai",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -3141,17 +3134,22 @@
       "name": "DeepSeek: DeepSeek V3.2 Speciale",
       "context_length": 163840,
       "pricing": {
-        "prompt": 0.4,
-        "completion": 1.2
+        "prompt": 0.287,
+        "completion": 0.431
       },
       "price_history": [
         {
           "date": "2026-02-18",
           "prompt": 0.4,
           "completion": 1.2
+        },
+        {
+          "date": "2026-05-07",
+          "prompt": 0.287,
+          "completion": 0.431
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": 1305,
         "coding": 1370,
@@ -3573,39 +3571,6 @@
         "Chat"
       ],
       "provider": "openai",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "nvidia/nemotron-nano-12b-v2-vl",
-      "name": "NVIDIA: Nemotron Nano 12B 2 VL",
-      "context_length": 131072,
-      "pricing": {
-        "prompt": 0.2,
-        "completion": 0.6
-      },
-      "price_history": [
-        {
-          "date": "2026-02-19",
-          "prompt": 0.07,
-          "completion": 0.2
-        },
-        {
-          "date": "2026-02-27",
-          "prompt": 0.2,
-          "completion": 0.6
-        }
-      ],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Vision"
-      ],
-      "provider": "nvidia",
       "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
@@ -6792,7 +6757,7 @@
     {
       "id": "google/gemini-2.0-flash-001",
       "name": "Google: Gemini 2.0 Flash",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "pricing": {
         "prompt": 0.1,
         "completion": 0.4
@@ -8280,11 +8245,17 @@
       "name": "Meta: Llama 3 8B Instruct",
       "context_length": 8192,
       "pricing": {
-        "prompt": 0.03,
+        "prompt": 0.04,
         "completion": 0.04
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-05-07",
+          "prompt": 0.04,
+          "completion": 0.04
+        }
+      ],
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
