@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-05-10T05:25:02.088431Z",
-    "total_models": 335
+    "last_updated": "2026-05-11T05:46:42.978998Z",
+    "total_models": 333
   },
   "models": [
     {
@@ -2489,8 +2489,8 @@
       "name": "MoonshotAI: Kimi K2.5",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.44,
-        "completion": 2.0
+        "prompt": 0.4,
+        "completion": 1.98
       },
       "price_history": [
         {
@@ -2502,9 +2502,14 @@
           "date": "2026-04-21",
           "prompt": 0.44,
           "completion": 2.0
+        },
+        {
+          "date": "2026-05-11",
+          "prompt": 0.4,
+          "completion": 1.98
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6725,50 +6730,6 @@
       ],
       "provider": "google",
       "baki_report": "Infinite memory archetype. Perfect for full-codebase context and massive RAG."
-    },
-    {
-      "id": "anthropic/claude-3.7-sonnet",
-      "name": "Anthropic: Claude 3.7 Sonnet",
-      "context_length": 200000,
-      "pricing": {
-        "prompt": 3.0,
-        "completion": 15.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Chat"
-      ],
-      "provider": "anthropic",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
-    },
-    {
-      "id": "anthropic/claude-3.7-sonnet:thinking",
-      "name": "Anthropic: Claude 3.7 Sonnet (thinking)",
-      "context_length": 200000,
-      "pricing": {
-        "prompt": 3.0,
-        "completion": 15.0
-      },
-      "price_history": [],
-      "price_status": "stable",
-      "scores": {
-        "overall": null,
-        "coding": null,
-        "vision": null,
-        "hard": null
-      },
-      "tags": [
-        "Logic"
-      ],
-      "provider": "anthropic",
-      "baki_report": "Balanced performance profile. Reliable generalist for standard agentic workflows."
     },
     {
       "id": "mistralai/mistral-saba",
