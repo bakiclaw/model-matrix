@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-05-13T05:37:57.609890Z",
+    "last_updated": "2026-05-14T05:37:40.435880Z",
     "total_models": 330
   },
   "models": [
@@ -676,17 +676,22 @@
       "name": "DeepSeek: DeepSeek V4 Flash",
       "context_length": 1048576,
       "pricing": {
-        "prompt": 0.14,
-        "completion": 0.28
+        "prompt": 0.126,
+        "completion": 0.252
       },
       "price_history": [
         {
           "date": "2026-04-24",
           "prompt": 0.14,
           "completion": 0.28
+        },
+        {
+          "date": "2026-05-14",
+          "prompt": 0.126,
+          "completion": 0.252
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1064,7 +1069,7 @@
           "completion": 3.5
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1445,7 +1450,7 @@
       "name": "MiniMax: MiniMax M2.7",
       "context_length": 196608,
       "pricing": {
-        "prompt": 0.28,
+        "prompt": 0.279,
         "completion": 1.2
       },
       "price_history": [
@@ -1462,6 +1467,11 @@
         {
           "date": "2026-05-13",
           "prompt": 0.28,
+          "completion": 1.2
+        },
+        {
+          "date": "2026-05-14",
+          "prompt": 0.279,
           "completion": 1.2
         }
       ],
@@ -2600,7 +2610,7 @@
           "completion": 1.9
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4170,10 +4180,10 @@
     {
       "id": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
-      "context_length": 204800,
+      "context_length": 202752,
       "pricing": {
-        "prompt": 0.39,
-        "completion": 1.9
+        "prompt": 0.43,
+        "completion": 1.74
       },
       "price_history": [
         {
@@ -4185,9 +4195,14 @@
           "date": "2026-03-05",
           "prompt": 0.39,
           "completion": 1.9
+        },
+        {
+          "date": "2026-05-14",
+          "prompt": 0.43,
+          "completion": 1.74
         }
       ],
-      "price_status": "stable",
+      "price_status": "drop",
       "scores": {
         "overall": null,
         "coding": null,
@@ -4682,11 +4697,17 @@
       "name": "MoonshotAI: Kimi K2 0905",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.4,
-        "completion": 2.0
+        "prompt": 0.6,
+        "completion": 2.5
       },
-      "price_history": [],
-      "price_status": "stable",
+      "price_history": [
+        {
+          "date": "2026-05-14",
+          "prompt": 0.6,
+          "completion": 2.5
+        }
+      ],
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
