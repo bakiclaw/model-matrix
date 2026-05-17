@@ -1,7 +1,7 @@
 {
   "metadata": {
     "source": "OpenRouter + LMSYS Arena Mapping",
-    "last_updated": "2026-05-16T05:16:18.337868Z",
+    "last_updated": "2026-05-17T05:37:37.402160Z",
     "total_models": 324
   },
   "models": [
@@ -739,7 +739,7 @@
           "completion": 0.224
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1178,8 +1178,8 @@
       "name": "Google: Gemma 4 26B A4B ",
       "context_length": 262144,
       "pricing": {
-        "prompt": 0.06,
-        "completion": 0.33
+        "prompt": 0.07,
+        "completion": 0.34
       },
       "price_history": [
         {
@@ -1221,9 +1221,14 @@
           "date": "2026-04-24",
           "prompt": 0.06,
           "completion": 0.33
+        },
+        {
+          "date": "2026-05-17",
+          "prompt": 0.07,
+          "completion": 0.34
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -1701,8 +1706,8 @@
       "name": "NVIDIA: Nemotron 3 Super",
       "context_length": 1000000,
       "pricing": {
-        "prompt": 0.09,
-        "completion": 0.45
+        "prompt": 0.1,
+        "completion": 0.5
       },
       "price_history": [
         {
@@ -1714,9 +1719,14 @@
           "date": "2026-04-18",
           "prompt": 0.09,
           "completion": 0.45
+        },
+        {
+          "date": "2026-05-17",
+          "prompt": 0.1,
+          "completion": 0.5
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -3917,7 +3927,7 @@
           "completion": 0.112
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -5105,16 +5115,21 @@
       "context_length": 131072,
       "pricing": {
         "prompt": 0.039,
-        "completion": 0.18
+        "completion": 0.19
       },
       "price_history": [
         {
           "date": "2026-05-01",
           "prompt": 0.039,
           "completion": 0.18
+        },
+        {
+          "date": "2026-05-17",
+          "prompt": 0.039,
+          "completion": 0.19
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6474,7 +6489,7 @@
           "completion": 0.555
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -6822,7 +6837,7 @@
           "completion": 0.03
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -7750,7 +7765,7 @@
           "completion": 0.201
         }
       ],
-      "price_status": "hike",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -7783,7 +7798,7 @@
           "completion": 0.335
         }
       ],
-      "price_status": "drop",
+      "price_status": "stable",
       "scores": {
         "overall": null,
         "coding": null,
@@ -8034,7 +8049,7 @@
       "context_length": 131072,
       "pricing": {
         "prompt": 0.02,
-        "completion": 0.03
+        "completion": 0.04
       },
       "price_history": [
         {
@@ -8051,9 +8066,14 @@
           "date": "2026-04-29",
           "prompt": 0.02,
           "completion": 0.03
+        },
+        {
+          "date": "2026-05-17",
+          "prompt": 0.02,
+          "completion": 0.04
         }
       ],
-      "price_status": "stable",
+      "price_status": "hike",
       "scores": {
         "overall": null,
         "coding": null,
